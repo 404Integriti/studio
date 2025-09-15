@@ -59,11 +59,11 @@ body {
 }
 
 .menu-button {
-color: var(--menu-button-color);
-  font-family: var(--font-monts);
-  font-size: 18px;
-  font-weight: 400;
-  line-height: normal;
+color: #070707 !important;
+    font-family: var(--font-raleway);
+    font-size: 18px !important;
+    font-weight: 400;
+    line-height: normal;
 
 }
 
@@ -279,8 +279,10 @@ color: var(--menu-button-color);
 
 .header ul > li a {
   color: #575757;
-  font-size: 15px;
+  font-size: 16.74px;
   font-family: var(--font-raleway);
+  line-height: normal;
+  font-weight: 400;
 }
 
 .header ul > li a:hover {
@@ -709,68 +711,6 @@ iframe#vimeo-video {
 
 
 @layer components {
-  .web-main-herobtn-first, .web-main-herobtn-sec{
-    width: 133px !important;
-    max-width: 200px !important;
-    font-size: 14px !important;
-    height: 41px !important;
-    line-height: 21px !important;
-  }
-  .web-main-herobtn-first{
-    font-weight: 400 !important;
-  }
-  .web-main-herobtn-sec{
-    font-weight: 500 !important;
-  }
-  @media (min-width:479px){
-    .web-main-herobtn-first, .web-main-herobtn-sec{
-      width: 200px !important;
-      font-size:18px !important ;
-      height: 50px !important;
-    }
-
-  }
-  
-  .hero-button-first{
-    font-size: 18px !important;
-    font-weight: 400 ;
-    line-height: 22px;
-    width: 220px !important;
-    max-width: 220px !important;
-    height: 52px !important;
-  }
-  .hero-button-sec{
-    margin-top: 17px;
-    margin-left: 0px !important;
-    padding-top: 16px;
-    padding-bottom: 15px;
-    padding-left: 20px;
-    padding-right: 20px;
-    font-size: 18px !important;
-    font-weight: 400 ;
-    line-height: 22px;
-    width: 220px !important;
-    max-width: 220px !important;
-    height: 53px !important;
-  }
-@media (max-width: 479px) {
-  .hero-button-first {
-    width:146px !important;
-    font-size: 14px !important;
-    height: 43px !important;
-  }
-  .hero-button-sec {
-    margin-top: 18px;
-    /* margin-left: 10px; */
-    padding-top: 0px !important;
-    padding-bottom: 0px;
-    width:151px !important;
-    font-size: 15px !important;
-    font-weight: 500 ;
-    height: 43px !important;
-  }
-}
-  
   .prose h4{
      margin-top: 10px;
      margin-bottom: 10px;
@@ -783,17 +723,16 @@ iframe#vimeo-video {
   .prose p {
     color: #333;
     font-size: 18px;
-    margin-bottom: 10px;    
+    margin-bottom: 10px;
   }
   .prose h5 {
-    font-size:18px;
+    font-size:20px;
     color :#2f9688;
-    margin-top: 15px;
   }
-  /* .prose h5  em {
+  .prose h5  em {
     color:#2f9688 !important;
     font-size: 18px;
-  } */
+  }
   .prose li strong{
     color:#333333 !important;
     font-size: 18px;
@@ -881,22 +820,3 @@ iframe#vimeo-video {
 
   background: #2c4e34 !important;
 }
-.customBrandBtn{
-  max-width: 100% !important;
-
-  @apply sm:text-[18px] text-[14px] p-[15px] ;
-}
-
-.beauty-landing-page .footer-creative {
-    background: transparent !important;
-}
-/* @layer utilities {
-  @media (min-width: 1440px) {
-    .custom-btn {
-      @apply gap-[36px];
-    }
-  }
-} */
-/* @theme {
-  --breakpoint-1280: 1280px;
-} */
