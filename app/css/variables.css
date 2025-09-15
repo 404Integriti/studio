@@ -1,0 +1,40 @@
+:root {
+  /* Icon Orange Button Variables */
+  --icon-orange-btn-bg: #e64a19;
+  --icon-orange-btn-hover-bg: #ed8104;
+
+  --icon-orange-btn-text-color: #ffffff;
+  --icon-orange-btn-hover-text-color: #ffffff;
+
+  --icon-orange-icon-color: #ffffff;
+  --icon-orange-icon-hover-color: #ffffff;
+
+  --icon-orange-icon-border-color: #ffffff;
+  --icon-orange-icon-hover-border-color: #ffffff;
+
+  --icon-orange-btn-font: var(--font-raleway);
+  --icon-orange-btn-font-size: 16px;
+  --icon-orange-btn-font-weight: 400;
+
+  --icon-orange-btn-padding-y: 14px;
+  --icon-orange-btn-padding-x: 30px;
+  --icon-orange-btn-radius: 30px;
+  --icon-orange-btn-width: 220px;
+
+  --icon-orange-icon-size: 24px;
+  --icon-orange-icon-margin-left: 12px;
+  --icon-orange-icon-border-width: 1.5px;
+
+  /* Social Media Icons Variables*/
+  --sm-icon-bg-color: #009688;
+  --sm-icon-hover-bg-color: #ed8104;
+  --sm-icon-color: #ffffff;
+  --sm-icon-hover-color: #ffffff;
+  --sm-icon-size: 40px;
+  --sm-icon-font-size: calc(var(--sm-icon-size) * 0.5);
+  --sm-icon-margin: 0 8px;
+  --sm-icon-transition: background-color 0.3s ease;
+  --sm-icon-size: 40px;
+  --sm-icon-font-size: 20px;
+  --sm-icon-margin: 0 8px;
+}

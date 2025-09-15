@@ -1,0 +1,28 @@
+.social-icon-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: var(--sm-icon-size);
+  height: var(--sm-icon-size);
+  border-radius: 50%;
+  background-color: var(--sm-icon-bg-color);
+  transition: var(--sm-icon-transition);
+  margin: var(--sm-icon-margin);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.social-icon-container:hover {
+  background-color: var(--sm-icon-hover-bg-color);
+}
+
+.social-icon-container svg {
+  width: var(--sm-icon-font-size);
+  height: var(--sm-icon-font-size);
+  color: var(--sm-icon-color);
+  transition: var(--sm-icon-transition);
+}
+
+.social-icon-container:hover svg {
+  color: var(--sm-icon-hover-color);
+}

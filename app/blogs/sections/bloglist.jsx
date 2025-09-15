@@ -1,0 +1,100 @@
+"use client";
+
+import { useState, useEffect } from "react";
+import BlogCard from "../sections/blogcard";
+
+export default function BlogList() {
+  const [posts, setPosts] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
+  const [mounted, setMounted] = useState(false);
+
+  async function fetchAllPosts() {
+    try {
+      const res = await fetch(
+        `https://websitesblogs.integritistaffing.com/wp-json/wp/v2/posts?categories=3&_embed&per_page=100`,
+        { cache: "no-store" }
+      );
+
+      if (!res.ok) {
+        throw new Error("Failed to fetch posts");
+      }
+
+      const data = await res.json();
+
+      // ✅ Debug: log total posts fetched
+      console.log("Fetched posts length:", data.length);
+      console.log("Fetched posts:", data);
+
+      return data;
+    } catch (err) {
+      console.error("Error fetching posts:", err);
+      throw err;
+    }
+  }
+
+  useEffect(() => {
+    setMounted(true);
+
+    async function fetchPosts() {
+      try {
+        setLoading(true);
+        const allPosts = await fetchAllPosts();
+        setPosts(allPosts);
+      } catch (err) {
+        setError(err.message);
+      } finally {
+        setLoading(false);
+      }
+    }
+
+    fetchPosts();
+  }, []);
+
+  if (!mounted || loading) {
+    return (
+      <div className="flex justify-center items-center py-20">
+        <div className="w-24 h-24 border-4 border-[#009688] border-t-transparent rounded-full animate-spin"></div>
+      </div>
+    );
+  }
+
+  if (error) {
+    return (
+      <div className="flex justify-center items-center py-20">
+        <div className="text-red-500">Error loading blogs: {error}</div>
+      </div>
+    );
+  }
+
+  return (
+    <div className="py-10">
+      <div className="max-w-[1440px] w-full bg-[#fff] mx-auto">
+        <div className="max-w-[1310px] w-full bg-[#fff] mx-auto flex flex-wrap gap-[40px] justify-center">
+          {posts.map((post, index) => {
+            const imageUrl =
+              post._embedded?.["wp:featuredmedia"]?.[0]?.source_url || "/new.png";
+
+            // ✅ Debug: log each post as we render it
+            console.log(`Rendering post #${index + 1} / ${posts.length}`, {
+              id: post.id,
+              title: post.title?.rendered,
+              image: imageUrl,
+              slug: post.slug,
+            });
+
+            return (
+              <div key={post.id} className="flex justify-center">
+                <BlogCard
+                  image={imageUrl}
+                  title={post.title.rendered}
+                  link={`/blogs/${post.slug}`}
+                />
+              </div>
+            );
+          })}
+        </div>
+      </div>
+    </div>
+  );
+}
