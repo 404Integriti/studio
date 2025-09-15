@@ -927,3 +927,185 @@ const casestudybeauty = [
 
   ];
   export { casestudybeauty };
+
+
+ 
+      const PlushieChallenges = [
+      {  heading: "Global Reach Needs",
+        paragraph:"Required setup for international payments and currency conversions to cater to a global audience.",
+        bgcolor: "#ffd99d33",
+        margin: "0 auto 0 0"
+    },
+    {
+        heading: "Complex Product Uploads",
+        paragraph:"Multiple SKUs needed uploading with detailed descriptions and visuals for clarity. ",
+        bgcolor: "#c5e3e0",
+        margin: "0 0 0 auto"
+    },
+    {
+        heading: "Short Timeline",
+        paragraph:"The entire store had to be designed and launched in just seven days. ",
+        bgcolor: "#6c4ab633",
+        margin: "0 auto 0 0"
+    },
+    {
+        heading: "Customer Trust & Interaction",
+        paragraph:"Needed features like live chat and product reviews to build credibility and support.",
+        bgcolor: "#d2e6f6",
+        margin: "0 0 0 auto"
+    },
+]
+ 
+export { PlushieChallenges };
+
+
+const skinChallenges = [
+    {
+        heading: "Visual Consistency",
+        paragraph:"The brand needed high-quality product images and cohesive design throughout the website.",
+        bgcolor: "#ffd99d33",
+        margin: "0 auto 0 0"
+    },
+    {
+        heading: "Time Constraints",
+        paragraph:"A quick turnaround was required without compromising the quality of design or functionality.",
+        bgcolor: "#c5e3e0",
+        margin: "0 0 0 auto"
+    },
+    {
+        heading: "Responsive Layout",
+        paragraph:"Ensuring the website worked smoothly across all screen sizes and devices.",
+        bgcolor: "#6c4ab633",
+        margin: "0 auto 0 0"
+    },
+    {
+        heading: "Professional Appeal",
+        paragraph:"The store needed to build trust through a sleek and modern design that represented the brand.",
+        bgcolor: "#d2e6f6",
+        margin: "0 0 0 auto"
+    },
+]
+ 
+export { skinChallenges };
+const challengesInfo = [
+    {
+        heading: "Feature Limitations",
+        paragraph:"Shopify’s standard plans lacked advanced discount capabilities.",
+        bgcolor: "#ffd99d33",
+        margin: "0 auto 0 0"
+    },
+    {
+        heading: "Checkout Complexity",
+        paragraph:"Needed smooth discount application without disrupting the user journey.",
+        bgcolor: "#c5e3e0",
+        margin: "0 0 0 auto"
+    },
+    {
+        heading: "ERP Syncing",
+        paragraph:"Required real-time pricing and inventory integration with ERP.",
+        bgcolor: "#6c4ab633",
+        margin: "0 auto 0 0"
+    },
+    {
+        heading: "Dynamic Discounting",
+        paragraph:"Required automated discount logic for diverse customer segments.",
+        bgcolor: "#d2e6f6",
+        margin: "0 0 0 auto"
+    },
+]
+
+const whywebflowpoints = [
+  {
+    id: 1,
+    img: "https://cdn.prod.website-files.com/683f4d103b2510d5796dca20/6854435559ce608a510333de_Group%201216325848.svg",
+    text: "Intuitive responsive layout",
+  },
+  {
+    id: 2,
+    img: "https://cdn.prod.website-files.com/683f4d103b2510d5796dca20/68544599a5e18bc9b60cc81e_Group%201216325850.svg",
+    text: "Clean, exportable code",
+  },
+  {
+    id: 3,
+    img: "https://cdn.prod.website-files.com/683f4d103b2510d5796dca20/685444a3a043ffa41cc98482_Group%201216325849.svg",
+    text: "Powerful CMS capabilities",
+  },
+  {
+    id: 4,
+    img: "https://cdn.prod.website-files.com/683f4d103b2510d5796dca20/685445f13f87c34805e4e291_Group%201216325851.svg",
+    text: "Native animations & interactions",
+  },
+];
+export { whywebflowpoints };
+
+export { challengesInfo };
+
+const whitelabelwebflowservices = [
+  {
+    image: "/new/shopservone.svg",
+    heading: "Invisible, Reliable Partners",
+    text: "We work behind your brand, delivering seamless white label Webflow projects that feel like your own. Your clients will never know we’re here",
+  },
+    {
+    image: "/new/shopservtwo.svg",
+    heading: "Senior-Level Expertise Only",
+    text: "No juniors, no trial-and-error. Our Webflow developers are seasoned professionals with a proven record of success across industries",
+  },
+    {
+    image: "/new/shopservthree.svg",
+    heading: "Scalable Support on Demand",
+    text: "Need help on one project or 10? Our flexible engagement models scale with your agency’s growth.",
+  },
+    {
+    image: "/new/shopservfour.svg",
+    heading: "Focused on Your Profitability ",
+    text: "We help you expand your services, take on more clients, and grow your revenue without increasing overhead or stress.",
+  },
+]
+export { whitelabelwebflowservices };
+
+const trustAgencyPoints = [
+  {
+    id: 1,
+    text: "Skilled in Webflow Interactions",
+  },
+  {
+    id: 2,
+    text: "Proficient with Webflow Apps",
+  },
+  {
+    id: 3,
+    text: "Experienced in CMS and Dynamic Content",
+  },
+  {
+    id: 4,
+    text: "Advanced Animation Implementation",
+  },
+  {
+    id: 5,
+    text: "Clean Code Structure and SEO-Optimized",
+  },
+]
+
+export { trustAgencyPoints };
+
+const confidentialityPoints = [
+  {
+    id: 1,
+    text: "We work fully white label under signed NDAs.",
+  },
+  {
+    id: 2,
+    text: "Your clients remain 100% yours—always.",
+  },
+  {
+    id: 3,
+    text: "No portfolio sharing unless permitted by you.",
+  },
+  {
+    id: 4,
+    text: "Private, secured communication and data handling.",
+  },
+]
+
+export { confidentialityPoints };

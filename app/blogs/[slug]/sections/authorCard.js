@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function AuthorCard() {
   return (
     <div
@@ -8,7 +10,7 @@ export default function AuthorCard() {
         max-w-full
       "
     >
-<img
+<Image
   src="https://cdn.prod.website-files.com/683f4d103b2510d5796dca20/6849535d3afbbd0aeaf76e83_Frame%201597884324.svg"
   alt="Author"
   className="

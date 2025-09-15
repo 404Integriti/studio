@@ -1,4 +1,5 @@
 import { trustAgencyPoints, confidentialityPoints } from "../../components/customThemePoints"
+import Image from "next/image"
 
 export default function TrustContainers() {
     return (
@@ -14,7 +15,7 @@ export default function TrustContainers() {
                     <div className="space-y-6">
                         {trustAgencyPoints.map((point) => (
                             <div key={point.id} className="relative flex items-center pl-2">
-                                <img
+                                <Image
                                     src="https://cdn.prod.website-files.com/683f4d103b2510d5796dca20/6859508f74693d9557d18eb8_Frame%201597884424.svg"
                                     alt="Check"
                                     className="tick-icon"
@@ -35,7 +36,7 @@ export default function TrustContainers() {
                     <div className="space-y-4">
                         {confidentialityPoints.map((point) => (
                             <div key={point.id} className="relative flex items-center pl-8">
-                                <img
+                                <Image
                                     src="https://cdn.prod.website-files.com/683f4d103b2510d5796dca20/685948fe7b049a9aed73af58_Group%201216325853.svg"
                                     alt="Check"
                                     className="tick-icon"

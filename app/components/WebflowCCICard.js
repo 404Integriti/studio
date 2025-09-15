@@ -1,5 +1,6 @@
 // components/WebflowCCICard.js
 import React from "react";
+import Image from "next/image";
 
 const WebflowCCICard = ({ title, description, image, tiltDirection, alwaysTilt }) => {
   return (
@@ -20,7 +21,7 @@ const WebflowCCICard = ({ title, description, image, tiltDirection, alwaysTilt }
       >
         {/* Left Image */}
         <div className="flex justify-center">
-          <img
+          <Image
             src={image}
             alt="Motion Design Illustration"
             className="max-w-full h-full"

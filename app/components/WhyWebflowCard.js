@@ -1,5 +1,5 @@
 'use client';
-
+import Image from 'next/image';
 import { useState } from 'react';
 
 export default function Card({ icon, title, description }) {
@@ -17,7 +17,7 @@ export default function Card({ icon, title, description }) {
       <div className="flex items-center text-3xl">
        
           <div className='flex items-center justify-center'>
-            <img
+            <Image
           src={icon}
           alt="icon"
           className={`w-8 h-8 transition-all brightness-0 duration-500 ease-in-out ${isHovered ? 'invert brightness-0':'brightness-0'}`}
