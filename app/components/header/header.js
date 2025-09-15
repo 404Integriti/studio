@@ -150,7 +150,7 @@ export default function Header() {
                             <Link href="/shopify-support">Shopify Support</Link>
                           </li>
                           <li>
-                            <Link href="/">Shopify Design</Link>
+                            <Link href="/shopify-design">Shopify Design</Link>
                           </li>
                         </ul>
 
@@ -178,10 +178,10 @@ export default function Header() {
                             <Link href="/webflow-maintenance">Webflow Maintenance</Link>
                           </li>
                           <li>
-                            <Link href="/">Webflow Support</Link>
+                            <Link href="/webflow-support">Webflow Support</Link>
                           </li>
                           <li>
-                            <Link href="/">Webflow Design</Link>
+                            <Link href="/webflow-design">Webflow Design</Link>
                           </li>
                         </ul>
                       </div>
@@ -328,6 +328,7 @@ export default function Header() {
                   {/* Services List */}
                   <div className="mt-4 space-y-4">
                     {/* Website Development - Full width first row */}
+                    <Link href="/website-development-service">
                     <div className="w-full flex items-start space-x-3">
                       <div className="w-10 h-10 bg-orange-500 rounded-full flex items-center justify-center flex-shrink-0">
                         <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -339,7 +340,7 @@ export default function Header() {
                         <div className="text-gray-500 text-sm">Responsive Web Design</div>
                       </div>
                     </div>
-
+</Link>
                     {/* Remaining 3 services in one row on tablet, stacked on mobile */}
                     <div className="md:flex md:flex-row md:space-x-4 md:space-y-0 flex flex-col space-y-4">
                       {/* WordPress Services */}
@@ -357,10 +358,10 @@ export default function Header() {
                           <span className="text-orange-500 font-semibold">WordPress Services</span>
                         </div>
                         <div className="ml-13 space-y-1">
-                          <div className="text-gray-500 text-sm">WordPress Development</div>
-                          <div className="text-gray-500 text-sm">WordPress Maintenance</div>
-                          <div className="text-gray-500 text-sm">WordPress Support</div>
-                          <div className="text-gray-500 text-sm">WordPress Design</div>
+                          <Link href="/wordpress-development" className="text-gray-500 text-sm">WordPress Development</Link>
+                          <Link href="/wordpress-maintenance" className="text-gray-500 text-sm">WordPress Maintenance</Link>
+                          <Link href="/wordpress-support" className="text-gray-500 text-sm">WordPress Support</Link>
+                          <Link href="/wordpress-design" className="text-gray-500 text-sm">WordPress Design</Link>
                         </div>
                       </div>
 
@@ -379,10 +380,10 @@ export default function Header() {
                           <span className="text-orange-500 font-semibold">Shopify Services</span>
                         </div>
                         <div className="ml-13 space-y-1">
-                          <div className="text-gray-500 text-sm">Shopify Development</div>
-                          <div className="text-gray-500 text-sm">Shopify Maintenance</div>
-                          <div className="text-gray-500 text-sm">Shopify Support</div>
-                          <div className="text-gray-500 text-sm">Shopify Design</div>
+                          <Link href="/shopify-development" className="text-gray-500 text-sm">Shopify Development</Link>
+                          <Link href="/shopify-maintenance" className="text-gray-500 text-sm">Shopify Maintenance</Link>
+                          <Link href="/shopify-support" className="text-gray-500 text-sm">Shopify Support</Link>
+                          <Link href="/shopify-design" className="text-gray-500 text-sm">Shopify Design</Link>
                         </div>
                       </div>
 
@@ -401,10 +402,10 @@ export default function Header() {
                           <span className="text-orange-500 font-semibold">Webflow Services</span>
                         </div>
                         <div className="ml-13 space-y-1">
-                          <div className="text-gray-500 text-sm">Webflow Development</div>
-                           <div className="text-gray-500 text-sm">Webflow Maintenance</div>
-                          <div className="text-gray-500 text-sm">Webflow Support</div>
-                          <div className="text-gray-500 text-sm">Webflow Design</div>                         
+                           <Link href="/webflow-development" className="text-gray-500 text-sm">Webflow Development</Link>
+                           <Link href="/webflow-maintenance" className="text-gray-500 text-sm">Webflow Maintenance</Link>
+                           <Link href="/webflow-support" className="text-gray-500 text-sm">Webflow Support</Link>
+                           <Link href="/webflow-design" className="text-gray-500 text-sm">Webflow Design</Link>
                         </div>
                       </div>
                     </div>
@@ -431,7 +432,7 @@ export default function Header() {
                 </li>
                 <li>
                   <Link 
-                    href="/" 
+                    href="/blogs" 
                     className="menu-font-style block py-2"
                     onClick={closeMobileMenu}
                   >
@@ -440,7 +441,7 @@ export default function Header() {
                 </li>
                 <li>
                   <Link 
-                    href="/" 
+                    href="/resources" 
                     className="menu-font-style block py-2"
                     onClick={closeMobileMenu}
                   >
