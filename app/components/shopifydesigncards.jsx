@@ -29,22 +29,24 @@ export default function ShopifyDesignCards({ cards }) {
   }, []);
 
   return (
-    <div className="cards-wrapper ">
+    <div className="cards-wrapper shopify-cards-wrapper">
       {cards.map((card, index) => (
         <div
           key={index}
           ref={(el) => (cardsRef.current[index] = el)}
-          className=" h-[180px] hover:bg-[#fff3e0] transition duration-300 shadow-[0_-12px_16px_-4px_#0000000d] rounded-[20px] border px-[20px]"
+          className=" card shopify-card"
           style={{ transform: `rotate(${card.rotate})` }}
         >
           <div className="w-[100%] max-w-[100%]">
             <h3
-              className="text-[#333] font-[600] md:text-[24px] text-[20px] leading-[30px] mt-[20px]"
-              style={{ fontFamily: "raleway" }}
+              className="text-[#333] font-[600] md:text-[24px] text-[20px] leading-[30px] mt-[20px] mb-[10px]"
+              style={{ fontFamily: "var(--font-raleway)" }}
             >
               {card.title}
             </h3>
-            <p className="text-[#070707] text-left font-[400] md:text-[17px] text-[16px] leading-[27px]">
+            <p className="text-[#070707] text-left font-[400] md:text-[14px] text-[16px] leading-[27px]"
+              style={{ fontFamily: "var(--font-raleway)" }}
+              >
               {card.text}
             </p>
           </div>
