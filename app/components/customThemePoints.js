@@ -908,31 +908,63 @@ const casestudybeauty = [
 
   const challengesSkinwordpress = [
     {
-        heading: "Blank Slate",
-        paragraph:"The project required building the website design and structure from the ground up.",
+        heading: "Platform Limitations",
+        paragraph:"WooCommerce lacked advanced features and scalability required for international growth.",
         bgcolor: "#ffd99d33",
         margin: "0 0 0 0"
     },
     {
-        heading: "Cross-Device Experience –",
-        paragraph:"Needed to function flawlessly on all screen sizes.",
+        heading: "International Expansion",
+        paragraph:"The client needed localized content and currency support to effectively target the UAE market.",
         bgcolor: "#c5e3e0",
         margin: "0 0 0 auto"
     },
     {
-        heading: "Core Feature Integration",
-        paragraph:"A simple and efficient booking system was critical.",
+        heading: "UI/UX Enhancements",
+        paragraph:"The existing site’s design required an upgrade to improve user experience and boost conversions.",
         bgcolor: "#6c4ab633",
         margin: "0 0 0 0"
     },
     {
-        heading: "Visual Appeal",
-        paragraph:"Had to ensure modern, appealing UI design reflecting the clinic’s brand. ",
+        heading: "Payment Gateway Needs",
+        paragraph:"Integration of secure and regionally trusted payment methods was critical for smooth transactions.",
         bgcolor: "#d2e6f6",
         margin: "0 0 0 auto"
     },
 ]
 export {challengesSkinwordpress};
+
+
+
+
+  const challengesCasestudy = [
+    {
+        heading: "Platform Limitations",
+        paragraph:"WooCommerce lacked advanced features and scalability required for international growth.",
+        bgcolor: "#ffd99d33",
+        margin: "0 0 0 0"
+    },
+    {
+        heading: "International Expansion",
+        paragraph:"The client needed localized content and currency support to effectively target the UAE market.",
+        bgcolor: "#c5e3e0",
+        margin: "0 0 0 auto"
+    },
+    {
+        heading: "UI/UX Enhancements",
+        paragraph:"The existing site’s design required an upgrade to improve user experience and boost conversions.",
+        bgcolor: "#6c4ab633",
+        margin: "0 0 0 0"
+    },
+    {
+        heading: "Payment Gateway Needs",
+        paragraph:"Integration of secure and regionally trusted payment methods was critical for smooth transactions.",
+        bgcolor: "#d2e6f6",
+        margin: "0 0 0 auto"
+    },
+]
+export {challengesCasestudy};
+
 
 const skinChallenges = [
     {
