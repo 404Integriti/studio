@@ -9,26 +9,26 @@ const ProductOffering = () => {
   const accordionItems = [
     {
       id: 1,
-      title: "Tailored Shopify Store Design",
-      description: "Crafted a mobile-responsive, visually consistent site tailored to the brand's lifestyle focus.",
+      title: "Lightweight WordPress Website",
+      description: "Built using Hello Elementor theme for fast loading and optimized performance.",
       isActive: activeAccordion === 1
     },
     {
       id: 2,
-      title: "Smooth Browsing Experience",
-      description: "Enhanced navigation and product display for hassle-free exploration across devices.",
+      title: "Engaging Navigation & Services",
+      description: "Well-organized service listings and intuitive navigation to guide users effectively. ",
       isActive: activeAccordion === 2
     },
     {
       id: 3,
-      title: "Promotional Integration",
-      description: "Added plug-ins for social media and email to power marketing campaigns and boost visibility.",
+      title: "Custom Booking Solution",
+      description: "Advanced appointment form with conditional logic to personalize user experience. ",
       isActive: activeAccordion === 3
     },
     {
       id: 4,
-      title: "Performance Optimization",
-      description: "Improved loading speed and backend performance to ensure stability during high traffic.",
+      title: "Speed & Optimization",
+      description: "WebP images and responsive design to reduce load times and improve UX.",
       isActive: activeAccordion === 4
     }
   ];
@@ -38,7 +38,7 @@ const ProductOffering = () => {
   };
 
   return (
-    <section className="bg-white pt-[45px] px-[20px] pb-[30px] md:px-[40px] lg:px-0">
+    <section className="bg-white pt-[45px] px-[20px] pb-[65px] md:px-[40px] lg:px-0">
       <div className="w-full max-w-[1200px] mx-auto  ">
         {/* Main Heading */}
         <h2 
@@ -107,7 +107,7 @@ const ProductOffering = () => {
               {/* Laptop with rocket illustration */}
               <div className="w-full h-full flex items-center  justify-center ">
             <Image 
-              src="/bitsaOffering.png"
+              src="/skin_and_hair_pic.png"
               width={459}
               height={297}
               alt="Laptop with rocket illustration"
