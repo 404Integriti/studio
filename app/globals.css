@@ -885,3 +885,50 @@ iframe#vimeo-video {
 
   background: #2c4e34 !important;
 }
+.customBrandBtn{
+  max-width: 100% !important;
+
+  @apply sm:text-[18px] text-[14px] p-[15px] ;
+}
+
+.beauty-landing-page .footer-creative {
+    background: transparent !important;
+}
+.skinCard {
+
+  border: 1px solid rgba(128, 128, 128, 0.185) !important;
+  display: flex !important;
+  flex-direction: column;
+  align-items: center;
+
+  /* NEW: spacing and equal alignment */
+  justify-content: space-between;
+  text-align: center;
+}
+.skinCard h3{
+  min-height: 60px;
+  display: flex;
+  justify-content: center; 
+}
+.customskinCard{
+    border: 1px solid rgba(128, 128, 128, 0.185) !important;
+  display: flex !important;
+  flex-direction: column;
+  align-items: center;
+
+  text-align: center;
+}
+
+.dental-case-study-page .bg-change,.skin-and-hair-shopify-case-study-page .bg-change ,.bitsababy-case-study-page .bg-change , .plushie-toy-store-case-study-page  .bg-change{
+
+  background: #2c4e34 !important;
+}
+.customBrandBtn{
+  max-width: 100% !important;
+
+  @apply sm:text-[18px] text-[14px] p-[15px] ;
+}
+
+.beauty-landing-page .footer-creative {
+    background: transparent !important;
+}

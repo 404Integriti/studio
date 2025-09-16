@@ -15,13 +15,13 @@ const WebflowSpeedComponent = ({ title, accordionItems, imageSrc }) => {
       <div className="w-full max-w-[1200px] mx-auto">
         {/* Main Heading */}
         <h2
-          className="max-[991px]:text-center md:text-[36px] text-[30px] md:leading-[42px] leading-10 font-[600] mb-[43px] mt-[50px] min-[991px]:w-[45%] text-[#333333]"
+          className="max-[991px]:text-center md:text-[36px] text-[30px] md:leading-[42px] leading-10 font-[600] mb-[43px] mt-[50px] min-[991px]:w-[45%]"
           style={{ fontFamily: "var(--font-raleway)" }}
         >
           {title}
         </h2>
 
-        <div className="grid grid-cols-1 min-[991px]:grid-cols-2 gap-12 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Left Side - Accordion */}
           <div className="space-y-4 lg:px-[0px] px-[20px]">
             {accordionItems.map((item) => {
@@ -36,7 +36,7 @@ const WebflowSpeedComponent = ({ title, accordionItems, imageSrc }) => {
                     className="w-full text-left flex flex-row-reverse items-center justify-end transition-all duration-300 ease-in-out"
                   >
                     <span
-                      className="md:text-[22px] text-[18px] font-[700] text-[#333] leading-[78px] h-[80px] transition-all duration-300 ease-in-out"
+                      className="md:text-[22px] text-[18px] font-[700] text-[#333] md:leading-[78px] leading-[30px] h-[80px] transition-all duration-300 ease-in-out"
                       style={{ fontFamily: "var(--font-raleway)" }}
                     >
                       {item.title}
@@ -77,8 +77,8 @@ const WebflowSpeedComponent = ({ title, accordionItems, imageSrc }) => {
           </div>
 
           {/* Right Side - Illustration */}
-          <div className="min-[991px]:flex justify-center hidden">
-            <div className="w-full h-full flex items-center justify-center">
+          <div className="flex justify-center">
+            <div className="w-full h-full flex items-center lg:justify-start justify-center">
               <Image
                 src={imageSrc}
                 width={459}

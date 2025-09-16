@@ -9,26 +9,26 @@ const ProductOffering = () => {
   const accordionItems = [
     {
       id: 1,
-      title: "Tailored Shopify Store Design",
-      description: "Crafted a mobile-responsive, visually consistent site tailored to the brand's lifestyle focus.",
+      title: "Dual-Purpose Shopify Platform",
+      description: "A powerful backend setup to manage both direct-to-consumer and wholesale needs without compromise.",
       isActive: activeAccordion === 1
     },
     {
       id: 2,
-      title: "Smooth Browsing Experience",
-      description: "Enhanced navigation and product display for hassle-free exploration across devices.",
+      title: "Refined Brand Identity",
+      description: "A fresh logo and visual overhaul that clearly communicates the brand’s streetwear vibe.",
       isActive: activeAccordion === 2
     },
     {
       id: 3,
-      title: "Promotional Integration",
-      description: "Added plug-ins for social media and email to power marketing campaigns and boost visibility.",
+      title: "Mobile-Optimized UI",
+      description: "Sleek, responsive design elements to ensure a seamless experience on every device.",
       isActive: activeAccordion === 3
     },
     {
       id: 4,
-      title: "Performance Optimization",
-      description: "Improved loading speed and backend performance to ensure stability during high traffic.",
+      title: "Advanced Sales Features",
+      description: "Custom displays, tiered pricing, and streamlined checkout to serve both business clients and casual shoppers.",
       isActive: activeAccordion === 4
     }
   ];
@@ -38,11 +38,11 @@ const ProductOffering = () => {
   };
 
   return (
-    <section className="bg-white pt-[45px] px-[20px] pb-[30px] md:px-[40px] lg:px-0">
+    <section className="bg-white pt-[45px] px-[20px] pb-[65px] md:px-[40px] lg:px-0">
       <div className="w-full max-w-[1200px] mx-auto  ">
         {/* Main Heading */}
         <h2 
-          className=" mb-10 md:text-[36px] text-[#333333] text-[24px] md:leading-[42px] leading-[30px] font-[600]  mt-[50px]  lg:text-left text-center"
+          className=" mb-[40px]  md:text-[36px] text-[#333333] text-[24px] md:leading-[42px] leading-[30px] font-[600]  mt-[50px]  lg:text-left text-center"
           style={{
                  fontFamily: "var(--font-raleway)"
           }}
@@ -52,9 +52,9 @@ const ProductOffering = () => {
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Left Side - Accordion */}
-          <div className="space-y-4 lg:px-[0px] px-[20px]">
+          <div className="space-y-4 lg:px-[0px] px-[20px] ">
             {accordionItems.map((item) => (
-              <div key={item.id} className="rounded-[15px] shadow-[0_2px_20px_12px_#effefb] transition-all duration-300 ease-in-out mb-[23px] ms-[-5px]">
+              <div key={item.id} className="rounded-[15px]  shadow-[0_2px_20px_12px_#effefb] transition-all duration-300 ease-in-out mb-[23px] ms-[-5px]">
                 <button
                   onClick={() => toggleAccordion(item.id)}
                   className="w-full text-left flex flex-row-reverse items-center justify-end transition-all duration-300 ease-in-out"
@@ -107,7 +107,7 @@ const ProductOffering = () => {
               {/* Laptop with rocket illustration */}
               <div className="w-full h-full flex items-center  justify-center ">
             <Image 
-              src="/bitsaOffering.png"
+              src="/tokyo_six_Logo.png"
               width={459}
               height={297}
               alt="Laptop with rocket illustration"
