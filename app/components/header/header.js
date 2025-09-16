@@ -72,7 +72,7 @@ export default function Header() {
                       {/* Submenu Header Item */}
                       <Link
                         href="/website-development-service"
-                        className="w-full pt-[20px] pb-[16px] pr-[16px] flex hover:bg-[#fff3e0]"
+                        className="w-full pt-[20px] pb-[16px] pr-[16px] flex items-center hover:bg-[#fff3e0]"
                       >
                         <Image
                           src="/menuimage.png"

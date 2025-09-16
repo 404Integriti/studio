@@ -270,11 +270,13 @@ color: #070707 !important;
 
 .header .menu-list .head {
    color: #ed8104 !important;
-   font-size: 16px;
+   font-size: 16px !important;
+   font-weight: 600 !important;
 }
 
 .menu-list li:not(:first-child) {
     margin-left: 46px;
+    margin-bottom: 5px;
 }
 
 .header ul > li a {
@@ -284,7 +286,9 @@ color: #070707 !important;
   line-height: normal;
   font-weight: 400;
 }
-
+.header ul.menu-list > li a {
+    font-size: 15px !important;
+}
 .header ul > li a:hover {
   color: #ed8104;
 }
