@@ -1,10 +1,10 @@
 import Image from "next/image";
-import { shopifyservices } from "../../components/customThemePoints";
+import { shopifyDevelopment } from "../../components/customThemePoints";
 
-export default function Shopservicers() {
+export default function ShopifyDevelopment() {
   return (
     <div className="shopify-service-block flex flex-col gap-[20px] max-w-[560px]">
-      {shopifyservices.map((item, index) => (
+      {shopifyDevelopment.map((item, index) => (
         <div key={index} className="flex">
           {/* Left column */}
           <div className="flex flex-col justify-start items-center w-[100%] max-w-[60px] relative">

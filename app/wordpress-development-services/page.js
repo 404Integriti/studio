@@ -1,7 +1,9 @@
 
-;
 import Wordpressdevelopmenthero from "../components/heroSection/wordpressdevelopmenthero";
+import Maintenance from "./sections/maintenance";
+import ScrollFeatures from "./sections/scrollFeature";
 import WordpressServices from "./sections/services";
+import TextMarquee from "./sections/TextMarquee";
 import WordpressSolutions from "./sections/wordpressSolution";
 
 export default function page() {
@@ -10,6 +12,9 @@ export default function page() {
         <Wordpressdevelopmenthero/>
         <WordpressSolutions/>
       <WordpressServices/>
+      <TextMarquee/>
+      <ScrollFeatures/>
+      <Maintenance/>
     </>
   )
 }

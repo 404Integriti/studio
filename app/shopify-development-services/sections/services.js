@@ -1,8 +1,8 @@
 
 import Image from 'next/image';
 import Herobutton from '@/app/components/herobuttons/herobutton';
-import Wordpressservices from '@/app/components/wordpressServices/wordpressServices';
-export default function WordpressServices() {
+import ShopifyDevelopment from '@/app/components/shopifyDevelopment/shopifyDevelopment';
+export default function ShopifyServices() {
   return (
   <section className=' w-[100%] mx-auto text-[#333333]'>
   <div className=' max-w-[1440px]  px-[20px] sm:p-[60px] flex lg:flex-row flex-col space-y-[80px] mx-auto justify-center '>
@@ -19,11 +19,10 @@ export default function WordpressServices() {
         <h3 className='font-[600] text-[31px] leading-[38px] mt-[0px] mb-[10px] lg:w-[80%]' style={{
             fontFamily: "var(--font-raleway)",
           }}>
-        WordPress Design:  <br />
-         The Modular Experience  
+        Shopify Design
         </h3>
         <p className='text-[14px] w-[84%] '>
-          Why limit your creativity to static templates? We design modular, interactive systems that empower your team to manage content with agility. 
+          Design isn’t decoration—it’s strategy. At Integriti Studio, we craft Shopify designs that not only look amazing but are built with conversion at the core. Every element has a purpose. Every layout is intentional. Because when form meets function, thats when store scale. 
         </p>
           <div className='flex justify-baseline '>
              <Herobutton 
@@ -42,7 +41,7 @@ export default function WordpressServices() {
     <div className='   flex justify-center'>
         
       
-        <Wordpressservices />
+        <ShopifyDevelopment />
         
     </div>
   </div>
