@@ -1,7 +1,7 @@
 // components/FeatureItem.jsx
 import Image from "next/image";
 
-export default function FeatureItem({ icon, title, description,iconSize }) {
+export default function FeatureItem({ icon, title, description,iconSize,titleStyle }) {
   return (
     <div className="flex flex-col items-center text-center" style={{fontFamily:"var(--font-raleway)",}}>
       {/* Icon */}
@@ -10,7 +10,7 @@ export default function FeatureItem({ icon, title, description,iconSize }) {
       </div>
 
       {/* Title */}
-      <h3 className={`text-[20px] font-[700] text-[#070707] mt-[20px] mb-[10px] leading-[26px]`} >
+      <h3 className={`text-[20px] font-[700] text-[#070707] mt-[20px] mb-[10px] leading-[26px] ${titleStyle}`} >
         {title}
       </h3>
 

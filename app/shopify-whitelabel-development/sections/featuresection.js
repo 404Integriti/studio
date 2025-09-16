@@ -53,12 +53,19 @@ export default function FeatureSection() {
           {features.map((feature, index) => (
             <div
             key={index}
-            className={`px-[10px] ${index !== features.length - 1 ? "border-r border-[#E5E7EB]" : ""}`}>
+            className={`px-[10px] 
+            ${index !== features.length - 1 ? "min-[991px]:border-r-2 border-[#E5E7EB]" : ""}
+            ${index === features.length - 1 ? "min-[991px]:col-span-1 min-[767px]:max-[991px]:col-span-5  min-[767px]:max-[991px]:mx-auto min-[767px]:max-[991px]:max-w-[227px]" : ""}
+            
+            
+            `}>
                 <FeatureItem
               icon={feature.icon}
               iconSize={feature.iconSize}
               title={feature.title}
               description={feature.description}
+              titleStyle={index>2 && "max-w-[70%]"}
+
             />
             </div>
           ))}

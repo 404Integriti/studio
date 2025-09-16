@@ -1,9 +1,11 @@
 import ShopifyWhitelabelHero from "../components/heroSection/shopifywhitelabel";
-import TrustSection from "./sections.js/trustsection";
-import FocusClientSection from "./sections.js/focusonclientsection";
-import HowToConnect from "./sections.js/howtoconnect";
-import FaqSection from "./sections.js/faqsection";
-import FeatureSection from "./sections.js/featuresection";
+import TrustSection from "./sections/trustsection";
+import FocusClientSection from "./sections/focusclientsection";
+import HowToConnect from "./sections/howtoconnect";
+import FaqSection from "./sections/faqsection";
+import FeatureSection from "./sections/featuresection";
+import MyMarqeee from "./sections/marqee";
+import ShopifyWhitelabelServices from "./sections/services";
 
 export default function page() {
   return (
@@ -11,7 +13,9 @@ export default function page() {
     <ShopifyWhitelabelHero />
     <FeatureSection />
     <FocusClientSection />
+    <ShopifyWhitelabelServices />
     <TrustSection />
+    <MyMarqeee />
     <HowToConnect />
     <FaqSection />
     
