@@ -333,6 +333,12 @@ export { storeFeatures };
 
 const MobileApproach = [
 
+   {
+    numberImage: "/new/fullyresponsive.svg",
+    title: "Fully Responsive",
+    descrp: "Fully responsive design across all breakpoints",
+  },
+
   {
     numberImage: "/new/smooth-mobile.svg",
     title: "Smooth Mobile Experience",

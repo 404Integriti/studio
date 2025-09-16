@@ -25,6 +25,8 @@ export default function ShopifyPlusSection() {
         <div className="relative">
           <Image
             src="/new/shopify-plus.svg"
+            width={622}
+            height={392}
             alt="Shopify Store"
             className=""
           />
