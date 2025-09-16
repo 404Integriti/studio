@@ -10,7 +10,7 @@ export default function TokyoSection() {
           <span className="hero-orange">Tokyo Blanks</span>
         </>
       }
-      headingClass="lg:max-w-[900px] md:max-w-[740px] mx-auto text-center mt-[20px] lg:leading-[68px] md:text-[60px] text-[41px] text-[28px] md:leading-[55px] leading-[40px] font-[800]  
+      headingClass="lg:max-w-[900px] md:max-w-[740px] mx-auto text-center mt-[20px] lg:leading-[68px] lg:text-[60px] md:text-[48px]  text-[26px] md:leading-[67px] leading-[32px] font-[800]  
             text-2xl    "
         subheading={<>Project Overview</>}
         subheadingClass="lg:max-w-[930px] md:max-w-[740px] mx-auto text-center my-[10px] mt-[19px] lg:leading-[36px] mb-[10px] lg:text-[24px]  text-[20px]  font-[800] text-[#333333] montserrat "

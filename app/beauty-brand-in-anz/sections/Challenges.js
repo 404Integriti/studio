@@ -48,7 +48,7 @@ export default function Challenges() {
         </div>
 
         <Image
-            src="/Contemporary.png"
+            src="/ChallengesLaptop.png"
             height={360}
             width={640}
             className="absolute top-[18%] bottom-auto left-[-185px]  z-30 hidden lg:block"

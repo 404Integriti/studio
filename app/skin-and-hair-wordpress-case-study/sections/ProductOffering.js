@@ -52,7 +52,7 @@ const ProductOffering = () => {
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Left Side - Accordion */}
-          <div className="w-[590px] mx-auto space-y-4 lg:px-[0px] px-[20px]">
+          <div className="max-w-[590px] mx-auto space-y-4 lg:px-[0px] px-[20px]">
             {accordionItems.map((item) => (
               <div key={item.id} className="rounded-[15px] shadow-[0_2px_20px_12px_#effefb] transition-all duration-300 ease-in-out mb-[23px] ms-[-5px]">
                 <button
