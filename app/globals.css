@@ -820,6 +820,6 @@ iframe#vimeo-video {
 
   background: #2c4e34 !important;
 }
-.wordpress-whitelabel-development-page .bg-change,.shopify-whitelabel-development-page .bg-change{
+.wordpress-whitelabel-development-page .bg-change,.shopify-whitelabel-development-page .bg-change , .webflow-whitelabel-development-page .bg-change {
 background: #35255e !important;
 }
