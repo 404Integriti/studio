@@ -1,4 +1,5 @@
 "use client";
+import Herobutton from "@/app/components/herobuttons/herobutton";
 import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
 
@@ -11,29 +12,29 @@ const ScrollFeatures = () => {
 
   const features = [
     {
-      icon: "/crm.png",
-      title: "CRM & ERP, Your Way",
-      description: "CRM, ERP, and third-party tools seamlessly integrated and tailored to your unique business workflow."
+      icon: "/realtime.svg",
+      title: "Real-Time Fixes",
+      description: "From urgent bug fixes to backend support, our team is ready when you need us—minimizing downtime and keeping sales moving"
+    },
+      {
+      icon: "/proactive.png",
+      title: "Proactive Issue Monitoring",
+      description: "We don’t just react—we run regular health checks to identify issues before they become roadblocks, saving you time and revenue."
     },
     {
-      icon: "/crm2.svg",
-      title: "Backend Essentials",
-      description: "Payment gateways, shipping platforms, and inventory systems integrated for smooth operations."
+      icon: "/fast.svg",
+      title: "Fast Turnaround",
+      description: "No endless waiting, no runarounds. Just quick responses, efficient troubleshooting, and fast resolutions so you can focus on growth."
     },
     {
-      icon: "/crm3.svg",
-      title: "Marketing Tool Integration",
-      description: "Powerful marketing tools like Klaviyo, Meta, and Google Ads seamlessly integrated to drive traffic and boost sales."
+      icon: "/fulltransperant.svg",
+      title: "Full Transparency",
+      description: "You’ll always know exactly what’s happening, why it matters, and what we’re doing about it—because clarity builds trust."
     },
     {
-      icon: "/crm4.svg",
-      title: "Boost with One Click",
-      description: "One-click post-purchase upsells and advanced loyalty systems to increase customer retention and maximize revenue."
-    },
-    {
-      icon: "/crm5.svg",
-      title: "Real-Time Insights",
-      description: "Advanced analytics and reporting tools for real-time, data-driven business insights and smarter decision-making."
+      icon: "/tailored.svg",
+      title: "Tailored Support Plans",
+      description: "From startups to enterprise-scale stores, we build flexible support packages that adapt to your business as it grows."
     },
 
   ];
@@ -41,7 +42,7 @@ const ScrollFeatures = () => {
   // Check if device is mobile
   useEffect(() => {
     const checkMobile = () => {
-      setIsMobile(window.innerWidth < 768);
+      setIsMobile(window.innerWidth < 1024);
     };
     
     checkMobile();
@@ -81,11 +82,11 @@ const ScrollFeatures = () => {
         <div className="w-full mx-auto px-6">
    
 
-          <div className="grid grid-cols-1 gap-6">
+          <div className="grid grid-cols-1 gap-6 justify-items-center">
             {features.map((feature, index) => (
               <div
                 key={index}
-                className="w-[100%] max-w-[390px] min-h-[255px] bg-[#effefb] rounded-[1.2rem] border-[.0625rem] border-[#83838329] p-6"
+                className="w-[100%] sm:max-w-[80%] min-h-[200px] bg-[#effefb] rounded-[1.2rem] border-[.0625rem] border-[#83838329] p-6"
               >
                 <div className="text-center mb-4">
                   <div className=" mb-3"><Image src={feature.icon} width={46} height={44} alt="" /></div>
@@ -121,11 +122,11 @@ const ScrollFeatures = () => {
   
 
         {/* Four Slides Container */}
-        <div className="relative h-[400px] flex items-center justify-center">
+        <div className="relative h-[400px] flex items-center justify-center ">
           {features.map((feature, index) => (
             <div
               key={index}        
-              className={`absolute w-[100%] xxl:max-w-[390px] max-w-[336px] min-h-[255px] bg-[#effefb] rounded-[1.2rem] border-[.0625rem] border-[#83838329] p-6 transition-all duration-700 ease-in-out ${
+              className={`absolute  xxl:max-w-[390px] w-[24%] max-w-[336px] lg:min-h-[285px] xl:min-h-[255px]  rounded-[1.2rem] border-[.0625rem] border-[#83838329] p-6  transition-all duration-700 ease-in-out  ${index % 2 === 0 ? "bg-[#c7fff4]" : "bg-[#effefb]"} ${
                 index >= currentSlide && index < currentSlide + 4
                   ? "opacity-100 translate-x-0 scale-100 z-10"
                   : index < currentSlide
@@ -144,7 +145,8 @@ const ScrollFeatures = () => {
               }}
             >
               <div className="text-center mb-4">
-                <div className="mb-3"><Image src={feature.icon} width={46} height={44} alt="" /></div>
+                <div className="mb-3  h-[47px] w-[47px] ">
+                    <Image src={feature.icon} width={feature.icon === "/cursor.svg" ? 30 : 46} height={feature.icon === "/cursor.svg" ? 27 : 44} alt="" className="" /></div>
               </div>
               <h3 
                 className="text-[20px] min-[1430px]:text-[24px] font-[600] text-[#1d1d1f] tracking-[-.025em]"
@@ -166,27 +168,20 @@ const ScrollFeatures = () => {
           ))}
         </div>
 
-{/* 
-        <div className="flex justify-center mt-8 space-x-3">
-          {Array.from({ length: features.length - 3 }, (_, i) => (
-            <button
-              key={i}
-              onClick={() => setCurrentSlide(i)}
-              className={`w-3 h-3 rounded-full transition-all duration-300 ${
-                i === currentSlide 
-                  ? "bg-[#009688] scale-125" 
-                  : "bg-gray-300 hover:bg-gray-400"
-              }`}
-            />
-          ))}
-        </div>
-
-
-        <div className="text-center mt-6 text-sm text-gray-500">
-          <p>Scroll {scrollDirection === "up" ? "up" : "down"} to see more features</p>
-        </div>
-         */}
+  <div className='flex justify-center '>
+             <Herobutton 
+                        btnpadfirst="hero-btn-dental !text-[18px] !max-w-[400px] !mt-[-30px] raleway !px-[32px] !py-[10px] !font-[400] flex"
+                        btnpadsec="hidden"
+                        buttonwidth=" sm:!280px"
+                        buttonheight="!18px"
+                        firstButtonText="Explore Webflow Services"
+                        secondButtonText=""
+                        firstButtonlink="/contact-us"
+                        secondButtonlink="#meetourteam"
+                      />
+          </div>
       </div>
+
     </section>
   );
 };

@@ -10,7 +10,7 @@ export const WordpressDevelopment = ({ data }) => {
         <Image src={icon} alt="icon" width={60} height={60} />
       </div>
       <h3
-        className={titleStyle || "text-[22px] font-semibold mb-[10px] mt-4 text-[#333333] "}
+        className={titleStyle || "text-[22px] font-[600] mb-[10px] mt-4 text-[#333333] "}
         style={{ fontFamily: "var(--font-raleway)" }}
       >
         {title}
