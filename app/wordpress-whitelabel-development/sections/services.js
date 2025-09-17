@@ -1,68 +1,60 @@
-
-import ServiceCard from "@/app/components/services/page";
-
+import DnaCard from "@/app/components/dna/page";
+import WordPressWhitelabelCard from "./card";
+ 
 export default function WordpressWhitelabelServices() {
-
+ 
     const Data = [
   {
-    src: "/WordpressWhitelabel/maintenance.svg",
+    src: "/WordpressWhitelabel/1st.svg",
     alt: "DNA Image",
     width: 83,
     height: 83,
-    heading: "Ongoing Maintenance  & Support",
-    headingWidth:"xl:!px-[40px] ",
-    cardStyle:"skinCard !w-[95%] !h-[260px] md:!h-[280px] min-md:!w-[320px] lg:!h-[300px] lg:!w-[29.5%] xl:!h-[280px]",
+    heading: "Ongoing Maintenance <br/> & Support",
     description:
       "Beyond development, we offer maintenance packages that keep your client sites updated, secure and running smoothly. So you can promise peace of mind without extra effort",
   },
    {
-    src: "/WordpressWhitelabel/pixelperfect.svg", // Add your real path here
+    src: "/WordpressWhitelabel/2nd.svg", // Add your real path here
     alt: "DNA Image",
     width: 83,
     height: 83,
-    headingWidth:"w-80%",
     heading: "Pixel Perfect Development from Figma",
-    cardStyle:"skinCard !w-[95%] !h-[260px] md:!h-[280px] min-md:!w-[320px] lg:!h-[300px] lg:!w-[29.5%] xl:!h-[280px]",
     description:
       "Our front end developers take your Figma, Adobe XD or Sketch designs and convert them into pixel perfect WordPress sites. These match every detail and respond flawlessly across all screen sizes",
   },
   {
-    src: "/WordpressWhitelabel/website.svg",
+    src: "/WordpressWhitelabel/4th.svg",
     alt: "DNA Image",
     width: 83,
     height: 83,
-    headingWidth:"!px-[60px]",
-    heading: "Website Development",
-    cardStyle:"skinCard !w-[95%] !h-[260px] md:!h-[280px] min-md:!w-[320px] lg:!h-[300px] lg:!w-[29.5%] xl:!h-[280px]",
+    heading: "Website <br/> Development",
     description:
       "We create clean, responsive and high performance WordPress websites built to meet the exact specifications of your clients' needs",
   },
   {
-    src: "/WordpressWhitelabel/laptop.svg",
+    src: "/WordpressWhitelabel/4th.svg",
     alt: "DNA Image",
     width: 83,
     height: 83,
-    headingWidth:" ",
     heading: "Plugin Integration",
-    cardStyle:"skinCard !w-[95%] !h-[200px] md:!h-[280px] min-md:!w-[320px]  lg:!w-[29.5%] lg:!h-[200px]",
     description:
       "Payment integration",
   },
  
 ];
-
+ 
   return (
-       <section className="CommunityService w-[100%] flex justify-center  px-[20px] bg-[#f6f6f667] sm:px-[40px] lg:px-0 ">
-         <div className="max-w-[1440px]">
-          <div className="pt-[50px] w-[100%] max-w-[1200px]  mx-auto  pb-[60px] ">
-          <h2 className="text-[24px] sm:text-[28px] md:text-[32px]  lg:text-[35px] text-center text-[#333] raleway font-[700]  sm:leading-[60px]  ">White Label WordPress Development Services</h2>
-          <div className="flex  flex-wrap justify-evenly gap-x-[30px] gap-y-[125px] pt-[145px] ">
-                {Data.map((card, index) => (
-                  <ServiceCard key={index} {...card} className={`${card.cardStyle}`} desStyle="text-[14px] w-[100%] my-[auto] mb-[10px] text-[#575757] mt-[0px] font-normal leading-[20px]  text-center md:px-[0] !px-[10px] md:max-w-[90%]  max-w-[100%] pb-[40px] !text-wrap" imgClass={"mt-[-40px]"} />
-                ))}
+        <section className="pt-[60px] md:pt-[20px] pb-[60px] w-full ">
+              <div className="max-w-[1400px] px-[20px] mx-auto">
+                <h3 className="text-center mb-[10px] xl:mt-[60px] font-[700] text-[35px] text-[#333] " style={{fontFamily:"var(--font-raleway)",}}>White Label WordPress Development Services</h3>
+                <div className="flex flex-wrap xl:gap-x-[60px] justify-center xl:!justify-evenly boder gap-x-[20px] md:gap-y-[125px] gap-y-[90px] mt-[100px] lg:pt-[50px] pt-[30px]">
+                  {Data.map((card, index) => (
+                    <WordPressWhitelabelCard key={index} {...card} className={`!max-w-[385px] !min-w-[173px]
+        ${index === 3 ? "!h-[190px]" : "!min-h-[280px]"}`} headingStyle="px-[20px] !text-[19px] sm:!text-[24px] !font-[600] mt-[20px] mb-[10px] text-center " desStyle="text-[#333] text-[14px] font-[400] leading-[20px] min-[1440px]:leading-[23px] pl-[20px] sm:pl-[22px] pr-[22px] mb-[10px] min-[1440px]:mx-auto text-center"/>
+                  ))}
+                </div>
               </div>
-         </div>
-         </div>
-       </section>
+            </section>
   )
 }
+ 

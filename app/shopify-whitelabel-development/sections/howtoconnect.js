@@ -94,7 +94,7 @@ export default function HowToConnect() {
           Get started in 3 simple steps
         </button> */}
          <Herobutton
-                  btnpadfirst="!leading-[22px] !py-[0px] !raleway !max-w-[320px] !h-[46px] !w-[300px] sm:!h-[48px]  !text-[16px] sm:!text-[18px]  !mx-[40px] sm:mx-0"
+                  btnpadfirst="!leading-[22px] !py-[0px] !raleway !max-w-[320px] !h-[32px] sm:!h-[48px] !text-[18px]  "
                   buttonwidth="320px"
                   buttonheight="50px"
                   firstButtonText="Get started in 3 simple steps"
