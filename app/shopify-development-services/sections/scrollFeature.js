@@ -149,7 +149,7 @@ const ScrollFeatures = () => {
                     <Image src={feature.icon} width={feature.icon === "/cursor.svg" ? 30 : 46} height={feature.icon === "/cursor.svg" ? 27 : 44} alt="" className="" /></div>
               </div>
               <h3 
-                className="text-[24px] font-[600] text-[#1d1d1f] tracking-[-.025em] "
+                className="text-[20px] min-[1430px]:text-[24px] font-[600] text-[#1d1d1f] tracking-[-.025em]"
                 style={{
                   fontFamily: "var(--font-raleway)"
                 }}

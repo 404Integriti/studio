@@ -14,7 +14,7 @@ const Player = dynamic(
 );
 export default function Maintenance() {
   return (
-    <section className="w-[100%]">
+    <section className="w-[100%] py-[40px]">
       <div className="max-w-[1440px] flex flex-col justify-center items-center  lg:flex-row  px-[10px] sm:px-[40px] lg:px-[60px]">
         <div className="flex flex-col justify-baseline md:w-[80%]  lg:w-[45%]">
           <h4

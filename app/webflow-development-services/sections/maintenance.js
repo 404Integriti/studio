@@ -23,21 +23,14 @@ export default function Maintenance() {
               fontFamily: "var(--font-raleway)",
             }}
           >
-            WordPress Maintenance{" "}
+            Webflow Maintenance{" "}
           </h4>
           <p
             className="lg:w-[100%] xl:w-[90%] text-[16px] leading-[23px] "
             style={{
               fontFamily: "var(--font-opensans)",
             }}
-          >
-            Keeping your site updated and protected shouldn’t be stressful. At
-            Integriti Studio, we manage plugin updates, theme checks, security
-            patches, uptime monitoring, performance tuning and daily backups.
-            All this so you don’t have to. Whether you are running a small
-            marketing site or a large WooCommerce store. We keep everything
-            running smoothly in the background. No missed updates. No security
-            gaps. Just peace of mind
+          >Keeping your Webflow site running smoothly isn’t just about maintenance—it’s about creating an edge. We handle everything from updates to technical optimization, ensuring your site performs at its best. Behind the scenes, we fine-tune assets and maintain fast-loading pages. With strong security protocols and reliable backups, your site stays protected. And as your business grows, we help evolve and improve your website to keep you ahead of competitors.
           </p>
           <div className="flex justify-baseline mt-[29px] ">
             <Herobutton
@@ -45,7 +38,7 @@ export default function Maintenance() {
               btnpadsec="hidden"
               buttonwidth=" sm:!280px"
               buttonheight="!18px"
-              firstButtonText="Expolre Wordpress Maintenance"
+              firstButtonText="Expolre Webflow Maintenance"
               secondButtonText=""
               firstButtonlink="/contact-us"
               secondButtonlink="#meetourteam"

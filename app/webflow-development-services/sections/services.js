@@ -1,8 +1,8 @@
 
-import Image from 'next/image';
+
 import Herobutton from '@/app/components/herobuttons/herobutton';
-import ShopifyDevelopment from '@/app/components/shopifyDevelopment/shopifyDevelopment';
-export default function ShopifyServices() {
+import WebflowDevelopment from '@/app/components/webflowdevelopmentservices/webflowdevelopment';
+export default function WebflowServices() {
   return (
   <section className=' w-[100%] mx-auto text-[#333333]  bg-[#F8F8F8]'>
   <div className=' max-w-[1440px]  px-[20px] sm:p-[60px] flex lg:flex-row flex-col space-y-[80px] mx-auto justify-center '>
@@ -11,9 +11,10 @@ export default function ShopifyServices() {
         style={{
           backgroundImage: "url('/background.png')",
           backgroundSize: "cover",
-          backgroundPosition: "center",
+          backgroundPosition: "bottom",
           backgroundRepeat: "no-repeat",
           backgroundColor: "#F8F8F8",
+          
         }}
       >
       <div className='flex flex-col  mt-[40px] sm:mt-[80px] max-w-[620px]  lg:mx-[34px] xl:mx-[48px] '>
@@ -21,10 +22,10 @@ export default function ShopifyServices() {
         <h3 className='font-[600] text-[31px] leading-[38px] mt-[0px] mb-[10px] lg:w-[80%]' style={{
             fontFamily: "var(--font-raleway)",
           }}>
-        Shopify Design
+        Webflow Design
         </h3>
         <p className='text-[14px] w-[84%] '>
-          Design isn’t decoration—it’s strategy. At Integriti Studio, we craft Shopify designs that not only look amazing but are built with conversion at the core. Every element has a purpose. Every layout is intentional. Because when form meets function, thats when store scale. 
+        Web design isn’t just how your website looks—it’s how your brand feels online. At Integriti Studio, we use Webflow to bridge bold creative with flawless execution. Your website should tell a story, guide the user, and turn visitors into believers. It’s not just design—it’s your brand, brought to life with intent and precision.
         </p>
           <div className='flex justify-baseline '>
              <Herobutton 
@@ -32,7 +33,7 @@ export default function ShopifyServices() {
                         btnpadsec="hidden"
                         buttonwidth=" sm:!280px"
                         buttonheight="!18px"
-                        firstButtonText="Expolre Wordpress Design"
+                        firstButtonText="Expolre Webflow Design"
                         secondButtonText=""
                         firstButtonlink="/contact-us"
                         secondButtonlink="#meetourteam"
@@ -43,7 +44,7 @@ export default function ShopifyServices() {
     <div className='   flex justify-center'>
         
       
-        <ShopifyDevelopment />
+        <WebflowDevelopment />
         
     </div>
   </div>

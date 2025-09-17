@@ -899,6 +899,29 @@ const shopifyDevelopment = [
   },
 ]
 export { shopifyDevelopment };
+const webflowDevelopment = [
+  {
+    image: "/new/shopservone.svg",
+    heading: "Brand-Led Visual Design",
+    text: "We translate your brand identity into a beautiful, functional online experience—built to engage and impress.",
+  },
+    {
+    image: "/new/shopservtwo.svg",
+    heading: "Advanced Animations",
+    text: "We use Webflow’s native animation tools to make your website move, flow, and stand out.",
+  },
+    {
+    image: "/new/shopservthree.svg",
+    heading: "Mobile-First Design",
+    text: "We prioritize mobile users first with highly responsive layouts that work beautifully on any screen size.",
+  },
+    {
+    image: "/new/shopservfour.svg",
+    heading: "Clean & Scalable Systems",
+    text: "We create consistent, reusable design systems so your site can grow without design chaos.",
+  },
+]
+export { webflowDevelopment };
 
 const wordpressservices = [
   {

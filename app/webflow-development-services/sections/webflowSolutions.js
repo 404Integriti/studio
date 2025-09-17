@@ -6,36 +6,36 @@ import Image from "next/image";
 const solutions = [
   {
     icon: "/customshopify.svg",
-    title: "Custom Shopify Builds ",
-    description: "We build Shopify stores tailored to your brand, with every feature you need—fully scalable, fully optimized.",
+    title: "Figma-to-Webflow Execution",
+    description: "We transform Figma designs into very flawless Webflow builds that are pixel perfect, fully responsive and SEO-optimized.",
     cardStyle:'!bg-[#c7fff4] hover:!bg-[#B3FFF5] !w-[342px] !mx-[0px] ',
     imgContainer:'!max-w-[55px]'
    
   },
   {
     icon: "/shopifyplus.svg",
-    title: "Shopify Plus Expertise",
-    description: "For brands ready to level up, we deliver enterprise-grade development built for big catalogs and bigger traffic.",
+    title: "CMS & Dynamic Content",
+    description: "We build powerful CMS collections to help you manage and scale content easily as your business grows.",
     cardStyle:'!bg-[#fbf4e3] hover:!bg-[#FDF3DD] !w-[342px] !mx-[0px]',
    imgContainer:'!max-w-[55px]'
   },
  
   {
     icon: "/advanceintegration.svg",
-    title: "Advanced Integrations",
-    description: "Inventory management, CRM, fulfillment—connect the tools you already use for seamless operations.",
+    title: "Custom Code & Integrations",
+    description: "Need something beyond Webflow’s native features? No problem—we can extend your build with custom code.",
     cardStyle:'!bg-[#eeecfc] hover:!bg-[#EEECFC] !w-[342px]  !mx-[0px]',
     imgContainer:'!max-w-[55px]'
     // innerCard:'px-[20px]'
   },
 ];
 
-const ShopifySolutions = () => {
+const WebflowSolutions = () => {
   return (
     <section className="bg-[#f8f8f8]  w-full py-[20px] sm:py-[40px]">
         <div className="  max-w-[1360px] mx-auto ">
         
-     <h2 className="xs:text-[32px] text-[32px] font-[600] leading-[36px] text-center text-[#333333] raleway px-[30px] sm:px-[40px] pt-[20px] mb-[10px] ">Shopify Development</h2>
+     <h2 className="xs:text-[32px] text-[32px] font-[600] leading-[36px] text-center text-[#333333] raleway px-[30px] sm:px-[40px] pt-[20px] mb-[10px] ">Webflow Development</h2>
 
       <div className="flex flex-wrap gap-[36px] !justify-center !items-center pt-[40px] px-[5px]">
         {solutions.map((feature, index) => (
@@ -47,7 +47,7 @@ const ShopifySolutions = () => {
                 btnpadsec="hidden "
                 buttonwidth="!280px"
                 buttonheight="!20px"
-                firstButtonText="Expolre Wordpress Development"
+                firstButtonText="Expolre Webflow Development"
                 secondButtonText=""
                 firstButtonlink="/contact-us"
                 secondButtonlink="#meetourteam"
@@ -57,7 +57,7 @@ const ShopifySolutions = () => {
   );
 };
 
-export default ShopifySolutions;
+export default WebflowSolutions;
 
 
 
