@@ -876,6 +876,53 @@ const shopifyservices = [
   },
 ]
 export { shopifyservices };
+const shopifyDevelopment = [
+  {
+    image: "/new/shopservone.svg",
+    heading: "Conversion-Led Design",
+    text: "We design every page with one goal: to turn visitors into loyal customers.",
+  },
+    {
+    image: "/new/shopservtwo.svg",
+    heading: "Fully Custom Storefronts",
+    text: "No generic themes. Your store deserves a visual identity that reflects your brand.",
+  },
+    {
+    image: "/new/shopservthree.svg",
+    heading: "Mobile-First Design",
+    text: "Most shoppers are mobile. We design for phones first, desktops second.",
+  },
+    {
+    image: "/new/shopservfour.svg",
+    heading: "UX That Builds Trust",
+    text: "We focus on clarity, simplicity and intuitive design to boost buyer confidence and engagement.",
+  },
+]
+export { shopifyDevelopment };
+
+const wordpressservices = [
+  {
+    image: "/new/shopservone.svg",
+    heading: "Design Systems, Not Just Pages",
+    text: "We build full systems using components you can mix, match and reuse.",
+  },
+    {
+    image: "/new/shopservtwo.svg",
+    heading: "Interactive Storytelling",
+    text: "Scroll-based animations, parallax sections and micro interactions create immersive user journeys.",
+  },
+    {
+    image: "/new/shopservthree.svg",
+    heading: "Live Design Prototyping",
+    text: "We involve you in the process, using interactive prototypes to review layout, content, and function in real time.",
+  },
+    {
+    image: "/new/shopservfour.svg",
+    heading: "Client Editable Blocks",
+    text: "Empower your content team with editable, intuitive CMS blocks—no dev help needed.",
+  },
+]
+export { wordpressservices };
 
 
 const casestudybeauty = [

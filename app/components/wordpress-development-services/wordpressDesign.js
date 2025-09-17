@@ -1,9 +1,10 @@
+
 import Image from "next/image";
 import { shopifyservices } from "../../components/customThemePoints";
 
-export default function Shopservicers() {
+export default function WordpressDesign() {
   return (
-    <div className="shopify-service-block flex flex-col gap-[20px] max-w-[560px]">
+  <div className="shopify-service-block flex flex-col gap-[20px]">
       {shopifyservices.map((item, index) => (
         <div key={index} className="flex">
           {/* Left column */}
@@ -24,7 +25,7 @@ export default function Shopservicers() {
                 {item.heading}
               </h3>
               <p
-                className="text-[15px] leading-[24px] w-[100%] "
+                className="text-[16px] leading-[24px] w-[100%] max-w-[340px]"
                 style={{ fontFamily: "var(--font-opensans)" }}
               >
                 {item.text}
@@ -34,5 +35,5 @@ export default function Shopservicers() {
         </div>
       ))}
     </div>
-  );
+  )
 }
