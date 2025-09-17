@@ -957,6 +957,36 @@ export {challengesSkinwordpress};
 export {FametteCaseStudy};
 
 
+  const ProteinSuppliment = [
+    {
+        heading: "Complex Product Navigation",
+        paragraph:"The existing categorization system made it difficult for customers to find products efficiently.",
+        bgcolor: "#ffd99d33",
+        margin: "0 0 0 0"
+    },
+    {
+        heading: "Lack of Engaging Product Content",
+        paragraph:"Product pages lacked detailed descriptions and high-quality visuals, reducing customer interest.",
+        bgcolor: "#c5e3e0",
+        margin: "0 0 0 auto"
+    },
+    {
+        heading: "Limited Personalization & Upselling",
+        paragraph:"There were no recommendation tools to enhance cross-selling or upselling opportunities.",
+        bgcolor: "#6c4ab633",
+        margin: "0 0 0 0"
+    },
+    {
+        heading: "Inefficient Checkout Process",
+        paragraph:"A complicated checkout system led to high cart abandonment rates.",
+        bgcolor: "#d2e6f6",
+        margin: "0 0 0 auto"
+    },
+]
+export {ProteinSuppliment};
+
+
+
 
 
   const challengesCasestudy = [
