@@ -31,7 +31,7 @@ const solutions = [
 
 const WordpressSolutions = () => {
   return (
-    <section className="bg-[#f8f8f8]  w-full">
+    <section className="bg-[#f8f8f8] py-[20px] sm:py-[40px]  w-full">
         <div className="  max-w-[1360px] mx-auto ">
         
      <h2 className="xs:text-[32px] text-[32px] font-[600] leading-[36px] text-center text-[#333333] raleway px-[30px] sm:px-[40px] pt-[20px] mb-[10px] ">WordPress Development Solutions</h2>

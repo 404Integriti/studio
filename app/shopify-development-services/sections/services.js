@@ -4,16 +4,18 @@ import Herobutton from '@/app/components/herobuttons/herobutton';
 import ShopifyDevelopment from '@/app/components/shopifyDevelopment/shopifyDevelopment';
 export default function ShopifyServices() {
   return (
-  <section className=' w-[100%] mx-auto text-[#333333]'>
+  <section className=' w-[100%] mx-auto text-[#333333]  bg-[#F8F8F8]'>
   <div className=' max-w-[1440px]  px-[20px] sm:p-[60px] flex lg:flex-row flex-col space-y-[80px] mx-auto justify-center '>
-    <div className='  lg:w-[60%]  relative'>
-        <Image
-                src="/background.png"          // your image path
-                alt="Background"
-                fill                     // makes it cover the parent container
-                className="object-cover w-[250px] -z-20 border" // cover & send behind content
-                priority
-              />
+   <div
+        className=" lg:w-[60%]  relative"
+        style={{
+          backgroundImage: "url('/background.png')",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          backgroundRepeat: "no-repeat",
+          backgroundColor: "#F8F8F8",
+        }}
+      >
       <div className='flex flex-col  mt-[40px] sm:mt-[80px] max-w-[620px]  lg:mx-[34px] xl:mx-[48px] '>
       
         <h3 className='font-[600] text-[31px] leading-[38px] mt-[0px] mb-[10px] lg:w-[80%]' style={{
