@@ -1068,7 +1068,31 @@ const challengesInfo = [
         margin: "0 0 0 auto"
     },
 ]
- 
+
+const whywebflowpoints = [
+  {
+    id: 1,
+    img: "https://cdn.prod.website-files.com/683f4d103b2510d5796dca20/6854435559ce608a510333de_Group%201216325848.svg",
+    text: "Intuitive responsive layout",
+  },
+  {
+    id: 2,
+    img: "https://cdn.prod.website-files.com/683f4d103b2510d5796dca20/685444a3a043ffa41cc98482_Group%201216325849.svg",
+    text: "Clean, exportable code",
+  },
+  {
+    id: 3,
+    img: "https://cdn.prod.website-files.com/683f4d103b2510d5796dca20/68544599a5e18bc9b60cc81e_Group%201216325850.svg",
+    text: "Powerful CMS capabilities",
+  },
+  {
+    id: 4,
+    img: "https://cdn.prod.website-files.com/683f4d103b2510d5796dca20/685445f13f87c34805e4e291_Group%201216325851.svg",
+    text: "Native animations & interactions",
+  },
+];
+export { whywebflowpoints };
+
 export { challengesInfo };
 
 

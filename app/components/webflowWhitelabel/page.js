@@ -27,7 +27,7 @@ export default function Shopservicers() {
           {item.heading}
         </h3>
         <p
-          className="text-[15px] text-[#333] leading-[24px] w-[100%] max-w-[340px]"
+          className="text-[15px] text-[#333] w-[100%] max-w-[400px] leading-[20px]"
           style={{ fontFamily: "var(--font-opensans)" }}
         >
           {item.text}
