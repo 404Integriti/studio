@@ -274,6 +274,11 @@ color: #070707 !important;
    font-weight: 600 !important;
 }
 
+.wordpress-whitelabel-development-page .bg-change,.shopify-whitelabel-development-page .bg-change{
+background: #35255e !important;
+}
+
+
 .menu-list li:not(:first-child) {
     margin-left: 46px;
     margin-bottom: 5px;
