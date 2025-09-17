@@ -928,6 +928,34 @@ const casestudybeauty = [
 ]
 export {challengesSkinwordpress};
 
+  const FametteCaseStudy = [
+    {
+        heading: "Outdated Online Presence",
+        paragraph:"The brand lacked a visually engaging website that aligned properly with its organic theme.",
+        bgcolor: "#ffd99d33",
+        margin: "0 0 0 0"
+    },
+    {
+        heading: "Weak Brand Communication",
+        paragraph:"The existing platform failed to effectively convey the brand’s message to customers.",
+        bgcolor: "#c5e3e0",
+        margin: "0 0 0 auto"
+    },
+    {
+        heading: "Limited eCommerce Features",
+        paragraph:"The website needed better integration of product details with a smooth purchasing process.",
+        bgcolor: "#6c4ab633",
+        margin: "0 0 0 0"
+    },
+    {
+        heading: "User Engagement Issues",
+        paragraph:"Navigation and browsing were not intuitive, leading to lower customer interaction.",
+        bgcolor: "#d2e6f6",
+        margin: "0 0 0 auto"
+    },
+]
+export {FametteCaseStudy};
+
 
 
 
