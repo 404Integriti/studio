@@ -1004,6 +1004,148 @@ const casestudybeauty = [
 ]
 export {challengesSkinwordpress};
 
+  const Pharmacutical = [
+    {
+        heading: "Complex Product Catalog",
+        paragraph:"Managing 14,000 products required a structured approach.",
+        bgcolor: "#ffd99d33",
+        margin: "0 0 0 0"
+    },
+    {
+        heading: "Managing Collection and Sub-Collections",
+        paragraph:"Organizing products into clear, navigable categories.",
+        bgcolor: "#c5e3e0",
+        margin: "0 0 0 auto"
+    },
+    {
+        heading: "Setting Up Pickup Locations",
+        paragraph:"Configuring pickup points based on user location.",
+        bgcolor: "#6c4ab633",
+        margin: "0 0 0 0"
+    },
+    {
+        heading: "Product Descriptions Not Provided",
+        paragraph:"We had to research and write descriptions for all products in the first batch.",
+        bgcolor: "#d2e6f6",
+        margin: "0 0 0 auto"
+    },
+]
+export {Pharmacutical};
+
+  const FametteCaseStudy = [
+    {
+        heading: "Outdated Online Presence",
+        paragraph:"The brand lacked a visually engaging website that aligned properly with its organic theme.",
+        bgcolor: "#ffd99d33",
+        margin: "0 0 0 0"
+    },
+    {
+        heading: "Weak Brand Communication",
+        paragraph:"The existing platform failed to effectively convey the brand’s message to customers.",
+        bgcolor: "#c5e3e0",
+        margin: "0 0 0 auto"
+    },
+    {
+        heading: "Limited eCommerce Features",
+        paragraph:"The website needed better integration of product details with a smooth purchasing process.",
+        bgcolor: "#6c4ab633",
+        margin: "0 0 0 0"
+    },
+    {
+        heading: "User Engagement Issues",
+        paragraph:"Navigation and browsing were not intuitive, leading to lower customer interaction.",
+        bgcolor: "#d2e6f6",
+        margin: "0 0 0 auto"
+    },
+]
+export {FametteCaseStudy};
+
+
+  const ProteinSuppliment = [
+    {
+        heading: "Complex Product Navigation",
+        paragraph:"The existing categorization system made it difficult for customers to find products efficiently.",
+        bgcolor: "#ffd99d33",
+        margin: "0 0 0 0"
+    },
+    {
+        heading: "Lack of Engaging Product Content",
+        paragraph:"Product pages lacked detailed descriptions and high-quality visuals, reducing customer interest.",
+        bgcolor: "#c5e3e0",
+        margin: "0 0 0 auto"
+    },
+    {
+        heading: "Limited Personalization & Upselling",
+        paragraph:"There were no recommendation tools to enhance cross-selling or upselling opportunities.",
+        bgcolor: "#6c4ab633",
+        margin: "0 0 0 0"
+    },
+    {
+        heading: "Inefficient Checkout Process",
+        paragraph:"A complicated checkout system led to high cart abandonment rates.",
+        bgcolor: "#d2e6f6",
+        margin: "0 0 0 auto"
+    },
+]
+export {ProteinSuppliment};
+
+  const CustomCaseStudy = [
+    {
+        heading: "Inaccurate Shipping Rates",
+        paragraph:"Existing setup couldn't support location-specific shipping prices.",
+        bgcolor: "#ffd99d33",
+        margin: "0 0 0 0"
+    },
+    {
+        heading: "Platform Restrictions",
+        paragraph:"Shopify Basic plan limitations prevented native advanced features.",
+        bgcolor: "#c5e3e0",
+        margin: "0 0 0 auto"
+    },
+    {
+        heading: "Urgent Timeline",
+        paragraph:"Project needed to be completed and deployed within a single week.",
+        bgcolor: "#6c4ab633",
+        margin: "0 0 0 0"
+    },
+    {
+        heading: "Smooth Integration Needed",
+        paragraph:"App had to integrate flawlessly with Shopify without affecting user experience.",
+        bgcolor: "#d2e6f6",
+        margin: "0 0 0 auto"
+    },
+]
+export {CustomCaseStudy};
+
+  const EcommerceClientStudy = [
+    {
+        heading: "Real-time Pricing Accuracy",
+        paragraph:"Shopify needed to reflect SAP’s dynamic pricing instantly.",
+        bgcolor: "#ffd99d33",
+        margin: "0 0 0 0"
+    },
+    {
+        heading: "Webhook Delays",
+        paragraph:"Delayed webhook updates caused pricing issues during peak hours.",
+        bgcolor: "#c5e3e0",
+        margin: "0 0 0 auto"
+    },
+    {
+        heading: "Data Security",
+        paragraph:"Secure session token management was essential for syncing data.",
+        bgcolor: "#6c4ab633",
+        margin: "0 0 0 0"
+    },
+    {
+        heading: "Customer Accessibility",
+        paragraph:" Needed seamless experience for both logged-in and guest users.",
+        bgcolor: "#d2e6f6",
+        margin: "0 0 0 auto"
+    },
+]
+export {EcommerceClientStudy};
+
+
 
 
 
