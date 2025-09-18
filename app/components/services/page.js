@@ -37,7 +37,7 @@ export default function ServiceCard({
             width={width}
             height={height}
             style={{ objectFit: "contain" }}
-            className={`sm:max-w-[100%]  w-[100%] h-[100%]` }
+            className={`sm:max-w-[100%]  h-[100%]` }
           />
         )}
       </div>
