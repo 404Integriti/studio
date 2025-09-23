@@ -19,7 +19,7 @@ export default function ClientStudy() {
       subheadingClass="mx-auto  text-center my-[10px] leading-[36px] sm:text-[24px] text-[20px] mt-[20px]  font-[800] text-[#333333] montserrat "
       paragraph={
         <>
-        A B2B eCommerce client using Shopify needed a custom real-time pricing solution integrated with their SAP ERP system. Their goal was to provide accurate, dynamic pricing at checkout while ensuring seamless synchronization with SAP. Shopify's webhook limitations posed a challenge, requiring a tailored approach to optimize pricing updates and customer experience.
+        A B2B eCommerce client using Shopify needed a custom real-time pricing solution integrated with their SAP ERP system. Their goal was to provide accurate, dynamic pricing at checkout while ensuring seamless synchronization with SAP. Shopify&apos;s webhook limitations posed a challenge, requiring a tailored approach to optimize pricing updates and customer experience.
         </>
       }
       paragraphClass="max-w-[678px] mx-auto text-center text-[#333333] sm:text-[18px] text-[14px] sm:leading-[32px] leading-[26px] "
