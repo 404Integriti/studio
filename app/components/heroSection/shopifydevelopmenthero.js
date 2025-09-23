@@ -11,7 +11,7 @@ export default function Shopifydevelopmenthero() {
         </>
       }
       headingClass="lg:max-w-[830px] md:max-w-[740px] mx-auto text-center my-[20px] lg:leading-[68px] lg:text-[50px] md:text-[36px] text-[28px] md:leading-[55px] leading-[40px] font-[800]  
-            text-2xl    "
+            text-2xl   !montserrat !font-[800] "
        
       paragraph={<>
       
