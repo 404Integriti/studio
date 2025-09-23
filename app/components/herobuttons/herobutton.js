@@ -16,7 +16,7 @@ export default function Herobutton({
     <div className="flex lg:gap-[47px] md:gap-[35px] sm:gap-[25px] gap-[20px] justify-center mt-[29px]">
       <Link
         href={firstButtonlink}
-        className={`lg:text-[21px] md:text-[18px] sm:text-[16px] text-[14px] tracking-[0em] hero_buttons hero_buttons-first rounded-[73.62px] text-white flex justify-center items-center gap-2 ${btnpadfirst}`}
+        className={` min-[770px]:!text-[18px] sm:text-[16px] text-[14px] tracking-[0em] hero_buttons hero_buttons-first rounded-[73.62px] text-white flex justify-center items-center gap-2 ${btnpadfirst}`}
         style={{
           fontFamily:
             fontfamily === "raleway"

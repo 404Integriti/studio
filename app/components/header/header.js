@@ -51,7 +51,7 @@ export default function Header() {
                 <li className="py-[20px] px-[12px] flex justify-center items-center relative group">
                   <Link
                     className="menu-font-style flex justify-between items-center gap-[5px]"
-                    href="/"
+                    href=""
                   >
                     Services
                     <span>
@@ -116,7 +116,7 @@ export default function Header() {
                             </Link>
                           </li>
                           <li>
-                            <Link href="/wordpress-development">WordPress Development</Link>
+                            <Link href="/wordpress-development" >WordPress Development</Link>
                           </li>
                           <li>
                             <Link href="/wordpress-maintenance">WordPress Maintenance</Link>
@@ -457,6 +457,15 @@ export default function Header() {
                     onClick={closeMobileMenu}
                   >
                     Resources
+                  </Link>
+                </li>
+                <li>
+                  <Link 
+                    href="/contact-us" 
+                    className="menu-font-style block py-2"
+                    onClick={closeMobileMenu}
+                  >
+                    Contact
                   </Link>
                 </li>
               </ul>

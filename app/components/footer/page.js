@@ -29,13 +29,23 @@ export default function Footer() {
                 href="https://www.linkedin.com/company/integritistudio/"
                 className="h-[36px] w-[36px] bg-[#009688] hover:bg-[#ed8104] rounded-full flex items-center justify-center"
               >
-                <Image src="/linkdin.svg" alt="LinkedIn" width={16} height={16} />
+                <Image
+                  src="/linkdin.svg"
+                  alt="LinkedIn"
+                  width={16}
+                  height={16}
+                />
               </Link>
               <Link
                 href="https://www.instagram.com/integriti.studio?igsh=MWtjY2ZuN2dyM3Bndg=="
                 className="h-[36px] w-[36px] bg-[#009688] hover:bg-[#ed8104] rounded-full flex items-center justify-center"
               >
-                <Image src="/instagram.svg" alt="Instagram" width={16} height={16} />
+                <Image
+                  src="/instagram.svg"
+                  alt="Instagram"
+                  width={16}
+                  height={16}
+                />
               </Link>
               <Link
                 href="https://github.com/Integritistudio"
@@ -50,17 +60,26 @@ export default function Footer() {
           <div className="footer-links w-full md:col-span-1 lg:col-span-1">
             <ul className="flex flex-col md:gap-3 gap-1 pt-[20px] md:pt-[50px]">
               <li className="lg:text-center text-left">
-                <Link href="/about" className="text-white hover:text-[#ed8104] w-[80px] text-left">
+                <Link
+                  href="/aboutus"
+                  className="text-white hover:text-[#ed8104] w-[80px] text-left"
+                >
                   About Us
                 </Link>
               </li>
               <li className="lg:text-center text-left">
-                <Link href="/portfolio" className="text-white hover:text-[#ed8104] w-[80px] text-left">
+                <Link
+                  href="/portfolio"
+                  className="text-white hover:text-[#ed8104] w-[80px] text-left"
+                >
                   Portfolio
                 </Link>
               </li>
               <li className="lg:text-center text-left">
-                <Link href="/contact" className="text-white hover:text-[#ed8104] w-[80px] text-left">
+                <Link
+                  href="/contact-us"
+                  className="text-white hover:text-[#ed8104] w-[80px] text-left"
+                >
                   Contact us
                 </Link>
               </li>

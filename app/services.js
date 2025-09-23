@@ -6,6 +6,7 @@ const ServiceCardsData = [
   {
     src: "/service1.svg",
     alt: "DNA Image",
+    link:'/wordpress-development',
     width: 48,
     height: 80,
     heading: "WordPress Development",
@@ -20,6 +21,7 @@ const ServiceCardsData = [
   {
     src: "/service2.svg",
     alt: "DNA Image",
+    link:'/shopify-development',
     width: 48,
     height: 80,
     heading: "Shopify Development",
@@ -33,6 +35,7 @@ const ServiceCardsData = [
   {
     src: "/service3.svg",
     alt: "DNA Image",
+    link:'/webflow-development',
     width: 48,
     height: 80,
     heading: "Webflow Development",

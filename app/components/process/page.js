@@ -22,6 +22,7 @@ export default function Process() {
           classparagraph="mb-[20px] text-center md:text-[18px] text-[15px] text-[#575757] w-full max-w-[390px] mt-[15px] font-[500] leading-[26px] process-text sans-serif"
           buttontext="Book an Appointment"
           buttonclass="px-[30px] py-[13px] text-[#fff] rounded-[30px] leading-[20px] bg-[#009688] hover:bg-[#00776c] transition-normal transition-all"
+          buttonlink='/contact-us'
         />
       </div>
 

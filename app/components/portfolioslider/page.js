@@ -5,6 +5,7 @@ import $ from "jquery";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Image from "next/image";
+import Link from "next/link";
 
 
 export default function PortfolioSlider({ images = [] }) {
@@ -65,9 +66,9 @@ export default function PortfolioSlider({ images = [] }) {
   return (
     <div className="slider-center">
       {images.map((img, index) => (
-        <div className="slider-item" key={index}>
-          <Image src={img} alt={`Portfolio ${index + 1}`} width={327} height={427} className="w-[327px] h-[427px]" />
-        </div>
+        <Link href={`${img.link}`} className="slider-item " key={index} >
+          <Image src={img.img} alt={`Portfolio ${index + 1}`} width={327} height={427} className="w-[327px] h-[427px]" />
+        </Link>
       ))}
     </div>
   );

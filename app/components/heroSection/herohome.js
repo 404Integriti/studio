@@ -46,7 +46,7 @@ export default function Herohome() {
         <Herobutton
           btnpadfirst="
             px-[14px] lg:py-[14px] py-[10px] text-[16px]   // base
-            md:px-[18px] md:py-[16px] md:text-[18px]
+            md:px-[18px] md:py-[16px] 
             2xl:px-[11px] 2xl:py-[19px] 2xl:text-[21px]
           "
           btnpadsec="

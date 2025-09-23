@@ -21,7 +21,7 @@ export default function Dijital({ laptopimg, heading, paragraphtext, buttonlink,
       <div className="dijital_right w-full lg:max-w-[840px] max-w-[450px] mr-[0px] ml-[40px] lg:mr-[40px] lg:ml-[40px] ">
         {/* HEADING */}
         <h2
-          className="text-[27px] lg:text-[57.56px] md:text-[35px] font-[400] leading-[40px] lg:leading-[50px] text-white md:mt-[30px] mt-[16px] xl:mt-[60px] lg:mt-[40px] mb-[0px] w-[100%] max-w-[70%] md:w-[100%] md:max-w-[100%]"
+          className="text-[27px] min-[1040px]:!text-[57.56px] min-[797px]:text-[35px] font-[400] leading-[40px] lg:leading-[50px] text-white md:mt-[30px] mt-[16px] xl:mt-[60px] lg:mt-[40px] mb-[0px] w-[100%] max-w-[70%] md:w-[100%] md:max-w-[100%]"
           style={{
             fontFamily: "var(--font-bebas-neue)",
           }}
@@ -42,7 +42,8 @@ export default function Dijital({ laptopimg, heading, paragraphtext, buttonlink,
         {/* BUTTON */}
         <Link
           href={buttonlink}
-          className="rounded-[30px] dijitalbtn py-[12px] px-[15px] md:py-[15px] md:px-[33px] text-[14px] md:text-[15px] font-[500] text-white bg-[#FF5722] transition-transform duration-300 md:ml-[0px] ml-[30px]"
+          className="rounded-[30px] dijitalbtn py-[12px] px-[15px] md:py-[15px] md:px-[33px] text-[14px] md:text-[15px] font-[500] text-white bg-[#FF5722] transition-transform duration-300 
+          md:ml-[0px] "
           style={{
             backgroundImage: "linear-gradient(90deg, #ed8104, #ec6a6c)",
             fontFamily: "var(--font-raleway)",

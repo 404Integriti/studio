@@ -291,7 +291,7 @@ background: #35255e !important;
   line-height: normal;
   font-weight: 400;
 }
-.header ul.menu-list > li a {
+.header .menu-list > li a {
     font-size: 15px !important;
 }
 .header ul > li a:hover {

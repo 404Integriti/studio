@@ -3,13 +3,25 @@ import Secheading from '@/app/components/secheading';
  // ✅ not from page.js
 
 export default function Portfolio() {
-  const portfolioImages = [
-    '/portfolio1.png',
-    '/portfolio2.png',
-    '/portfolio3.png',
-    '/portfolio5.png',
-    '/portfolio6.png',
-    '/portfolio7.png'
+   const portfolioImages = [
+    {img:'/portfolio1.png',
+      link:'/mero-case-study'
+    },
+    {img:'/portfolio2.png',
+      link:'/nett-pharmacy-case-study'
+    },
+    {img:'/portfolio3.png',
+      link:'/skin-and-hair-shopify-case-study'
+    },
+    {img:'/portfolio5.png',
+      link:'/zendura-dental-case-study'
+    },
+    {img:'/portfolio6.png',
+      link:'/skin-and-hair-wordpress-case-study'
+    },
+    {img:'/portfolio7.png',
+      link:'/protein-supplement-ecommerce-store'
+    },
   ];
 
   return (

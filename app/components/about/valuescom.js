@@ -5,9 +5,9 @@ export default function Valuescom({ mainHeading, highlight, intro, values }) {
     <div className="w-full max-w-[1370px] md:px-[30px] px-[20px] mx-auto lg:mt-[40px] mt-[0px] flex flex-col lg:flex-row  lg:gap-[40px] gap-[0px]">
       
       {/* Left section */}
-      <div className="flex-1 lg:mt-[40px] mt-[0px] lg:mt-[100px]">
-        <div className="w-[100%] lg:max-w-[465px] max-w-[816px] lg:ml-auto md:mx-auto md:pl-[20px]">
-          <h3 className="lg:my-[24px] mt-[0px] mb-[20px] leading-[44px] mb-[10px] raleway lg:text-[36px] text-[30px] font-[600] text-[#333]">
+      <div className="flex-1  mt-[0px] lg:mt-[100px] ">
+        <div className="w-[100%] lg:max-w-[465px] max-w-[816px]  lg:ml-12 md:mx-auto md:pl-[20px]">
+          <h3 className="lg:my-[24px] mt-[0px] mb-[20px] leading-[44px]  raleway lg:text-[36px] text-[30px] font-[600] text-[#333]">
             {mainHeading}
             <span className="text-[#00b8a9]">{highlight}</span>
           </h3>
