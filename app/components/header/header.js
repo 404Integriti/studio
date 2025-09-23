@@ -6,6 +6,7 @@ import { useState } from "react";
 
 export default function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [isServicesSubmenuOpen, setIsServicesSubmenuOpen] = useState(false);
 
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
@@ -13,6 +14,11 @@ export default function Header() {
 
   const closeMobileMenu = () => {
     setIsMobileMenuOpen(false);
+    setIsServicesSubmenuOpen(false); // Close submenu when mobile menu closes
+  };
+
+  const toggleServicesSubmenu = () => {
+    setIsServicesSubmenuOpen(!isServicesSubmenuOpen);
   };
 
   return (
@@ -28,7 +34,7 @@ export default function Header() {
             </div>
 
             {/* Desktop Menu - Hidden on mobile */}
-            <div className="menu hidden lg:block">
+            <div className="menu desktop-menu">
               <ul className="flex gap-[12px]">
                 <li className="py-[20px] px-[12px] flex justify-center items-center">
                   <Link className="menu-font-style" href="/">
@@ -72,7 +78,7 @@ export default function Header() {
                       {/* Submenu Header Item */}
                       <Link
                         href="/website-development-service"
-                        className="w-full pt-[20px] pb-[16px] pr-[16px] flex hover:bg-[#fff3e0]"
+                        className="w-full pt-[20px] pb-[16px] pr-[16px] flex items-center hover:bg-[#fff3e0]"
                       >
                         <Image
                           src="/menuimage.png"
@@ -218,7 +224,7 @@ export default function Header() {
             </div>
 
             {/* Mobile Menu Button - Visible only on mobile */}
-            <div className="lg:hidden">
+            <div className="mobile-menu-button">
               <button
                 onClick={toggleMobileMenu}
                 className="p-2 text-black focus:outline-none"
@@ -246,7 +252,7 @@ export default function Header() {
 
       {/* Mobile Menu Overlay */}
       {isMobileMenuOpen && (
-        <div className="fixed inset-0 z-50 lg:hidden">
+        <div className="fixed inset-0 z-50">
           {/* Backdrop */}
           <div 
             className="fixed inset-0 bg-black bg-opacity-50"
@@ -308,10 +314,13 @@ export default function Header() {
                 
                 {/* Services Section */}
                 <li>
-                  <div className="flex items-center justify-between menu-font-style py-2">
+                  <div 
+                    className="flex items-center justify-between menu-font-style py-2 cursor-pointer"
+                    onClick={toggleServicesSubmenu}
+                  >
                     <span>Services</span>
                     <svg
-                      className="w-5 h-5"
+                      className={`w-5 h-5 transition-transform duration-200 ${isServicesSubmenuOpen ? 'rotate-180' : ''}`}
                       fill="none"
                       stroke="currentColor"
                       viewBox="0 0 24 24"
@@ -326,7 +335,8 @@ export default function Header() {
                   </div>
                   
                   {/* Services List */}
-                  <div className="mt-4 space-y-4">
+                  {isServicesSubmenuOpen && (
+                    <div className="mt-4 space-y-4 flex gap-6 flex-col">
                     {/* Website Development - Full width first row */}
                     <Link href="/website-development-service">
                     <div className="w-full flex items-start space-x-3">
@@ -358,10 +368,10 @@ export default function Header() {
                           <span className="text-orange-500 font-semibold">WordPress Services</span>
                         </div>
                         <div className="ml-13 space-y-1">
-                          <Link href="/wordpress-development" className="text-gray-500 text-sm">WordPress Development</Link>
-                          <Link href="/wordpress-maintenance" className="text-gray-500 text-sm">WordPress Maintenance</Link>
-                          <Link href="/wordpress-support" className="text-gray-500 text-sm">WordPress Support</Link>
-                          <Link href="/wordpress-design" className="text-gray-500 text-sm">WordPress Design</Link>
+                          <Link href="/wordpress-development" className="text-gray-500 text-sm md:inline block">WordPress Development</Link>
+                          <Link href="/wordpress-maintenance" className="text-gray-500 text-sm md:inline block">WordPress Maintenance</Link>
+                          <Link href="/wordpress-support" className="text-gray-500 text-sm md:inline block">WordPress Support</Link>
+                          <Link href="/wordpress-design" className="text-gray-500 text-sm md:inline block">WordPress Design</Link>
                         </div>
                       </div>
 
@@ -380,10 +390,10 @@ export default function Header() {
                           <span className="text-orange-500 font-semibold">Shopify Services</span>
                         </div>
                         <div className="ml-13 space-y-1">
-                          <Link href="/shopify-development" className="text-gray-500 text-sm">Shopify Development</Link>
-                          <Link href="/shopify-maintenance" className="text-gray-500 text-sm">Shopify Maintenance</Link>
-                          <Link href="/shopify-support" className="text-gray-500 text-sm">Shopify Support</Link>
-                          <Link href="/shopify-design" className="text-gray-500 text-sm">Shopify Design</Link>
+                          <Link href="/shopify-development" className="text-gray-500 text-sm md:inline block">Shopify Development</Link>
+                          <Link href="/shopify-maintenance" className="text-gray-500 text-sm md:inline block">Shopify Maintenance</Link>
+                          <Link href="/shopify-support" className="text-gray-500 text-sm md:inline block">Shopify Support</Link>
+                          <Link href="/shopify-design" className="text-gray-500 text-sm md:inline block">Shopify Design</Link>
                         </div>
                       </div>
 
@@ -402,14 +412,15 @@ export default function Header() {
                           <span className="text-orange-500 font-semibold">Webflow Services</span>
                         </div>
                         <div className="ml-13 space-y-1">
-                           <Link href="/webflow-development" className="text-gray-500 text-sm">Webflow Development</Link>
-                           <Link href="/webflow-maintenance" className="text-gray-500 text-sm">Webflow Maintenance</Link>
-                           <Link href="/webflow-support" className="text-gray-500 text-sm">Webflow Support</Link>
-                           <Link href="/webflow-design" className="text-gray-500 text-sm">Webflow Design</Link>
+                           <Link href="/webflow-development" className="text-gray-500 text-sm md:inline block">Webflow Development</Link>
+                           <Link href="/webflow-maintenance" className="text-gray-500 text-sm md:inline block">Webflow Maintenance</Link>
+                           <Link href="/webflow-support" className="text-gray-500 text-sm md:inline block">Webflow Support</Link>
+                           <Link href="/webflow-design" className="text-gray-500 text-sm md:inline block">Webflow Design</Link>
                         </div>
                       </div>
                     </div>
-                  </div>
+                    </div>
+                  )}
                 </li>
 
                 <li>

@@ -10,9 +10,9 @@ module.exports = {
       fontFamily: {
         arial: ["Arial", "sans-serif"],
       },
-      // screens: {
-      //   xxl: "1440px", 
-      // },
+      screens: {
+        'desktop': '1200px',
+      },
     },
   },
   plugins: [],

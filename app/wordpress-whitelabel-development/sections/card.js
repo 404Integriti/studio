@@ -1,6 +1,6 @@
-
+ 
 import Image from "next/image";
-
+ 
 export default function WordPressWhitelabelCard({
   className,
   src,
@@ -33,3 +33,5 @@ export default function WordPressWhitelabelCard({
     </div>
   );
 }
+ 
+ 

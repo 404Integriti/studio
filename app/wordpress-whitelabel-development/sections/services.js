@@ -1,8 +1,8 @@
 import DnaCard from "@/app/components/dna/page";
 import WordPressWhitelabelCard from "./card";
-
+ 
 export default function WordpressWhitelabelServices() {
-
+ 
     const Data = [
   {
     src: "/WordpressWhitelabel/1st.svg",
@@ -42,9 +42,9 @@ export default function WordpressWhitelabelServices() {
   },
  
 ];
-
+ 
   return (
-        <section className="pt-[60px] md:pt-[80px] pb-[60px] w-full ">
+        <section className="pt-[60px] md:pt-[20px] pb-[60px] w-full ">
               <div className="max-w-[1400px] px-[20px] mx-auto">
                 <h3 className="text-center mb-[10px] xl:mt-[60px] font-[700] text-[35px] text-[#333] " style={{fontFamily:"var(--font-raleway)",}}>White Label WordPress Development Services</h3>
                 <div className="flex flex-wrap xl:gap-x-[40px] justify-center xl:!justify-evenly boder gap-x-[20px] md:gap-y-[125px] gap-y-[90px] mt-[100px] lg:pt-[50px] pt-[30px]">
@@ -57,3 +57,4 @@ export default function WordpressWhitelabelServices() {
             </section>
   )
 }
+ 

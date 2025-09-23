@@ -60,7 +60,7 @@ const ProductOffering = () => {
                   className="w-full text-left flex flex-row-reverse items-center justify-end transition-all duration-300 ease-in-out"
                 >
                   <span 
-                    className="md:text-[22px] text-[18px] font-[700] text-[#333] leading-[78px] h-[80px] transition-all duration-300 ease-in-out"
+                    className="md:text-[22px] text-[18px] font-[700] text-[#333] md:leading-[78px] leading-[30px] h-[80px] transition-all duration-300 ease-in-out"
                     style={{
                        fontFamily: "var(--font-raleway)"
                     }}

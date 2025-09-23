@@ -27,6 +27,8 @@ export default function ShopifyPlusSection() {
             src="/shopify-plus.svg"
             alt="Shopify Store"
             className=""
+                 width={622}
+            height={392}
           />
         </div>
       </div>

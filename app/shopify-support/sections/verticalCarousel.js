@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, useEffect, useRef } from 'react'
+import { useState, useEffect, useRef, useCallback } from 'react'
 
 const VerticalCarousel = () => {
   const [currentSlide, setCurrentSlide] = useState(0)
@@ -31,7 +31,7 @@ const VerticalCarousel = () => {
     }
   ]
 
-  const handleWheel = (e) => {
+  const handleWheel = useCallback((e) => {
     if (isScrolling) return
 
     e.preventDefault()
@@ -52,7 +52,7 @@ const VerticalCarousel = () => {
     scrollTimeoutRef.current = setTimeout(() => {
       setIsScrolling(false)
     }, 500)
-  }
+  }, [isScrolling, currentSlide, slides.length])
 
   useEffect(() => {
     const container = containerRef.current
@@ -68,7 +68,7 @@ const VerticalCarousel = () => {
         clearTimeout(scrollTimeoutRef.current)
       }
     }
-  }, [currentSlide])
+  }, [currentSlide, handleWheel])
 
   return (
     <section className="py-20 bg-white overflow-hidden">

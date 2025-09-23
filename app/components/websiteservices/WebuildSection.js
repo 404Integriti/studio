@@ -51,7 +51,7 @@ export default function WebuildSection() {
             </h2>
             <p
               className="w-full max-w-[472px] text-[16px] mb-[10px] text-[#333]"
-              style={{ fontFamily: "open sans" }}
+              style={{ fontFamily: "var(--font-opensansq)" }}
             >
               We don’t believe in one size fit-all solutions. We believe in
               building partnerships that last. Our team aligns with yours. Your
