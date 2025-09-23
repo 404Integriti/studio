@@ -1289,3 +1289,85 @@ const challengesData = [
     },
 ]
 export { challengesData };
+
+
+    const PlushieChallenges = [
+      {  heading: "Global Reach Needs",
+        paragraph:"Required setup for international payments and currency conversions to cater to a global audience.",
+        bgcolor: "#ffd99d33",
+        margin: "0 auto 0 0"
+    },
+    {
+        heading: "Complex Product Uploads",
+        paragraph:"Multiple SKUs needed uploading with detailed descriptions and visuals for clarity. ",
+        bgcolor: "#c5e3e0",
+        margin: "0 0 0 auto"
+    },
+    {
+        heading: "Short Timeline",
+        paragraph:"The entire store had to be designed and launched in just seven days. ",
+        bgcolor: "#6c4ab633",
+        margin: "0 auto 0 0"
+    },
+    {
+        heading: "Customer Trust & Interaction",
+        paragraph:"Needed features like live chat and product reviews to build credibility and support.",
+        bgcolor: "#d2e6f6",
+        margin: "0 0 0 auto"
+    },
+]
+
+
+export { PlushieChallenges };
+
+const bitsaChallenges = [
+    {
+        heading: "Outdated Design ",
+        paragraph:"The existing site lacked modern aesthetics, making it hard to engage new visitors.",
+        bgcolor: "#ffd99d33",
+        margin: "0 auto 0 0"
+    },
+    {
+        heading: "Cluttered Navigation",
+        paragraph:"Users struggled to find products easily due to a confusing layout and poor structure.",
+        bgcolor: "#c5e3e0",
+        margin: "0 0 0 auto"
+    },
+    {
+        heading: "No Mobile Optimization",
+        paragraph:"The website was not responsive, leading to lost mobile traffic and poor usability.",
+        bgcolor: "#6c4ab633",
+        margin: "0 auto 0 0"
+    },
+    {
+        heading: "Weak Marketing Integration",
+        paragraph:"There was no connection with social or email tools, limiting digital promotion efforts.",
+        bgcolor: "#d2e6f6",
+        margin: "0 0 0 auto"
+    },
+]
+ 
+export { bitsaChallenges };
+ const whitelabelwebflowservices = [
+  {
+    image: "/new/shopservone.svg",
+    heading: "Invisible, Reliable Partners",
+    text: "We work behind your brand, delivering seamless white label Webflow projects that feel like your own. Your clients will never know we’re here",
+  },
+    {
+    image: "/new/shopservtwo.svg",
+    heading: "Senior-Level Expertise Only",
+    text: "No juniors, no trial-and-error. Our Webflow developers are seasoned professionals with a proven record of success across industries",
+  },
+    {
+    image: "/new/shopservthree.svg",
+    heading: "Scalable Support on Demand",
+    text: "Need help on one project or 10? Our flexible engagement models scale with your agency’s growth.",
+  },
+    {
+    image: "/new/shopservfour.svg",
+    heading: "Focused on Your Profitability ",
+    text: "We help you expand your services, take on more clients, and grow your revenue without increasing overhead or stress.",
+  },
+]
+export { whitelabelwebflowservices };
