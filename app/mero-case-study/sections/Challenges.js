@@ -3,7 +3,6 @@ import {challengesSkinwordpress} from "../../components/customThemePoints"
 
 
 export default function Challenges() {
-  console.log(challengesSkinwordpress);
   return (
     <section className="securitybackup py-[40px]  lg:pt-[82px] lg:pb-[85px]  bg-[#f6f6f6]">
       <div className="w-[100%] max-w-[1360px] lg:px-[10px] px-[20px] flex mx-auto lg:flex-row flex-col lg:gap-[16px] gap-[50px] relative z-40">

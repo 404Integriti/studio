@@ -42,7 +42,7 @@ const DemoStepCarousel = () => {
   ];
 
   const handleStepChange = (stepIndex) => {
-    console.log('Active step changed to:', stepIndex);
+    // Step change handler
   };
 
   return (

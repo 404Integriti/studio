@@ -22,9 +22,7 @@ export default function BlogList() {
 
       const data = await res.json();
 
-      // ✅ Debug: log total posts fetched
-      console.log("Fetched posts length:", data.length);
-      console.log("Fetched posts:", data);
+      // Posts fetched successfully
 
       return data;
     } catch (err) {
@@ -75,13 +73,7 @@ export default function BlogList() {
             const imageUrl =
               post._embedded?.["wp:featuredmedia"]?.[0]?.source_url || "/new.png";
 
-            // ✅ Debug: log each post as we render it
-            console.log(`Rendering post #${index + 1} / ${posts.length}`, {
-              id: post.id,
-              title: post.title?.rendered,
-              image: imageUrl,
-              slug: post.slug,
-            });
+            // Rendering post
 
             return (
               <div key={post.id} className="flex justify-center">

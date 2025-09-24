@@ -17,7 +17,7 @@ import Footer from "./components/footer/page";
 export default function Home() {
 
   const handleClick = () => {
-    console.log("Demo started!");
+    // Demo started
   };
   
   return (

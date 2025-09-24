@@ -2,8 +2,6 @@
 import Link from "next/link";
 
 export default function ResourcesCard({ title, link }) {
-  console.log("🟣 Rendering ResourcesCard", { title, link });
-
   return (
     <div   className="w-full max-w-[380px] h-[300px] flex flex-col justify-center items-center bg-cover bg-center"
           style={{ backgroundImage: `url("/resourcesbg.svg")` }}>
