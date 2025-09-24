@@ -156,7 +156,7 @@ color: #070707 !important;
 }
 
 .slider-center .slick-track {
-    padding-bottom: 10px !important;
+    padding-bottom: 30px !important;
 }
 
 .slider-center .slick-next:before {
@@ -263,7 +263,10 @@ color: #070707 !important;
     line-height: 17px;
     color: #ed8104 !important;
 }
+.portfolio-container img {
+box-shadow: 27px 27px 40px -27px #0003;
 
+}
 .menu-item:hover {
  color: #ed8104 !important;
 }
