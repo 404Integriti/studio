@@ -29,9 +29,9 @@ export default function Header() {
         <div className="container mx-auto max-w-[1300px] pt-[23px] pb-[23px] md:pl-[20px] pl-[15px] md:pr-[20px] pr-[15px] h-[86px] flex items-center">
           <div className="flex justify-between items-center w-full">
             {/* Logo */}
-            <div className="Logo">
+            <Link href="/" className="Logo">
               <Image src="/Logo.png" alt="Logo" width={234} height={25} />
-            </div>
+            </Link>
 
             {/* Desktop Menu - Hidden on mobile */}
             <div className="menu desktop-menu">

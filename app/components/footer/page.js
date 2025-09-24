@@ -12,12 +12,13 @@ export default function Footer() {
         >
           {/* Left section - Logo and About */}
           <div className="w-full max-w-[460px] flex flex-col md:col-span-2 lg:col-span-1 lg:mb-[0px] mb-[40px]">
+            <Link href="/">
             <Image
               src="/footerlogo.svg"
               alt="Footer Logo"
               width={234}
               height={25}
-            />
+            /></Link>
             <p className="text-white lg:mt-[30px] mt-[15px]  lg:mb-[40px] mb-[20px] text-[14px] leading-[26px] w-full max-w-[410px] tracking-[1px] font-[400]raleway">
               Integriti Studio is your trusted partner for high-performance web
               solutions—specializing in Shopify, WordPress, Webflow and custom
