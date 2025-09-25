@@ -26,7 +26,7 @@ export default function Shopifydevelopmenthero() {
           firstButtonText="Get started"
           secondButtonText="Learn More"
           firstButtonlink="/contact-us"
-          secondButtonlink="#meetourteam"
+          secondButtonlink="/shopify-whitelabel-development"
         />
       }
     />

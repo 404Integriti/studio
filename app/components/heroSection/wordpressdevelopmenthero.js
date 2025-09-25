@@ -26,7 +26,7 @@ export default function Wordpressdevelopmenthero() {
           firstButtonText="Get started"
           secondButtonText="Learn More"
           firstButtonlink="/contact-us"
-          secondButtonlink="#meetourteam"
+          secondButtonlink="/wordpress-whitelabel-development"
         />
       }
     />

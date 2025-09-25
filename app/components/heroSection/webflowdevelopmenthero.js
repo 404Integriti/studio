@@ -26,7 +26,7 @@ export default function Webflowdevelopmenthero() {
           firstButtonText="Get started"
           secondButtonText="Learn More"
           firstButtonlink="/contact-us"
-          secondButtonlink="#meetourteam"
+          secondButtonlink="/webflow-whitelabel-development"
         />
       }
     />
