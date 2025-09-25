@@ -19,7 +19,7 @@ const portfolioData = [
     ),
     headingClass:"text-[#333] font-[600] raleway md:md:text-[33px] text-[28px] text-[28px] leading-[40px] capitalize my-[10px]",
     paragraphClass:"text-[#575757] sans w-[100%] md:max-w-[440px] max-w-[100%] leading-[20px] text-[16px] my-[10px] font-[400]",
-    link: "/"
+    link: "/skin-and-hair-wordpress-case-study"
   },
   {
     id: 2,
@@ -35,7 +35,7 @@ const portfolioData = [
         This solution guarantees accurate, current pricing, boosts productivity, and keeps a quick, responsive store for a great customer experience.
       </>
     ),
-    link: "/"
+    link: "/zendura-dental-case-study"
   },
   {
     id: 3,
@@ -52,7 +52,7 @@ const portfolioData = [
       </>
     ),
     paragraphClass:"text-[#575757] sans w-[100%] md:max-w-[440px] max-w-[100%] leading-[20px] text-[16px] my-[10px] font-[400]",
-    link: "/"
+    link: "/mero-case-study"
   },
   {
     id: 4,
@@ -69,7 +69,7 @@ const portfolioData = [
       </>
     ),
     paragraphClass:"text-[#575757] sans w-[100%] md:max-w-[440px] max-w-[100%] leading-[20px] text-[16px] my-[10px] font-[400]",
-    link: "/"
+    link: "/farmette-case-study"
   },
     {
     id: 5,
@@ -86,7 +86,7 @@ const portfolioData = [
       </>
     ),
     paragraphClass:"text-[#575757] sans w-[100%] md:max-w-[440px] max-w-[100%] leading-[20px] text-[16px] my-[10px] font-[400]",
-    link: "/"
+    link: "/b2b-ecommerce-client-case-study"
   },
     {
     id: 6,
@@ -103,7 +103,7 @@ const portfolioData = [
       </>
     ),
     paragraphClass:"text-[#575757] sans w-[100%] md:max-w-[440px] max-w-[100%] leading-[20px] text-[16px] my-[10px] font-[400]",
-    link: "/"
+    link: "/nett-pharmacy-case-study"
   },
        {
     id: 7,
@@ -120,7 +120,7 @@ const portfolioData = [
       </>
     ),
     paragraphClass:"text-[#575757] sans w-[100%] md:max-w-[440px] max-w-[100%] leading-[20px] text-[16px] my-[10px] font-[400]",
-    link: "/"
+    link: "/protein-supplement-ecommerce-store"
   },
      {
     id: 6,
@@ -139,7 +139,7 @@ const portfolioData = [
       </>
     ),
     paragraphClass:"text-[#575757] sans w-[100%] md:max-w-[440px] max-w-[100%] leading-[20px] text-[16px] my-[10px] font-[400]",
-    link: "/"
+    link: "/beauty-brand-in-anz"
   },
 ];
 
@@ -164,7 +164,7 @@ export default function Porfoliolist() {
                       paragraph={item.paragraph}
                       paragraphClass={item.paragraphClass}
                     />
-                    <Link href={item.link} className="text-[#1c1c1c] border border-[#e64a19] rounded-[20px] mt-[20px] py-[9px] px-[15px] text-[15px] leading-[20px] font-[600]">
+                    <Link href={item.link} className="text-[#1c1c1c] border border-[#e64a19] rounded-[20px] mt-[20px] py-[9px] px-[15px] text-[15px] leading-[20px] font-[600] hover:text-[#e64a19]">
                       Learn More
                     </Link>
                   </div>
@@ -187,7 +187,7 @@ export default function Porfoliolist() {
                       paragraph={item.paragraph}
                       paragraphClass={item.paragraphClass}
                     />
-                    <Link href={item.link} className="text-[#1c1c1c] border border-[#e64a19] rounded-[20px] mt-[20px] py-[9px] px-[15px] text-[15px] leading-[20px] font-[600]">
+                    <Link href={item.link} className="text-[#1c1c1c] border border-[#e64a19] hover:text-[#e64a19] rounded-[20px] mt-[20px] py-[9px] px-[15px] text-[15px] leading-[20px] font-[600]">
                       Learn More
                     </Link>
                   </div>

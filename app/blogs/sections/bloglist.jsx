@@ -73,13 +73,21 @@ export default function BlogList() {
             const imageUrl =
               post._embedded?.["wp:featuredmedia"]?.[0]?.source_url || "/new.png";
 
-            // Rendering post
+            // Decode HTML entities from title
+            const decodedTitle = post.title.rendered
+              .replace(/&#038;/g, '&')
+              .replace(/&#8217;/g, '&')
+              .replace(/&amp;/g, '&')
+              .replace(/&lt;/g, '<')
+              .replace(/&gt;/g, '>')
+              .replace(/&quot;/g, '"')
+              .replace(/&#039;/g, "'");
 
             return (
               <div key={post.id} className="flex justify-center">
                 <BlogCard
                   image={imageUrl}
-                  title={post.title.rendered}
+                  title={decodedTitle}
                   link={`/blogs/${post.slug}`}
                 />
               </div>

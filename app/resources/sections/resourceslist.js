@@ -65,7 +65,7 @@ export default function Resourceslist() {
   }
 
   return (
-    <div className="w-full max-w-[1200px] mx-auto pt-[40px] pb-[60px] flex justify-center flex-wrap items-center gap-[30px]">
+    <div className="w-full max-w-[1200px] mx-auto pt-[40px] pb-[60px] flex justify-center flex-wrap items-center sm:gap-[55px] gap-[30px] ">
       {posts.map((post) => (
         <ResourcesCard
           key={post.id}

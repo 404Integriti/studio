@@ -34,7 +34,7 @@ export default function FocusClientSection() {
       <div className="w-full max-w-[1440px] min-[1441px]:mx-auto pt-[20px]">
         {/* Heading */}
         <div className="flex justify-center">
-          <h3 className="text-[#333] mt-[15px] mb-[10px] leading-[30px] text-[28px] font-[700] text-center max-w-[600px] max-h-[60px] " style={{fontFamily:"var(--font-raleway)",}}>
+          <h3 className="text-[#333] mt-[15px] mb-[10px] leading-[30px] px-[10px] text-[28px] font-[700] text-center max-w-[600px] max-h-[60px] " style={{fontFamily:"var(--font-raleway)",}}>
           Focus on Your Clients, Let Us Handle the Shopify Work
         </h3>
         </div>
