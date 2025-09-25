@@ -1,4 +1,4 @@
-'use client'
+"use client";
 
 import Herobutton from "@/app/components/herobuttons/herobutton";
 import React from "react";
@@ -48,7 +48,7 @@ export default function Maintenance() {
               firstButtonText="Expolre Wordpress Maintenance"
               secondButtonText=""
               firstButtonlink="/wordpress-maintenance "
-              secondButtonlink="#meetourteam"
+              secondButtonlink="/portfolio"
             />
           </div>
         </div>

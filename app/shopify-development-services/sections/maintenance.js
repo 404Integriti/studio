@@ -1,4 +1,4 @@
-'use client'
+"use client";
 
 import Herobutton from "@/app/components/herobuttons/herobutton";
 import React from "react";
@@ -31,7 +31,14 @@ export default function Maintenance() {
               fontFamily: "var(--font-opensans)",
             }}
           >
-           Keeping your Shopify store running smoothly isn’t just about updates—it’s about staying ahead. We handle regular platform, theme, and app updates to keep everything current. Behind the scenes, we optimize for performance—focusing on speed, SEO, and smooth functionality. With automated backups and real-time security monitoring, your store stays protected at all times. And as your business grows, we’ll evolve your setup to keep you scaling without missing a beat.
+            Keeping your Shopify store running smoothly isn’t just about
+            updates—it’s about staying ahead. We handle regular platform, theme,
+            and app updates to keep everything current. Behind the scenes, we
+            optimize for performance—focusing on speed, SEO, and smooth
+            functionality. With automated backups and real-time security
+            monitoring, your store stays protected at all times. And as your
+            business grows, we’ll evolve your setup to keep you scaling without
+            missing a beat.
           </p>
           <div className="flex justify-baseline mt-[29px] ">
             <Herobutton
@@ -42,7 +49,7 @@ export default function Maintenance() {
               firstButtonText="Expolre Wordpress Maintenance"
               secondButtonText=""
               firstButtonlink="/contact-us"
-              secondButtonlink="#meetourteam"
+              secondButtonlink="/portfolio"
             />
           </div>
         </div>

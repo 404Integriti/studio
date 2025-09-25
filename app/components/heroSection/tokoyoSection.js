@@ -12,13 +12,20 @@ export default function TokyoSection() {
       }
       headingClass="lg:max-w-[900px] md:max-w-[740px] mx-auto text-center mt-[20px] lg:leading-[68px] lg:text-[60px] md:text-[48px]  text-[26px] md:leading-[67px] leading-[32px] font-[800]  
             text-2xl    "
-        subheading={<>Project Overview</>}
-        subheadingClass="lg:max-w-[930px] md:max-w-[740px] mx-auto text-center my-[10px] mt-[19px] lg:leading-[36px] mb-[10px] lg:text-[24px]  text-[20px]  font-[800] text-[#333333] montserrat "
-      paragraph={<>Integriti Studio transformed a streetwear brand’s online store by developing a custom Shopify solution tailored to their aesthetic and business needs. This project involved comprehensive branding, logo redesign, and a user-friendly website layout. The result was a modernized digital presence that enhanced both B2B and B2C operations.
- </>}
+      subheading={<>Project Overview</>}
+      subheadingClass="lg:max-w-[930px] md:max-w-[740px] mx-auto text-center my-[10px] mt-[19px] lg:leading-[36px] mb-[10px] lg:text-[24px]  text-[20px]  font-[800] text-[#333333] montserrat "
+      paragraph={
+        <>
+          Integriti Studio transformed a streetwear brand’s online store by
+          developing a custom Shopify solution tailored to their aesthetic and
+          business needs. This project involved comprehensive branding, logo
+          redesign, and a user-friendly website layout. The result was a
+          modernized digital presence that enhanced both B2B and B2C operations.
+        </>
+      }
       paragraphClass="max-w-[678px] mx-auto text-center text-[#333333] md:text-[18px] text-[14px] leading-[32px] leading-[28px] "
       buttons={
-        <Herobutton 
+        <Herobutton
           btnpadfirst="hero-btn-dental raleway !font-[400]"
           btnpadsec="hero-btn-dental raleway "
           buttonwidth="220px"
@@ -26,9 +33,9 @@ export default function TokyoSection() {
           firstButtonText="Get started"
           secondButtonText="Learn More"
           firstButtonlink="/contact-us"
-          secondButtonlink="#meetourteam"
+          secondButtonlink="/portfolio"
         />
       }
     />
   );
-} 
+}

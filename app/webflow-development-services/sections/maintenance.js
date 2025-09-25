@@ -1,4 +1,4 @@
-'use client'
+"use client";
 
 import Herobutton from "@/app/components/herobuttons/herobutton";
 import React from "react";
@@ -30,7 +30,15 @@ export default function Maintenance() {
             style={{
               fontFamily: "var(--font-opensans)",
             }}
-          >Keeping your Webflow site running smoothly isn’t just about maintenance—it’s about creating an edge. We handle everything from updates to technical optimization, ensuring your site performs at its best. Behind the scenes, we fine-tune assets and maintain fast-loading pages. With strong security protocols and reliable backups, your site stays protected. And as your business grows, we help evolve and improve your website to keep you ahead of competitors.
+          >
+            Keeping your Webflow site running smoothly isn’t just about
+            maintenance—it’s about creating an edge. We handle everything from
+            updates to technical optimization, ensuring your site performs at
+            its best. Behind the scenes, we fine-tune assets and maintain
+            fast-loading pages. With strong security protocols and reliable
+            backups, your site stays protected. And as your business grows, we
+            help evolve and improve your website to keep you ahead of
+            competitors.
           </p>
           <div className="flex justify-baseline mt-[29px] ">
             <Herobutton
@@ -41,7 +49,7 @@ export default function Maintenance() {
               firstButtonText="Expolre Webflow Maintenance"
               secondButtonText=""
               firstButtonlink="/contact-us"
-              secondButtonlink="#meetourteam"
+              secondButtonlink="/portfolio"
             />
           </div>
         </div>
