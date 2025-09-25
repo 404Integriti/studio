@@ -8,7 +8,7 @@ const ServiceCardsData = [
     Paragraphclass: "pt-[10px] text-center lg:text-[24px] text-[20px] leading-[35px] w-[100%] max-w-[71%] mb-[10px] font-[400]",
     width:"342px",
     height: "290px",
-    bgcolor: "#fff",
+    bgcolor: "#CCEAE7",
     },
   {
     heading: "570+",
@@ -17,7 +17,7 @@ const ServiceCardsData = [
     Paragraphclass: "pt-[10px] text-center lg:text-[24px] text-[20px] leading-[35px] w-[100%] max-w-[71%] mb-[10px] font-[400]",
     width:"342px",
     height: "290px",
-    bgcolor: "#fadbd1",
+    bgcolor: "#FADBD1",
     },
       {
     heading: "100%",
@@ -26,7 +26,7 @@ const ServiceCardsData = [
     Paragraphclass: "pt-[10px] text-center lg:text-[24px] text-[20px] leading-[35px] w-[100%] max-w-[71%] mb-[10px] font-[400]",
     width:"342px",
     height: "290px",
-    bgcolor: "#fff",
+    bgcolor: "#CCEAE7",
     },
 ];
 

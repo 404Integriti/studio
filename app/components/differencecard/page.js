@@ -15,13 +15,13 @@ export default function Differencecard({
       style={{ height: height, width: width }}
     >
       <Image
-        src="/diffbg.png"
+        src={`${(bgcolor == "#CCEAE7") ? "/diffbg.png" : "/redcorner.png"}`}
         alt="Difference Background"
         fill
-        className="object-cover rounded-[40px]" 
+        className=" z-40 absolute " 
       />
       <div 
-        className="absolute top-[10px] left-[10px] right-[10px] bottom-[10px] rounded-[40px] flex flex-col items-center justify-start gap-[14] pt-[57px]" 
+        className="absolute top-[10px] left-[10px]  right-[10px] bottom-[10px] rounded-[40px] flex flex-col items-center justify-start gap-[14] pt-[57px]" 
         style={{ backgroundColor: bgcolor }}
       >
         <h3

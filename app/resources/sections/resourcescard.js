@@ -3,11 +3,11 @@ import Link from "next/link";
 
 export default function ResourcesCard({ title, link }) {
   return (
-    <div   className="w-full max-w-[380px] h-[300px] flex flex-col justify-center items-center bg-cover bg-center"
+    <div   className="w-full max-w-[342px] h-[300px] flex flex-col justify-center items-center bg-cover bg-center"
           style={{ backgroundImage: `url("/resourcesbg.svg")` }}>
    
  
-          <div className="w-full max-w-[91%] px-[10px] flex flex-col relative">
+          <div className="w-full max-w-[322px] px-[10px]  flex flex-col relative">
             <h3
               className="text-[22px] w-[80%] text-center mx-auto pt-[10px] font-[600] text-[#283338] leading-[28px] mt-[20px] h-[120px]"
               style={{ fontFamily: "var(--font-raleway)" }}

@@ -1,7 +1,7 @@
 import Herosection from "@/app/components/heroSection/herosection";
 import CallToAction from "../sections/calltoaction";
 import ShareButton from "../sections/sharebutton";
-import { FaTwitter, FaFacebookF, FaInstagram, FaGithub } from "react-icons/fa";
+import { FaXTwitter, FaFacebookF, FaInstagram, FaGithub } from "react-icons/fa6";
 import { OtherResourcesCard } from "../sections/otherresourcescard";
 import ContentRenderer from "../sections/contentrenderer";
 
@@ -71,9 +71,9 @@ export default async function ResourceDetail({ params}) {
           </h3>
           <div className="flex gap-4 text-green-600 text-xl mt-[20px]">
             <ShareButton
-              icon={<FaTwitter size={14} />}
+              icon={<FaXTwitter  size={14} />}
               link={
-                "https://x.com/share?url=https://www.integritistudio.com/blogs-2/" +
+                "https://x.com/?lang=en/share?url=https://www.integritistudio.com/blogs-2/" +
                 post.slug
               }
             />
