@@ -12,22 +12,22 @@ const Player = dynamic(() => import('@lottiefiles/react-lottie-player').then(mod
 const freedomcard = [
     {
     text: 'Our designers work seamlessly with your Figma files to create exact replicas, pixel-perfect and fully responsive.',
-    bgcolor: '#ffd99d33',
+    bgcolor: '#FFF7EB',
     marginleft: '0'
     },
     {
         text: 'From subtle motion to complex animations, we help your site feel alive and interactive to engage users.',
-        bgcolor: '#c5e3e0',
+        bgcolor: '#C5E3E0',
         marginleft: '50px'
     },
     {
     text: 'No bloated templates—only lean, lightweight and optimized builds that boost performance, SEO and conversions.',
-        bgcolor: '#c5e3e0',
+        bgcolor: '#E2DBF0',
         marginleft: '80px'
     },
     {
-    text: 'No bloated templates—only lean, lightweight and optimized builds that boost performance, SEO and conversions.',
-        bgcolor: '#c5e3e0',
+    text: 'If you value stunning visuals and technical performance, webflow is the perfect hybrid of both worlds',
+        bgcolor: '#D2E6F6',
         marginleft: '110px'
     }
 ]
@@ -66,7 +66,7 @@ export default function Freedom() {
                     </div>
                 ))}
 
-            <Link href="/" className='px-[15px] mt-[10px] py-[10px] bg-[#e64a19] rounded-[30px] w-[100%] max-w-[241px] h-[42px]  text-center text-[16px] text-[#fce4ec] font-[400] leading-[22px] lg:ml-[110px] mx-auto'>Explore Shopify Services </Link>      
+            <Link href="/webflow-development" className='px-[15px] mt-[10px] py-[10px] bg-[#e64a19] rounded-[30px] w-[100%] max-w-[241px] h-[42px]  text-center text-[16px] text-[#fce4ec] font-[400] leading-[22px] lg:ml-[110px] mx-auto hover:bg-[#ED8104] duration-300'>Explore Webflow Services </Link>      
              </div>
         </div>
       </div>

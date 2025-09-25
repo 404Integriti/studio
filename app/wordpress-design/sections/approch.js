@@ -45,7 +45,7 @@ export default function Approch() {
                classparagraph = "w-[100%] max-w-[580px] text-[#333] text-[#333] sans"
                 buttontext = "Get Started"
                  buttonclass = "bg-[#ff5722] w-[180px] pt-[12px] pb-[12px] text-[#fce4ec] text-[20px] leading-[22px] rounded-[30px] text-center mt-[25px]"
-            
+              buttonlink="/contact-us"
             />
         </div>
     </div>

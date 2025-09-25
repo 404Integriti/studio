@@ -47,7 +47,7 @@ export default function Maintenance() {
               buttonheight="!18px"
               firstButtonText="Expolre Wordpress Maintenance"
               secondButtonText=""
-              firstButtonlink="/contact-us"
+              firstButtonlink="/wordpress-maintenance "
               secondButtonlink="#meetourteam"
             />
           </div>

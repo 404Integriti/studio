@@ -1,5 +1,6 @@
 import shopifyData from '@/app/components/customThemePoints';
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function ShopifyPlusSection() {
   return (
@@ -19,9 +20,9 @@ export default function ShopifyPlusSection() {
             </div>
           ))}
         </div>
-        <button className="bg-[#009688] text-white px-10 py-2 rounded-full hover:bg-teal-700 transition text-[18px]raleway">
+        <Link href='/contact-us' className="bg-[#009688]  text-white mt-[20px] px-12 py-[15px] rounded-full hover:bg-teal-700 transition text-[18px]raleway">
           Contact Now
-        </button>
+        </Link>
       </div>
       <div className="w-full md:w-1/2 flex justify-center md:justify-start">
         <div className="relative">

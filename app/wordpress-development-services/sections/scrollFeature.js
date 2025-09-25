@@ -174,7 +174,7 @@ const ScrollFeatures = () => {
                         btnpadsec="hidden"
                         buttonwidth=" sm:!280px"
                         buttonheight="!18px"
-                        firstButtonText="Expolre Wordpress Design"
+                        firstButtonText="Expolre Wordpress Support"
                         secondButtonText=""
                         firstButtonlink="/contact-us"
                         secondButtonlink="#meetourteam"

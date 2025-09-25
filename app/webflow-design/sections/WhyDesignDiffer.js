@@ -6,7 +6,7 @@ import Secheading from "@/app/components/secheading"; // ✅ import Section Head
 
 export default function WhyDesignSection() {
   return (
-    <section className="bg-[#f6f6f6] py-24">
+    <section className="bg-[#f6f6f6] py-[30px] sm:py-24">
       {/* ✅ Added more side margin with px-6 md:px-12 lg:px-20 */}
       <div className="w-full max-w-[1350px] mx-auto px-6 md:px-12 lg:px-20">
         {/* ✅ Section Heading */}
@@ -22,7 +22,7 @@ export default function WhyDesignSection() {
           {whyDesignData.map((item, idx) => (
             <div
               key={idx}
-              className={`${item.wrapperClass} ${idx === 0 ? "sm:mx-0 mx-auto" : ""
+              className={`${item.wrapperClass} ${idx === 0 ? "sm:mx-0 flex justify-center  w-50% pb-10 sm:pb-0 mx-auto " : ""
                 }`}
             >
               {item.type === "imageOnly" ? (
@@ -31,7 +31,7 @@ export default function WhyDesignSection() {
                   alt={item.alt}
                   width={item.width}
                   height={item.height}
-                  className={item.className}
+                  className={`${item.className}`}
                 />
               ) : (
                 <>

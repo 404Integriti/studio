@@ -40,8 +40,8 @@ export default function Monitoring() {
 
           {/* CTA Button */}
           <Link
-            href="#"
-            className="inline-block mt-[30px] w-[100%] max-w-[230px] mt-[20px] text-center py-[12px] text-[#fce4ec] md:text-[20px] text-[18px] rounded-[30px] bg-[#e64a19] hover:bg-[#ed8104] transition-all duration-300"
+            href="/contact-us"
+            className="inline-block  w-[100%] max-w-[230px] mt-[20px] text-center py-[12px] text-[#fce4ec] md:text-[20px] text-[18px] rounded-[30px] bg-[#e64a19] hover:bg-[#ed8104] transition-all duration-300"
             style={{ fontFamily: "var(--font-raleway)" }}
           >
             We catch it fast

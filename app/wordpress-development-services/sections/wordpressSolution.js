@@ -48,7 +48,7 @@ const WordpressSolutions = () => {
                 buttonheight="!20px"
                 firstButtonText="Expolre Wordpress Development"
                 secondButtonText=""
-                firstButtonlink="/contact-us"
+                firstButtonlink="/wordpress-development"
                 secondButtonlink="#meetourteam"
               />
       </div>
