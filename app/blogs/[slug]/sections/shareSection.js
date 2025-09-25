@@ -1,10 +1,10 @@
-import { FaTwitter, FaFacebookF, FaInstagram, FaGithub } from "react-icons/fa";
+import { FaXTwitter, FaFacebookF, FaInstagram, FaGithub } from "react-icons/fa6";
 
 export default function ShareSection({ slug }) {
   const shareUrl = `https://www.integritistudio.com/blogs-2/${slug}/`;
 
   return (
-    <div className="w-[220px] sm:w-[260px] md:w-[280px]">
+    <div className="w-[220px] sm:w-[260px] md:w-[280px] ">
       <h3
         className="text-xl sm:text-2xl md:text-[28px] font-bold leading-tight mb-4 text-left text-[#333]"
         style={{ fontFamily: "var(--font-raleway)" }}
@@ -18,7 +18,7 @@ export default function ShareSection({ slug }) {
           rel="noopener noreferrer"
           className="w-10 h-10 flex items-center justify-center rounded-full bg-[#009688] text-white hover:bg-[#00b79b] transition-colors duration-300"
         >
-          <FaTwitter size={18} />
+          <FaXTwitter size={18} />
         </a>
         <a
           href={`https://www.facebook.com/sharer/sharer.php?u=${shareUrl}`}

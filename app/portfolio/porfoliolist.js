@@ -157,7 +157,7 @@ export default function Porfoliolist() {
               {/* ✅ If text is left */}
               {isLeftText && (
                 <>
-                  <div className="list-content w-[100%] md:max-w-[580px] max-w-[100%] flex flex-col items-start pr-[10px] ">
+                  <div className="list-content w-[100%] md:max-w-[580px] max-w-[100%] flex flex-col items-start pr-[10px]   ">
                     <Herosection
                       heading={item.heading}
                       headingClass={item.headingClass}
@@ -186,6 +186,7 @@ export default function Porfoliolist() {
                       headingClass={item.headingClass}
                       paragraph={item.paragraph}
                       paragraphClass={item.paragraphClass}
+                      sectionpadding={"!bg-none"}
                     />
                     <Link href={item.link} className="text-[#1c1c1c] border border-[#e64a19] hover:text-[#e64a19] rounded-[20px] mt-[20px] py-[9px] px-[15px] text-[15px] leading-[20px] font-[600]">
                       Learn More
