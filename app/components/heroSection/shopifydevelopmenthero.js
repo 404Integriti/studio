@@ -35,7 +35,7 @@ export default function Shopifydevelopmenthero() {
           firstButtonText="Get started"
           secondButtonText="Learn More"
           firstButtonlink="/contact-us"
-          secondButtonlink="/portfolio"
+          secondButtonlink="/shopify-whitelabel-development"
         />
       }
     />
