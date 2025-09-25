@@ -103,7 +103,7 @@ export default function Header() {
                           <li>
                             <div
                              
-                              className="flex head items-center text-[#ed8104] font-[600] tracking-[1px]"
+                              className="flex head items-center !text-[#ed8104] font-[600] tracking-[1px]"
                             >
                               <Image
                                 className="mr-[5px]"
@@ -134,7 +134,7 @@ export default function Header() {
                           <li>
                             <div
                               
-                              className="flex head items-center text-[#ed8104] font-[600] tracking-[1px]"
+                              className="flex head items-center !text-[#ed8104] font-[600] tracking-[1px]"
                             >
                               <Image
                                 className="mr-[5px]"
@@ -165,7 +165,7 @@ export default function Header() {
                           <li>
                             <div
                               
-                              className="flex head items-center text-[#ed8104] font-[600] tracking-[1px]"
+                              className="flex head items-center !text-[#ED8104] font-[600] tracking-[1px]"
                             >
                               <Image
                                 className="mr-[5px]"
@@ -296,7 +296,7 @@ export default function Header() {
                 <li>
                   <Link 
                     href="/" 
-                    className="menu-font-style block py-2"
+                    className="menu-font-style  hover:!text-[#ED8104] block py-2"
                     onClick={closeMobileMenu}
                   >
                     Home
@@ -304,8 +304,8 @@ export default function Header() {
                 </li>
                 <li>
                   <Link 
-                    href="/aboutus" 
-                    className="menu-font-style block py-2"
+                    href="/aboutus"
+                    className="menu-font-style hover:!text-[#ED8104] block py-2"
                     onClick={closeMobileMenu}
                   >
                     About Us
@@ -315,7 +315,7 @@ export default function Header() {
                 {/* Services Section */}
                 <li>
                   <div 
-                    className="flex items-center justify-between menu-font-style py-2 cursor-pointer"
+                    className="flex items-center justify-between menu-font-style hover:!text-[#ED8104] py-2 cursor-pointer"
                     onClick={toggleServicesSubmenu}
                   >
                     <span>Services</span>
@@ -347,7 +347,7 @@ export default function Header() {
                       </div>
                       <div>
                         <div className="font-semibold text-black">Website Development</div>
-                        <div className="text-gray-500 text-sm">Responsive Web Design</div>
+                        <div className="text-gray-500 text-sm">User-Centric Website Development</div>
                       </div>
                     </div>
 </Link>
@@ -365,13 +365,13 @@ export default function Header() {
                                 width={40}
                               /></span>
                           </div>
-                          <span className="text-orange-500 font-semibold">WordPress Services</span>
+                          <span className="!text-[#ed8104] font-semibold">WordPress Services</span>
                         </div>
                         <div className="ml-13 space-y-1">
-                          <Link href="/wordpress-development" className="text-gray-500 text-sm md:inline block">WordPress Development</Link>
-                          <Link href="/wordpress-maintenance" className="text-gray-500 text-sm md:inline block">WordPress Maintenance</Link>
-                          <Link href="/wordpress-support" className="text-gray-500 text-sm md:inline block">WordPress Support</Link>
-                          <Link href="/wordpress-design" className="text-gray-500 text-sm md:inline block">WordPress Design</Link>
+                          <Link href="/wordpress-development" className="text-gray-500 text-sm md:inline block hover:text-[#ed8104] ">WordPress Development</Link>
+                          <Link href="/wordpress-maintenance" className="text-gray-500 text-sm md:inline block hover:text-[#ed8104] ">WordPress Maintenance</Link>
+                          <Link href="/wordpress-support" className="text-gray-500 text-sm md:inline block hover:text-[#ed8104] ">WordPress Support</Link>
+                          <Link href="/wordpress-design" className="text-gray-500 text-sm md:inline block hover:text-[#ed8104] ">WordPress Design</Link>
                         </div>
                       </div>
 
@@ -387,13 +387,13 @@ export default function Header() {
                                 width={40}
                               /></span>
                           </div>
-                          <span className="text-orange-500 font-semibold">Shopify Services</span>
+                          <span className="text-[#ed8104] font-semibold">Shopify Services</span>
                         </div>
                         <div className="ml-13 space-y-1">
-                          <Link href="/shopify-development" className="text-gray-500 text-sm md:inline block">Shopify Development</Link>
-                          <Link href="/shopify-maintenance" className="text-gray-500 text-sm md:inline block">Shopify Maintenance</Link>
-                          <Link href="/shopify-support" className="text-gray-500 text-sm md:inline block">Shopify Support</Link>
-                          <Link href="/shopify-design" className="text-gray-500 text-sm md:inline block">Shopify Design</Link>
+                          <Link href="/shopify-development" className="text-gray-500 text-sm md:inline block hover:text-[#ed8104] ">Shopify Development</Link>
+                          <Link href="/shopify-maintenance" className="text-gray-500 text-sm md:inline block hover:text-[#ed8104] ">Shopify Maintenance</Link>
+                          <Link href="/shopify-support" className="text-gray-500 text-sm md:inline block hover:text-[#ed8104] ">Shopify Support</Link>
+                          <Link href="/shopify-design" className="text-gray-500 text-sm md:inline block hover:text-[#ed8104] ">Shopify Design</Link>
                         </div>
                       </div>
 
@@ -412,10 +412,10 @@ export default function Header() {
                           <span className="text-orange-500 font-semibold">Webflow Services</span>
                         </div>
                         <div className="ml-13 space-y-1">
-                           <Link href="/webflow-development" className="text-gray-500 text-sm md:inline block">Webflow Development</Link>
-                           <Link href="/webflow-maintenance" className="text-gray-500 text-sm md:inline block">Webflow Maintenance</Link>
-                           <Link href="/webflow-support" className="text-gray-500 text-sm md:inline block">Webflow Support</Link>
-                           <Link href="/webflow-design" className="text-gray-500 text-sm md:inline block">Webflow Design</Link>
+                           <Link href="/webflow-development" className="text-gray-500 text-sm md:inline block hover:hover:text-[#ed8104] ">Webflow Development</Link>
+                           <Link href="/webflow-maintenance" className="text-gray-500 text-sm md:inline block hover:text-[#ed8104] ">Webflow Maintenance</Link>
+                           <Link href="/webflow-support" className="text-gray-500 text-sm md:inline block hover:text-[#ed8104] ">Webflow Support</Link>
+                           <Link href="/webflow-design" className="text-gray-500 text-sm md:inline block hover:text-[#ed8104] ">Webflow Design</Link>
                         </div>
                       </div>
                     </div>
@@ -426,7 +426,7 @@ export default function Header() {
                 <li>
                   <Link 
                     href="/portfolio" 
-                    className="menu-font-style block py-2"
+                    className="menu-font-style hover:!text-[#ED8104] block py-2"
                     onClick={closeMobileMenu}
                   >
                     Portfolio
@@ -435,7 +435,7 @@ export default function Header() {
                 <li>
                   <Link 
                     href="/community" 
-                    className="menu-font-style block py-2"
+                    className="menu-font-style hover:!text-[#ED8104] block py-2"
                     onClick={closeMobileMenu}
                   >
                     Community
@@ -444,7 +444,7 @@ export default function Header() {
                 <li>
                   <Link 
                     href="/blogs" 
-                    className="menu-font-style block py-2"
+                    className="menu-font-style hover:!text-[#ED8104] block py-2"
                     onClick={closeMobileMenu}
                   >
                     Blogs
@@ -453,7 +453,7 @@ export default function Header() {
                 <li>
                   <Link 
                     href="/resources" 
-                    className="menu-font-style block py-2"
+                    className="menu-font-style hover:!text-[#ED8104] block py-2"
                     onClick={closeMobileMenu}
                   >
                     Resources
@@ -462,7 +462,7 @@ export default function Header() {
                 <li>
                   <Link 
                     href="/contact-us" 
-                    className="menu-font-style block py-2"
+                    className="menu-font-style hover:!text-[#ED8104] block py-2"
                     onClick={closeMobileMenu}
                   >
                     Contact
