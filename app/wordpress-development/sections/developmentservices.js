@@ -16,6 +16,7 @@ const devServiceCardsData = [
     buttontext: "Learn More",
         blockheight: "255px",
     buttonclass: "py-[13px] px-[47px] rounded-[30px] bg-[#009688] hover:bg-[#00776c] font-[500] text-[14px] text-[#ffffff]",
+    link:'/portfolio'
 
     },
   {
@@ -30,6 +31,7 @@ const devServiceCardsData = [
       "Seamless migrations from outdated platforms or builders",
     buttontext: "Learn More",
      buttonclass: "py-[13px] px-[47px] rounded-[30px] bg-[#009688] hover:bg-[#00776c] font-[500] text-[14px] text-[#ffffff]",
+     link:'/portfolio'
   },
   {
     src: "/devservies3.svg",
@@ -43,6 +45,7 @@ const devServiceCardsData = [
       "WooCommerce and third party tool integration",
     buttontext: "Learn More",
      buttonclass: "py-[13px] px-[47px] rounded-[30px] bg-[#009688] hover:bg-[#00776c] font-[500] text-[14px] text-[#ffffff]",
+     link:'/portfolio'
   },
 ];
 
@@ -51,7 +54,7 @@ export default function Developmentservices() {
     <section className="py-[40px] ">
       <div className="max-w-[1400px] mx-auto">
         <Secheading
-          classheading=" md:text-[32px] text-[24px] font-semibold text-[#333] leading-[36px] md:pb-[80px] pb-[80px] text-center"
+          classheading=" md:text-[32px] lg:text-[36px] lg:pb-[170px] text-[24px] font-semibold text-[#333] leading-[36px] md:pb-[80px] pb-[80px] text-center"
           heading="Our WordPress Development Services"
         />
      

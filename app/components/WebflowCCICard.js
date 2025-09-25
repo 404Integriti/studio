@@ -20,11 +20,12 @@ const WebflowCCICard = ({ title, description, image, tiltDirection, alwaysTilt }
         }}
       >
         {/* Left Image */}
-        <div className="flex justify-center">
+        <div className="flex justify-center relative h-full">
           <Image
             src={image}
+            fill={true}
             alt="Motion Design Illustration"
-            className="max-w-full h-full"
+            className="max-w-full h-full border"
           />
         </div>
 

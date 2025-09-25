@@ -35,7 +35,7 @@ export default function WordpressServices() {
                         buttonheight="!18px"
                         firstButtonText="Expolre Wordpress Design"
                         secondButtonText=""
-                        firstButtonlink="/contact-us"
+                        firstButtonlink="/wordpress-design"
                         secondButtonlink="#meetourteam"
                       />
           </div>

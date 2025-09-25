@@ -12,7 +12,7 @@ const WebflowSpeedComponent = ({ title, accordionItems, imageSrc }) => {
 
   return (
     <section className="bg-white pt-[30px] pb-[60px]">
-      <div className="w-full max-w-[1200px] mx-auto">
+      <div className="w-full max-w-[1200px] mx-auto ">
         {/* Main Heading */}
         <h2
           className="max-[991px]:text-center md:text-[36px] text-[30px] md:leading-[42px] leading-10 font-[600] mb-[43px] mt-[50px] min-[991px]:w-[45%]"
@@ -29,20 +29,20 @@ const WebflowSpeedComponent = ({ title, accordionItems, imageSrc }) => {
               return (
                 <div
                   key={item.id}
-                  className="rounded-[15px] shadow-[0_2px_20px_12px_#effefb] transition-all duration-300 ease-in-out mb-[23px]"
+                  className="rounded-[15px] shadow-[0_2px_20px_12px_#effefb] transition-all duration-600 ease mb-[23px]"
                 >
                   <button
                     onClick={() => toggleAccordion(item.id)}
-                    className="w-full text-left flex flex-row-reverse items-center justify-end transition-all duration-300 ease-in-out"
+                    className="w-full text-left flex flex-row-reverse items-center justify-end transition-all duration-600 ease"
                   >
                     <span
-                      className="md:text-[22px] text-[18px] font-[700] text-[#333] md:leading-[78px] leading-[30px] h-[80px] transition-all duration-300 ease-in-out"
+                      className="md:text-[22px] text-[18px] font-[700] text-[#333] md:leading-[78px] leading-[30px] h-[80px] transition-all duration-600 ease"
                       style={{ fontFamily: "var(--font-raleway)" }}
                     >
                       {item.title}
                     </span>
                     <span
-                      className={`text-[40px] text-[#333] mx-[25px] transition-all duration-300 ease-in-out ${isActive ? "rotate-[180deg]" : "rotate-0"}`}
+                      className={`text-[40px] text-[#333] mx-[25px] transition-all duration-600 ease ${isActive ? "rotate-[180deg]" : "rotate-0"}`}
                       style={{
                         fontSize: isActive ? "20px" : "40px",
                         fontWeight: isActive ? "800" : "400",
@@ -56,14 +56,14 @@ const WebflowSpeedComponent = ({ title, accordionItems, imageSrc }) => {
                   </button>
 
                   <div
-                    className={`overflow-hidden transition-all duration-300 ease-in-out ${
+                    className={`overflow-hidden transition-all duration-600 ease ${
                       isActive ? "max-h-32 opacity-100" : "max-h-0 opacity-0"
                     }`}
                   >
                     {item.description && (
-                      <div className="px-6 pb-4">
+                      <div className="px-6 ">
                         <p
-                          className="faq-answer-text pl-[45px] text-[16px] text-[#333] mb-[30px] transition-all duration-300 ease-in-out"
+                          className="faq-answer-text pl-[45px] text-[16px] text-[#333] mb-[30px] transition-all duration-600 ease"
                           style={{ fontFamily: "var(--font-opensans)" }}
                         >
                           {item.description}
@@ -77,7 +77,7 @@ const WebflowSpeedComponent = ({ title, accordionItems, imageSrc }) => {
           </div>
 
           {/* Right Side - Illustration */}
-          <div className="flex justify-center">
+          <div className="flex justify-center ">
             <div className="w-full h-full flex items-center lg:justify-start justify-center">
               <Image
                 src={imageSrc}

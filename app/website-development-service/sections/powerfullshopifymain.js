@@ -30,8 +30,8 @@ export default function PowerfulShopifymain() {
             linktextt="Conversion Focused"
             linktextfo="Growth Ready"
              buttontext="Explore Shopify Services" 
-             buttoncclass="px-[15px] mt-[30px] py-[10px] bg-[#e64a19] rounded-[30px] w-[100%] max-w-[241px] h-[42px]  text-center text-[16px] text-[#fce4ec] font-[400] leading-[22px]"
-              buttonlink="/contact" />
+             buttoncclass="px-[15px] mt-[30px] py-[10px] bg-[#e64a19] rounded-[30px] w-[100%] max-w-[241px] h-[42px]  text-center text-[16px] text-[#fce4ec] font-[400] leading-[22px] hover:bg-[#ED8104] duration-300 "
+              buttonlink="/shopify-development" />
         </div>
     </div>
 </div>

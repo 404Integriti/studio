@@ -154,7 +154,7 @@ export { designFeatures };
         linkText: 'LEARN MORE →',
         bgColor: 'bg-yellow-50',
         hoverColor: 'hover:bg-[#fff3e0]',
-        linkUrl: '#section1',
+        linkUrl: '/portfolio',
       },
       {
         title: 'Built for Business',
@@ -162,7 +162,7 @@ export { designFeatures };
         linkText: 'LEARN MORE →',
         bgColor: 'bg-amber-50',
         hoverColor: 'hover:bg-[#fff3e0]',
-        linkUrl: '#section2',
+        linkUrl: '/portfolio',
       },
       {
         title: 'Built for Speed',
@@ -170,7 +170,7 @@ export { designFeatures };
         linkText: 'LEARN MORE →',
         bgColor: 'bg-green-50',
         hoverColor: 'hover:bg-[#fff3e0]',
-        linkUrl: '#section3',
+        linkUrl: '/portfolio',
       },
       {
         title: 'Cross-Industry Expertise',
@@ -178,7 +178,7 @@ export { designFeatures };
         linkText: 'LEARN MORE →',
         bgColor: 'bg-teal-50',
         hoverColor: 'hover:bg-[#fff3e0]',
-        linkUrl: '#section4',
+        linkUrl: '/portfolio',
       },
     ];
    export { cards };
@@ -679,7 +679,7 @@ const wordpressdesign = [
     image: "/new/designthre.svg",
     heading: "Designed for Speed & Precision",
     text: "Looks aren’t enough. Our themes are engineered to load fast, run smoothly, and perform beautifully—without sacrificing design or usability.",
-    bgcolor: "#cceae7"  ,
+    bgcolor: "#E64A1933"  ,
     position: "center"
   }
 ]
@@ -717,7 +717,7 @@ const whyDesignData = [
     alt: "Webflow Large Icon",
     width: 400,
     height: 400,
-    className: "object-contain w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg -mr-16",
+    className: "object-contain w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg sm:-mr-16",
     wrapperClass: "flex items-center justify-end bg-[#f6f6f6] lg:bg-[#f6f6f6] relative z-0",
   },
   {
@@ -822,7 +822,7 @@ const responsiveDesign = [
     ],
     button: {
       text: "Work With Us",
-      href: "/learn-more",
+      href: "/contact-us",
     },
   },
 ];

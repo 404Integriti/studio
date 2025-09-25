@@ -16,10 +16,11 @@ export default function Card({ icon, title, description }) {
       {/* Icon */}
       <div className="flex items-center text-3xl">
        
-          <div className='flex items-center justify-center'>
+          <div className='flex items-center justify-center relative'>
             <Image
           src={icon}
           alt="icon"
+          fill={true}
           className={`w-8 h-8 transition-all brightness-0 duration-500 ease-in-out ${isHovered ? 'invert brightness-0':'brightness-0'}`}
         />
           </div>

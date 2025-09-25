@@ -125,7 +125,7 @@ const ScrollFeatures = () => {
           {features.map((feature, index) => (
             <div
               key={index}        
-              className={`absolute w-[100%] xxl:max-w-[390px] max-w-[336px] min-h-[255px] bg-[#effefb] rounded-[1.2rem] border-[.0625rem] border-[#83838329] p-6 transition-all duration-700 ease-in-out ${
+              className={`absolute w-[100%] xxl:max-w-[390px] max-w-[336px] min-h-[255px] ${index %2 == 0 ? 'bg-[#C7FFF4]' :'bg-[#effefb]'}  rounded-[1.2rem] border-[.0625rem] border-[#83838329] p-6 transition-all duration-700 ease-in-out ${
                 index >= currentSlide && index < currentSlide + 4
                   ? "opacity-100 translate-x-0 scale-100 z-10"
                   : index < currentSlide
@@ -144,7 +144,14 @@ const ScrollFeatures = () => {
               }}
             >
               <div className="text-center mb-4">
-                <div className="mb-3"><Image src={feature.icon} width={46} height={44} alt="" /></div>
+                <div className="mb-3">
+  <Image
+    src={feature.icon}
+    width={feature.icon === "/crm4.svg" ? 35 : 46} // 👈 condition here
+    height={feature.icon === "/crm4.svg" ? 35 : 44} // 👈 you can also change height if needed
+    alt=""
+  />
+</div>
               </div>
               <h3 
                 className="text-[20px] min-[1430px]:text-[24px] font-[600] text-[#1d1d1f] tracking-[-.025em]"

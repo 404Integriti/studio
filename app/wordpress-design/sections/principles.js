@@ -14,12 +14,13 @@ const pricipleCardsData = [
       Intuitive User <br /> Journeys
     </>
   ),
-    imgbgcolor: "#009688",
+    imgbgcolor: "#",
     blockheight: "270",
     
     description:
     "We design pathways that make sense—guiding visitors naturally from first click to final conversion without friction or confusion.",
-    blockwidth: "320px"
+    blockwidth: "320px",
+    imgClass:'mt-[-50]',
     },
   {
     src: "/rulesec.svg",
@@ -32,11 +33,12 @@ const pricipleCardsData = [
     </>
   ),
   
-      imgbgcolor: "#009688",
+      imgbgcolor: "#",
       blockheight: "270",
        blockwidth: "320px",
     description:
       "From hover states to subtle animations, every interaction adds clarity and feedback, making the user experience feel thoughtful and refined.",
+      imgClass:'mt-[-50]'
   },
   {
     src: "/rulethree.svg",
@@ -48,11 +50,12 @@ const pricipleCardsData = [
      Clear Visual <br /> Hierarchy
     </>
   ),
-     imgbgcolor: "#009688",
+     imgbgcolor: "#",
       blockheight: "270",
        blockwidth: "320px",
     description:
       "Using color, spacing, and typography, we direct attention to what matters most—your messages, CTAs, and conversion points.",
+      imgClass:'mt-[-50]'
 
   },
 ];

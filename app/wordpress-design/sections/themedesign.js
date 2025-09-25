@@ -24,11 +24,11 @@ export default function ThemeDesign() {
       <div className="w-full max-w-[1350px] mx-auto py-[80px]">
         {/* Section Heading */}
         <Secheading
-          classheading="md:text-[32px] text-[24px] font-semibold text-[#333] leading-[36px] md:pb-[80px] pb-[20px] text-center"
+          classheading="md:text-[32px] text-[24px] font-semibold text-[#333] leading-[36px] md:pb-[80px] pb-[20px] text-center "
           heading="Custom Theme Design"
         />
 
-        <div className="flex lg:flex-row flex-col lg:justify-start justfiy-center lg:gap-[0px] md:gap-[40px] gap-[20px] lg:px-[0px] px-[20px]">
+        <div className="flex lg:flex-row flex-col lg:justify-start justfiy-center lg:gap-[0px] md:gap-[40px] gap-[20px] lg:px-[0px] px-[20px] ">
           {/* Left: Lottie animation */}
           <div className="w-full lg:max-w-[50%] max-w-[100%] flex justify-center">
             {isMounted && (
@@ -46,7 +46,7 @@ export default function ThemeDesign() {
             {wordpressdesign.map((item, index) => (
               <div
                 key={index}
-                className="w-[100%] rounded-[15px]  lg:max-w-[495px] max-w-[816px] border border-[#e2dbf0] p-[16px] flex gap-[16px]" style={{
+                className="w-[100%]  rounded-[15px]  lg:max-w-[495px] max-w-[816px] border border-[#e2dbf0] p-[16px] flex gap-[16px]" style={{
                     backgroundColor: item.bgcolor,
                     alignSelf: item.position,
                 }}

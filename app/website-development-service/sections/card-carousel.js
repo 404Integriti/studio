@@ -46,7 +46,7 @@ const DemoStepCarousel = () => {
   };
 
   return (
-    <div className="flex justify-center items-center px-[30px]">
+    <div className="flex justify-center  items-center px-[30px]">
       <div className="w-[100%] max-w-[100%] mx-auto">
      
         

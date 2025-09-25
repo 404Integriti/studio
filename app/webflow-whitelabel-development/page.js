@@ -1,6 +1,6 @@
 import WebflowWhitelabelHero from "../components/heroSection/webflowwhitelabel"
 import FaqSection from "./sections/faqsection"
-import HowToConnect from "./sections/howtoconnect"
+import HowToConnect from "./sections/HowToConnect"
 import WebflowTrustSection from "./sections/trustsection"
 import WhyMakeIntegriti from "./sections/WhyMakeIntegriti"
 import WhyWebflow from "./sections/WhyWebflow"

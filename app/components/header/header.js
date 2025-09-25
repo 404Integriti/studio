@@ -29,9 +29,9 @@ export default function Header() {
         <div className="container mx-auto max-w-[1300px] pt-[23px] pb-[23px] md:pl-[20px] pl-[15px] md:pr-[20px] pr-[15px] h-[86px] flex items-center">
           <div className="flex justify-between items-center w-full">
             {/* Logo */}
-            <div className="Logo">
+            <Link href="/" className="Logo">
               <Image src="/Logo.png" alt="Logo" width={234} height={25} />
-            </div>
+            </Link>
 
             {/* Desktop Menu - Hidden on mobile */}
             <div className="menu desktop-menu">
@@ -101,8 +101,8 @@ export default function Header() {
                         {/* WordPress Services */}
                         <ul className="raleway menu-list">
                           <li>
-                            <Link
-                              href="/"
+                            <div
+                             
                               className="flex head items-center text-[#ed8104] font-[600] tracking-[1px]"
                             >
                               <Image
@@ -113,7 +113,7 @@ export default function Header() {
                                 width={40}
                               />
                               WordPress Services
-                            </Link>
+                            </div>
                           </li>
                           <li>
                             <Link href="/wordpress-development" >WordPress Development</Link>
@@ -132,8 +132,8 @@ export default function Header() {
                         {/* Shopify Services */}
                         <ul className="raleway menu-list">
                           <li>
-                            <Link
-                              href="/"
+                            <div
+                              
                               className="flex head items-center text-[#ed8104] font-[600] tracking-[1px]"
                             >
                               <Image
@@ -144,7 +144,7 @@ export default function Header() {
                                 width={40}
                               />
                               Shopify Services
-                            </Link>
+                            </div>
                           </li>
                           <li>
                             <Link href="/shopify-development">Shopify Development</Link>
@@ -163,8 +163,8 @@ export default function Header() {
                         {/* Webflow Services */}
                         <ul className="raleway menu-list">
                           <li>
-                            <Link
-                              href="/"
+                            <div
+                              
                               className="flex head items-center text-[#ed8104] font-[600] tracking-[1px]"
                             >
                               <Image
@@ -175,7 +175,7 @@ export default function Header() {
                                 width={40}
                               />
                               Webflow Services
-                            </Link>
+                            </div>
                           </li>
                           <li>
                             <Link href="/webflow-development">Webflow Development</Link>

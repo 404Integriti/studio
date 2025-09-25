@@ -37,6 +37,7 @@ export default function Shopifyapproch() {
             height={450}
             width={584}
             className='footer-float'
+            alt='laptop.svg'
             />
         </div>
     </div>

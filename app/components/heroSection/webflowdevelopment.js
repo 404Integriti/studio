@@ -17,7 +17,7 @@ export default function  WebflowDevelopment() {
       buttons={
         <Herobutton 
           btnpadfirst="px-[10px] pt-[10px] pb-[7px] sm:px-[0px] sm:py-[15px] mt-[20px] hero-button-first raleway"
-          btnpadsec=" hero-button-sec raleway "
+          btnpadsec=" hero-button-sec raleway mt-[20px]"
           buttonwidth="220px"
           buttonheight="53px"
           firstButtonText="Let's build Smarter"
