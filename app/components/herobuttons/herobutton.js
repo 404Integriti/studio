@@ -16,7 +16,7 @@ export default function Herobutton({
     <div className="flex lg:gap-[47px] md:gap-[35px] sm:gap-[25px] gap-[20px] justify-center mt-[29px]">
       <Link
         href={firstButtonlink}
-        className={` min-[770px]:!text-[18px] sm:text-[16px] text-[14px] tracking-[0em] hero_buttons hero_buttons-first rounded-[73.62px] text-white flex justify-center items-center gap-2 ${btnpadfirst}`}
+        className={` min-[770px]:!text-[18px] sm:text-[16px] text-[14px] tracking-[0em] hero_buttons hero_buttons-first rounded-[73.62px] text-white flex justify-center items-center gap-2 ${btnpadfirst} `}
         style={{
           fontFamily:
             fontfamily === "raleway"
@@ -33,7 +33,7 @@ export default function Herobutton({
 
       <Link
         href={secondButtonlink}
-        className={` tracking-[0em] hero_buttons-sec rounded-[73.62px] ${btnpadsec} hero_buttons flex items-center justify-center`}
+        className={` tracking-[0em] hero_buttons-sec border !w-[400px] rounded-[73.62px] ${btnpadsec} hero_buttons flex items-center justify-center `}
         style={{
           fontFamily:
             fontfamily === "raleway"
