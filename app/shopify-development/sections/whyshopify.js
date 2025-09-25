@@ -4,10 +4,10 @@ import ShopifyStepCarousel  from './shopifystepcarousel'
 
 export default function Whyshopify() {
   return (
-    <section className='custom-wordpress-solution' style={{
+    <section className='custom-wordpress-solution w-[100%]' style={{
         backgroundImage: 'linear-gradient(#f9f8f84d, #f5f1f1 8%)',
     }}>
-        <div className='w-[100%] max-w-[1440px] mx-auto flex lg:flex-row flex-col justify-center items-center
+        <div className='mx-auto max-w-[1440px]  flex lg:flex-row flex-col justify-center items-center
                          gap-[46px] pt-[30px] lg:pb-[120px] md:pb-[80px] pb-[60px]'>
          <div className='w-[100%] max-w-[470px] lg:pl-[40px] px-[20px]'>
             <Herosection 

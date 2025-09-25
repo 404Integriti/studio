@@ -63,7 +63,7 @@ export default function WebuildSection() {
         </div>
 
         {/* Right side */}
-        <div className="w-full lg:max-w-[38%] max-w-[100%] relative lg:mt-[0px] mt-[50px]">
+        <div className="w-full lg:max-w-[38%] mx-auto max-w-[100%] relative lg:mt-[0px] mt-[50px]">
             <div className={`wrapper`}> {/* gives enough scroll space */}
                 <StackedCards cards={cardData} />
               </div>

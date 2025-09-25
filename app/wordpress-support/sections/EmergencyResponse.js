@@ -12,7 +12,7 @@ const EmergencyResponse = () => {
         {emergencyResponseData.map((emfeature, index) => (
           <div
             key={index}
-            className="bg-[#f8f8f8] rounded-lg px-6 overflow-hidden flex gap-6 items-center"
+            className="bg-[#f8f8f8] rounded-lg py-[15px] sm:py-[0px] px-6 overflow-hidden flex gap-6 items-center"
           ><div>
             <Image
               src={emfeature.numberImage}

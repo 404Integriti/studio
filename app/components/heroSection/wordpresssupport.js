@@ -4,7 +4,7 @@ import Herobutton from "@/app/components/herobuttons/herobutton";
 export default function  Wordpresssupporthero() {
   return (
     <Herosection
-      sectionpadding="lg:py-[120px] md:py-[60px] py-[40px] lg:pb-[100px] md:pb-[80px] pb-[60px] lg:pt-[100px] md:pt-[50px] lg:px-[0px] px-[15px] text-[]"
+      sectionpadding="lg:py-[120px] md:py-[60px] py-[30px] lg:pb-[100px] md:pb-[80px] pb-[60px] lg:pt-[100px] md:pt-[50px] lg:px-[0px] px-[15px] text-[]"
       heading={
         <>
         Ongoing <span className="hero-orange">WordPress Support</span> That Keeps You Moving

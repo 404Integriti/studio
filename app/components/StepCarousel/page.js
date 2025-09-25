@@ -25,7 +25,7 @@ const StepCarousel = ({ steps=[], activeStep = 0, onStepChange }) => {
   };
 
   return (
-    <div className="flex flex-col md:flex-row lg:justify-end md:justify-center items-center gap-4 md:gap-0">
+    <div className="flex flex-col md:flex-row lg:justify-end md:justify-center items-center  gap-0">
       {steps.map((step, index) => (
         <div
           key={index}

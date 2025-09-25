@@ -110,6 +110,18 @@ const ScrollFeatures = () => {
               </div>
             ))}
           </div>
+           <div className='flex justify-center py-[40px] '>
+             <Herobutton 
+                        btnpadfirst="hero-btn-dental !text-[18px] !max-w-[400px] !mt-[-30px] raleway !px-[32px] !py-[10px] !font-[400] flex"
+                        btnpadsec="hidden"
+                        buttonwidth=" sm:!280px"
+                        buttonheight="!18px"
+                        firstButtonText="Expolre Wordpress Support"
+                        secondButtonText=""
+                        firstButtonlink="/contact-us"
+                        secondButtonlink="#meetourteam"
+                      />
+          </div>
         </div>
       </section>
     );
@@ -174,7 +186,7 @@ const ScrollFeatures = () => {
                         btnpadsec="hidden"
                         buttonwidth=" sm:!280px"
                         buttonheight="!18px"
-                        firstButtonText="Expolre Wordpress Design"
+                        firstButtonText="Expolre Wordpress Support"
                         secondButtonText=""
                         firstButtonlink="/contact-us"
                         secondButtonlink="#meetourteam"

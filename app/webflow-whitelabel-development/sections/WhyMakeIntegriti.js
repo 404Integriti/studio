@@ -33,7 +33,7 @@ export default function WhyMakeIntegriti() {
         {/* Right Side with Services */}
         <div className="w-full min-[479px]:max-w-[100%] min-[991px]:w-[480px] min-[991px]:max-w-[940px] min-[1280px]:ml-[77px] xl:ml-[0px] ">
   <div className="mt-[40px]">
-    <div className='max-[768px]:flex justify-center'>
+    <div className=' max-[768px]:flex justify-center'>
       <Shopservicers />
     </div>
   </div>

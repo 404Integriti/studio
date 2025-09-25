@@ -7,7 +7,7 @@ const CustomThemeDevelopment = () => {
   return (
     <section className="w-full max-w-[1440px] mx-auto px-[10]  md:pt-[80px]  md:pb-[80px] pb-[40px] grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
       <div className="md:ml-15">
-             <h2 className="md:text-[36px] text-[30px] font-[600] text-left leading-[36px] text-[#333333] raleway mt-[60px] pb-[25px]"> Custom Theme Development</h2>
+             <h2 className="md:text-[36px] text-[30px] font-[600] text-left leading-[36px] text-[#333333] raleway mt-[20px] md:mt-[60px] pb-[25px]"> Custom Theme Development</h2>
         <ul className="space-y-4 mb-8 opensans">
           {customThemePoints.map((point, index) => (
             <li key={index} className="flex items-center gap-3">

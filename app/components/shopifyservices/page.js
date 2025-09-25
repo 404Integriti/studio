@@ -8,7 +8,7 @@ export default function Shopservicers() {
         <div key={index} className="flex">
           {/* Left column */}
           <div className="flex flex-col justify-start items-center w-[100%] max-w-[60px] relative">
-          <div className="bg-[#ed8104] rounded-[100%] w-[100%] max-w-[60px] h-[60px] flex justify-center items-center left-col relative">
+          <div className="bg-[#ed8104] z-50 rounded-[100%] w-[100%] max-w-[60px] h-[60px] flex justify-center items-center left-col relative">
             <Image src={item.image} height={36} width={36} alt={item.heading} />
        </div>
             <div className="line-dotted"></div>
