@@ -52,7 +52,7 @@ export default function WhyWebflow() {
 
         <div className="max-w-[1080px] grid grid-cols-1 md:grid-cols-2 pt-[20px] mx-auto gap-y-[25px]">
             {whywebflowpoints.map((item,index) => (
-               <div className={`flex justify-start md:justify-center gap-y-[16px] ${index===3 && 'md:pl-[70px]'}`}>
+               <div key={index} className={`flex justify-start md:justify-center gap-y-[16px] ${index===3 && 'md:pl-[70px]'}`}>
                 <ThemePoint key={index} img={item.img} text={item.text} />
               </div>
             ))}

@@ -3,17 +3,19 @@ import { whitelabelwebflowservices } from "../../components/customThemePoints";
 
 export default function Shopservicers() {
   return (
-    <div className="shopify-service-block flex flex-col gap-[40px]">
+    <div className="shopify-service-block flex flex-col gap-[50px]">
       {whitelabelwebflowservices.map((item, index) => (
   <div key={index} className="flex">
     {/* Left column */}
     <div className="flex flex-col justify-start items-center w-[100%] max-w-[60px] relative">
-      <div className="bg-[#ed8104] rounded-[100%] w-[100%] max-w-[60px] h-[60px] flex justify-center items-center left-col relative">
+      <div className="bg-[#ed8104] rounded-[100%] w-[100%] max-w-[60px] h-[60px] flex justify-center items-center left-col relative z-20 ">
         <Image src={item.image} height={36} width={36} alt={item.heading} />
       </div>
       {/* Render line only if not the last item */}
       {index !== whitelabelwebflowservices.length - 1 && (
-        <div className="straight-line"></div>
+        <div className=" absolute top-[60px] left-1/2 -translate-x-1/2 
+      w-[1px] h-[100px] bg-black
+      z-0"></div>
       )}
     </div>
 
