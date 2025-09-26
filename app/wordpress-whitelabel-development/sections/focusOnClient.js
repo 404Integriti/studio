@@ -32,7 +32,7 @@ export default function FocusOnClient() {
                 alt="focus-icon-hover"
                 className="px-4 pb-4 hidden group-hover:block"
               />
-                <p className="text-[#e64a19]  group-hover:text-[#d9d9d9] text-[19px] font-[700] leading-[20px] pt-0  px-[20px] pr-[30px]">
+                <p className="text-[#e64a19]  group-hover:text-white text-[19px] font-[700] leading-[20px] pt-0  px-[20px] pr-[30px]">
                   Take on more projects without stretching your team
                 </p>
               </div>
@@ -54,7 +54,7 @@ export default function FocusOnClient() {
                 alt="focus-icon-hover"
                 className="px-4 pb-4 hidden group-hover:block"
               />
-                <p className="text-[#e64a19]  group-hover:text-[#d9d9d9] text-[19px] font-[700]  px-[20px] pr-[30px] leading-[22px]">
+                <p className="text-[#e64a19]  group-hover:text-white text-[19px] font-[700]  px-[20px] pr-[30px] leading-[22px]">
                   Skip hiring and training new developers
                 </p>
               </div>
@@ -80,7 +80,7 @@ export default function FocusOnClient() {
                 alt="focus-icon-hover"
                 className="px-4 pb-4 hidden group-hover:block"
               />
-              <p className="text-[#e64a19]  group-hover:text-[#d9d9d9] text-[19px] font-[700] px-[20px] pr-[50px] leading-[22px]">
+              <p className="text-[#e64a19]  group-hover:text-white text-[19px] font-[700] px-[20px] pr-[50px] leading-[22px]">
                 Keep full control of client communication
               </p>
             </div>
@@ -102,7 +102,7 @@ export default function FocusOnClient() {
                 alt="focus-icon-hover"
                 className="px-4 pb-4 hidden group-hover:block"
               />
-              <p className="text-[#e64a19]  group-hover:text-[#d9d9d9] text-[19px] font-[700]  px-[20px] pr-[30px] leading-[22px]">
+              <p className="text-[#e64a19]  group-hover:text-white text-[19px] font-[700]  px-[20px] pr-[30px] leading-[22px]">
                 Get fast, professional turnaround on every build
               </p>
             </div>
@@ -124,7 +124,7 @@ export default function FocusOnClient() {
                 alt="focus-icon-hover"
                 className="px-4 pb-4 hidden group-hover:block"
               />
-              <p className="text-[#e64a19]  group-hover:text-[#d9d9d9] text-[19px] font-[700]  px-[20px] pr-[30px] leading-[22px]">
+              <p className="text-[#e64a19]  group-hover:text-white text-[19px] font-[700]  px-[20px] pr-[30px] leading-[22px]">
                 Scale your agency without added overhead
               </p>
             </div>

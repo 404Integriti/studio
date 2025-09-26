@@ -6,14 +6,13 @@ const imageList = [
   "/profiles/omer.png",
   "/profiles/ahmer.png",
   "/profiles/yousaf.png",
+    "/profiles/haseeb.png",
+    "/profiles/aman.svg",
+      "/profiles/mahnoor.png",
   "/profiles/ravale.png",
-  "/profiles/haseeb.png",
+   "/profiles/salman.png",
   "/profiles/Zoya.png",
-  "/profiles/salman.png",
-  "/profiles/aman.svg",
   "/profiles/sajid.png",
-  "/profiles/mahnoor.png",
-  "/profiles/alia.png",
   "/profiles/ahsanarshad.png",
   
 ];

@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useCallback } from "react";
 import ResourcesCard from "../sections/resourcescard";
 
 export default function Resourceslist() {
@@ -9,7 +9,7 @@ export default function Resourceslist() {
   const [error, setError] = useState(null);
   const [mounted, setMounted] = useState(false);
 
-  async function fetchAllPosts(attempt = 1, maxAttempts = 3) {
+  const fetchAllPosts = useCallback(async (attempt = 1, maxAttempts = 3) => {
     try {
       const res = await fetch(
         `https://websitesblogs.integritistaffing.com/wp-json/wp/v2/posts?categories=4&per_page=100`,
@@ -25,7 +25,7 @@ export default function Resourceslist() {
         throw err;
       }
     }
-  }
+  }, []);
 
   useEffect(() => {
     setMounted(true);
@@ -42,7 +42,7 @@ export default function Resourceslist() {
       }
     }
     fetchPosts();
-  }, []);
+  }, [fetchAllPosts]);
 
   if (!mounted || loading) {
     return (
@@ -65,7 +65,7 @@ export default function Resourceslist() {
   }
 
   return (
-    <div className="w-full max-w-[1200px] mx-auto pt-[40px] pb-[60px] flex justify-center flex-wrap items-center gap-[30px]">
+    <div className="w-full max-w-[1200px] mx-auto pt-[40px] pb-[60px] flex justify-center flex-wrap items-center sm:gap-[55px] gap-[30px] ">
       {posts.map((post) => (
         <ResourcesCard
           key={post.id}

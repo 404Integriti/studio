@@ -116,7 +116,7 @@ const SectionUpdate = () => {
                 firstButtonText="Design My Experience"
                 secondButtonText="Meet Our Team"
                 firstButtonlink="/contact-us"
-                secondButtonlink="#meetourteam"
+                secondButtonlink="/portfolio"
               />
             </div>
           </div>

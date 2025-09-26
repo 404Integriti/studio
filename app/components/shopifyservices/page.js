@@ -3,12 +3,12 @@ import { shopifyservices } from "../../components/customThemePoints";
 
 export default function Shopservicers() {
   return (
-    <div className="shopify-service-block flex flex-col gap-[20px]">
+    <div className="shopify-service-block flex flex-col gap-[20px] max-w-[560px]">
       {shopifyservices.map((item, index) => (
         <div key={index} className="flex">
           {/* Left column */}
           <div className="flex flex-col justify-start items-center w-[100%] max-w-[60px] relative">
-          <div className="bg-[#ed8104] rounded-[100%] w-[100%] max-w-[60px] h-[60px] flex justify-center items-center left-col relative">
+          <div className="bg-[#ed8104] z-50 rounded-[100%] w-[100%] max-w-[60px] h-[60px] flex justify-center items-center left-col relative">
             <Image src={item.image} height={36} width={36} alt={item.heading} />
        </div>
             <div className="line-dotted"></div>
@@ -24,7 +24,7 @@ export default function Shopservicers() {
                 {item.heading}
               </h3>
               <p
-                className="text-[16px] leading-[24px] w-[100%] max-w-[340px]"
+                className="text-[15px] leading-[24px] w-[100%] "
                 style={{ fontFamily: "var(--font-opensans)" }}
               >
                 {item.text}

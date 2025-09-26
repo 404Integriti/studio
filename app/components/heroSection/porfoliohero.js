@@ -20,7 +20,7 @@ websites and e-commerce stores on the platforms of WordPress and Shopify."
       buttons={
         <Herobutton 
           btnpadfirst="px-[10px] py-[15px] raleway font-[400] lg:text-[20px] text-[18px]"
-          btnpadsec="px-[15px] py-[10px] raleway text-[18px]"
+          btnpadsec="hidden"
           buttonwidth="200px"
           buttonheight="50px"
           firstButtonText="Say Hi !"

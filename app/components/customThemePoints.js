@@ -154,7 +154,7 @@ export { designFeatures };
         linkText: 'LEARN MORE →',
         bgColor: 'bg-yellow-50',
         hoverColor: 'hover:bg-[#fff3e0]',
-        linkUrl: '#section1',
+        linkUrl: '/portfolio',
       },
       {
         title: 'Built for Business',
@@ -162,7 +162,7 @@ export { designFeatures };
         linkText: 'LEARN MORE →',
         bgColor: 'bg-amber-50',
         hoverColor: 'hover:bg-[#fff3e0]',
-        linkUrl: '#section2',
+        linkUrl: '/portfolio',
       },
       {
         title: 'Built for Speed',
@@ -170,7 +170,7 @@ export { designFeatures };
         linkText: 'LEARN MORE →',
         bgColor: 'bg-green-50',
         hoverColor: 'hover:bg-[#fff3e0]',
-        linkUrl: '#section3',
+        linkUrl: '/portfolio',
       },
       {
         title: 'Cross-Industry Expertise',
@@ -178,7 +178,7 @@ export { designFeatures };
         linkText: 'LEARN MORE →',
         bgColor: 'bg-teal-50',
         hoverColor: 'hover:bg-[#fff3e0]',
-        linkUrl: '#section4',
+        linkUrl: '/portfolio',
       },
     ];
    export { cards };
@@ -333,6 +333,12 @@ export { storeFeatures };
 
 const MobileApproach = [
 
+   {
+    numberImage: "/new/fullyresponsive.svg",
+    title: "Fully Responsive",
+    descrp: "Fully responsive design across all breakpoints",
+  },
+
   {
     numberImage: "/new/smooth-mobile.svg",
     title: "Smooth Mobile Experience",
@@ -483,34 +489,6 @@ const userexperience = [
   
 ]
 export { userexperience };
-const bitsaChallenges = [
-    {
-        heading: "Outdated Design ",
-        paragraph:"The existing site lacked modern aesthetics, making it hard to engage new visitors.",
-        bgcolor: "#ffd99d33",
-        margin: "0 auto 0 0"
-    },
-    {
-        heading: "Cluttered Navigation",
-        paragraph:"Users struggled to find products easily due to a confusing layout and poor structure.",
-        bgcolor: "#c5e3e0",
-        margin: "0 0 0 auto"
-    },
-    {
-        heading: "No Mobile Optimization",
-        paragraph:"The website was not responsive, leading to lost mobile traffic and poor usability.",
-        bgcolor: "#6c4ab633",
-        margin: "0 auto 0 0"
-    },
-    {
-        heading: "Weak Marketing Integration",
-        paragraph:"There was no connection with social or email tools, limiting digital promotion efforts.",
-        bgcolor: "#d2e6f6",
-        margin: "0 0 0 auto"
-    },
-]
- 
-export { bitsaChallenges };
 const platforms = [
     
     {
@@ -701,7 +679,7 @@ const wordpressdesign = [
     image: "/new/designthre.svg",
     heading: "Designed for Speed & Precision",
     text: "Looks aren’t enough. Our themes are engineered to load fast, run smoothly, and perform beautifully—without sacrificing design or usability.",
-    bgcolor: "#cceae7"  ,
+    bgcolor: "#E64A1933"  ,
     position: "center"
   }
 ]
@@ -739,7 +717,7 @@ const whyDesignData = [
     alt: "Webflow Large Icon",
     width: 400,
     height: 400,
-    className: "object-contain w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg -mr-16",
+    className: "object-contain w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg sm:-mr-16",
     wrapperClass: "flex items-center justify-end bg-[#f6f6f6] lg:bg-[#f6f6f6] relative z-0",
   },
   {
@@ -844,7 +822,7 @@ const responsiveDesign = [
     ],
     button: {
       text: "Work With Us",
-      href: "/learn-more",
+      href: "/contact-us",
     },
   },
 ];
@@ -898,6 +876,76 @@ const shopifyservices = [
   },
 ]
 export { shopifyservices };
+const shopifyDevelopment = [
+  {
+    image: "/new/shopservone.svg",
+    heading: "Conversion-Led Design",
+    text: "We design every page with one goal: to turn visitors into loyal customers.",
+  },
+    {
+    image: "/new/shopservtwo.svg",
+    heading: "Fully Custom Storefronts",
+    text: "No generic themes. Your store deserves a visual identity that reflects your brand.",
+  },
+    {
+    image: "/new/shopservthree.svg",
+    heading: "Mobile-First Design",
+    text: "Most shoppers are mobile. We design for phones first, desktops second.",
+  },
+    {
+    image: "/new/shopservfour.svg",
+    heading: "UX That Builds Trust",
+    text: "We focus on clarity, simplicity and intuitive design to boost buyer confidence and engagement.",
+  },
+]
+export { shopifyDevelopment };
+const webflowDevelopment = [
+  {
+    image: "/new/shopservone.svg",
+    heading: "Brand-Led Visual Design",
+    text: "We translate your brand identity into a beautiful, functional online experience—built to engage and impress.",
+  },
+    {
+    image: "/new/shopservtwo.svg",
+    heading: "Advanced Animations",
+    text: "We use Webflow’s native animation tools to make your website move, flow, and stand out.",
+  },
+    {
+    image: "/new/shopservthree.svg",
+    heading: "Mobile-First Design",
+    text: "We prioritize mobile users first with highly responsive layouts that work beautifully on any screen size.",
+  },
+    {
+    image: "/new/shopservfour.svg",
+    heading: "Clean & Scalable Systems",
+    text: "We create consistent, reusable design systems so your site can grow without design chaos.",
+  },
+]
+export { webflowDevelopment };
+
+const wordpressservices = [
+  {
+    image: "/new/shopservone.svg",
+    heading: "Design Systems, Not Just Pages",
+    text: "We build full systems using components you can mix, match and reuse.",
+  },
+    {
+    image: "/new/shopservtwo.svg",
+    heading: "Interactive Storytelling",
+    text: "Scroll-based animations, parallax sections and micro interactions create immersive user journeys.",
+  },
+    {
+    image: "/new/shopservthree.svg",
+    heading: "Live Design Prototyping",
+    text: "We involve you in the process, using interactive prototypes to review layout, content, and function in real time.",
+  },
+    {
+    image: "/new/shopservfour.svg",
+    heading: "Client Editable Blocks",
+    text: "Empower your content team with editable, intuitive CMS blocks—no dev help needed.",
+  },
+]
+export { wordpressservices };
 
 
 const casestudybeauty = [
@@ -928,35 +976,206 @@ const casestudybeauty = [
   ];
   export { casestudybeauty };
 
-
- 
-      const PlushieChallenges = [
-      {  heading: "Global Reach Needs",
-        paragraph:"Required setup for international payments and currency conversions to cater to a global audience.",
+  const challengesSkinwordpress = [
+    {
+        heading: "Platform Limitations",
+        paragraph:"WooCommerce lacked advanced features and scalability required for international growth.",
         bgcolor: "#ffd99d33",
-        margin: "0 auto 0 0"
+        margin: "0 0 0 0"
     },
     {
-        heading: "Complex Product Uploads",
-        paragraph:"Multiple SKUs needed uploading with detailed descriptions and visuals for clarity. ",
+        heading: "International Expansion",
+        paragraph:"The client needed localized content and currency support to effectively target the UAE market.",
         bgcolor: "#c5e3e0",
         margin: "0 0 0 auto"
     },
     {
-        heading: "Short Timeline",
-        paragraph:"The entire store had to be designed and launched in just seven days. ",
+        heading: "UI/UX Enhancements",
+        paragraph:"The existing site’s design required an upgrade to improve user experience and boost conversions.",
         bgcolor: "#6c4ab633",
-        margin: "0 auto 0 0"
+        margin: "0 0 0 0"
     },
     {
-        heading: "Customer Trust & Interaction",
-        paragraph:"Needed features like live chat and product reviews to build credibility and support.",
+        heading: "Payment Gateway Needs",
+        paragraph:"Integration of secure and regionally trusted payment methods was critical for smooth transactions.",
         bgcolor: "#d2e6f6",
         margin: "0 0 0 auto"
     },
 ]
- 
-export { PlushieChallenges };
+export {challengesSkinwordpress};
+
+  const Pharmacutical = [
+    {
+        heading: "Complex Product Catalog",
+        paragraph:"Managing 14,000 products required a structured approach.",
+        bgcolor: "#ffd99d33",
+        margin: "0 0 0 0"
+    },
+    {
+        heading: "Managing Collection and Sub-Collections",
+        paragraph:"Organizing products into clear, navigable categories.",
+        bgcolor: "#c5e3e0",
+        margin: "0 0 0 auto"
+    },
+    {
+        heading: "Setting Up Pickup Locations",
+        paragraph:"Configuring pickup points based on user location.",
+        bgcolor: "#6c4ab633",
+        margin: "0 0 0 0"
+    },
+    {
+        heading: "Product Descriptions Not Provided",
+        paragraph:"We had to research and write descriptions for all products in the first batch.",
+        bgcolor: "#d2e6f6",
+        margin: "0 0 0 auto"
+    },
+]
+export {Pharmacutical};
+
+  const FametteCaseStudy = [
+    {
+        heading: "Outdated Online Presence",
+        paragraph:"The brand lacked a visually engaging website that aligned properly with its organic theme.",
+        bgcolor: "#ffd99d33",
+        margin: "0 0 0 0"
+    },
+    {
+        heading: "Weak Brand Communication",
+        paragraph:"The existing platform failed to effectively convey the brand’s message to customers.",
+        bgcolor: "#c5e3e0",
+        margin: "0 0 0 auto"
+    },
+    {
+        heading: "Limited eCommerce Features",
+        paragraph:"The website needed better integration of product details with a smooth purchasing process.",
+        bgcolor: "#6c4ab633",
+        margin: "0 0 0 0"
+    },
+    {
+        heading: "User Engagement Issues",
+        paragraph:"Navigation and browsing were not intuitive, leading to lower customer interaction.",
+        bgcolor: "#d2e6f6",
+        margin: "0 0 0 auto"
+    },
+]
+export {FametteCaseStudy};
+
+
+  const ProteinSuppliment = [
+    {
+        heading: "Complex Product Navigation",
+        paragraph:"The existing categorization system made it difficult for customers to find products efficiently.",
+        bgcolor: "#ffd99d33",
+        margin: "0 0 0 0"
+    },
+    {
+        heading: "Lack of Engaging Product Content",
+        paragraph:"Product pages lacked detailed descriptions and high-quality visuals, reducing customer interest.",
+        bgcolor: "#c5e3e0",
+        margin: "0 0 0 auto"
+    },
+    {
+        heading: "Limited Personalization & Upselling",
+        paragraph:"There were no recommendation tools to enhance cross-selling or upselling opportunities.",
+        bgcolor: "#6c4ab633",
+        margin: "0 0 0 0"
+    },
+    {
+        heading: "Inefficient Checkout Process",
+        paragraph:"A complicated checkout system led to high cart abandonment rates.",
+        bgcolor: "#d2e6f6",
+        margin: "0 0 0 auto"
+    },
+]
+export {ProteinSuppliment};
+
+  const CustomCaseStudy = [
+    {
+        heading: "Inaccurate Shipping Rates",
+        paragraph:"Existing setup couldn't support location-specific shipping prices.",
+        bgcolor: "#ffd99d33",
+        margin: "0 0 0 0"
+    },
+    {
+        heading: "Platform Restrictions",
+        paragraph:"Shopify Basic plan limitations prevented native advanced features.",
+        bgcolor: "#c5e3e0",
+        margin: "0 0 0 auto"
+    },
+    {
+        heading: "Urgent Timeline",
+        paragraph:"Project needed to be completed and deployed within a single week.",
+        bgcolor: "#6c4ab633",
+        margin: "0 0 0 0"
+    },
+    {
+        heading: "Smooth Integration Needed",
+        paragraph:"App had to integrate flawlessly with Shopify without affecting user experience.",
+        bgcolor: "#d2e6f6",
+        margin: "0 0 0 auto"
+    },
+]
+export {CustomCaseStudy};
+
+  const EcommerceClientStudy = [
+    {
+        heading: "Real-time Pricing Accuracy",
+        paragraph:"Shopify needed to reflect SAP’s dynamic pricing instantly.",
+        bgcolor: "#ffd99d33",
+        margin: "0 0 0 0"
+    },
+    {
+        heading: "Webhook Delays",
+        paragraph:"Delayed webhook updates caused pricing issues during peak hours.",
+        bgcolor: "#c5e3e0",
+        margin: "0 0 0 auto"
+    },
+    {
+        heading: "Data Security",
+        paragraph:"Secure session token management was essential for syncing data.",
+        bgcolor: "#6c4ab633",
+        margin: "0 0 0 0"
+    },
+    {
+        heading: "Customer Accessibility",
+        paragraph:" Needed seamless experience for both logged-in and guest users.",
+        bgcolor: "#d2e6f6",
+        margin: "0 0 0 auto"
+    },
+]
+export {EcommerceClientStudy};
+
+
+
+
+
+  const challengesCasestudy = [
+    {
+        heading: "Platform Limitations",
+        paragraph:"WooCommerce lacked advanced features and scalability required for international growth.",
+        bgcolor: "#ffd99d33",
+        margin: "0 0 0 0"
+    },
+    {
+        heading: "International Expansion",
+        paragraph:"The client needed localized content and currency support to effectively target the UAE market.",
+        bgcolor: "#c5e3e0",
+        margin: "0 0 0 auto"
+    },
+    {
+        heading: "UI/UX Enhancements",
+        paragraph:"The existing site’s design required an upgrade to improve user experience and boost conversions.",
+        bgcolor: "#6c4ab633",
+        margin: "0 0 0 0"
+    },
+    {
+        heading: "Payment Gateway Needs",
+        paragraph:"Integration of secure and regionally trusted payment methods was critical for smooth transactions.",
+        bgcolor: "#d2e6f6",
+        margin: "0 0 0 auto"
+    },
+]
+export {challengesCasestudy};
 
 
 const skinChallenges = [
@@ -987,6 +1206,7 @@ const skinChallenges = [
 ]
  
 export { skinChallenges };
+
 const challengesInfo = [
     {
         heading: "Feature Limitations",
@@ -1040,7 +1260,95 @@ export { whywebflowpoints };
 
 export { challengesInfo };
 
-const whitelabelwebflowservices = [
+
+
+const challengesData = [
+    {
+        heading: "Outdated Interface",
+        paragraph:"The old store lacked the edgy, urban design that matched the brand’s streetwear identity.",
+        bgcolor: "#ffd99d33",
+        margin: "0 0 0 0"
+    },
+    {
+        heading: "Weak Branding",
+        paragraph:"The previous logo and branding failed to capture the brand's bold vision and authenticity.",
+        bgcolor: "#c5e3e0",
+        margin: "0 0 0 auto"
+    },
+    {
+        heading: "Poor UX",
+        paragraph:"Cluttered navigation and design led to a frustrating shopping journey and high bounce rates.",
+        bgcolor: "#6c4ab633",
+        margin: "0 0 0 0"
+    },
+    {
+        heading: "Dual Sales Complexity",
+        paragraph:"Managing B2B and B2C transactions on one platform required custom functionality.",
+        bgcolor: "#d2e6f6",
+        margin: "0 0 0 auto"
+    },
+]
+export { challengesData };
+
+
+    const PlushieChallenges = [
+      {  heading: "Global Reach Needs",
+        paragraph:"Required setup for international payments and currency conversions to cater to a global audience.",
+        bgcolor: "#ffd99d33",
+        margin: "0 auto 0 0"
+    },
+    {
+        heading: "Complex Product Uploads",
+        paragraph:"Multiple SKUs needed uploading with detailed descriptions and visuals for clarity. ",
+        bgcolor: "#c5e3e0",
+        margin: "0 0 0 auto"
+    },
+    {
+        heading: "Short Timeline",
+        paragraph:"The entire store had to be designed and launched in just seven days. ",
+        bgcolor: "#6c4ab633",
+        margin: "0 auto 0 0"
+    },
+    {
+        heading: "Customer Trust & Interaction",
+        paragraph:"Needed features like live chat and product reviews to build credibility and support.",
+        bgcolor: "#d2e6f6",
+        margin: "0 0 0 auto"
+    },
+]
+
+
+export { PlushieChallenges };
+
+const bitsaChallenges = [
+    {
+        heading: "Outdated Design ",
+        paragraph:"The existing site lacked modern aesthetics, making it hard to engage new visitors.",
+        bgcolor: "#ffd99d33",
+        margin: "0 auto 0 0"
+    },
+    {
+        heading: "Cluttered Navigation",
+        paragraph:"Users struggled to find products easily due to a confusing layout and poor structure.",
+        bgcolor: "#c5e3e0",
+        margin: "0 0 0 auto"
+    },
+    {
+        heading: "No Mobile Optimization",
+        paragraph:"The website was not responsive, leading to lost mobile traffic and poor usability.",
+        bgcolor: "#6c4ab633",
+        margin: "0 auto 0 0"
+    },
+    {
+        heading: "Weak Marketing Integration",
+        paragraph:"There was no connection with social or email tools, limiting digital promotion efforts.",
+        bgcolor: "#d2e6f6",
+        margin: "0 0 0 auto"
+    },
+]
+ 
+export { bitsaChallenges };
+ const whitelabelwebflowservices = [
   {
     image: "/new/shopservone.svg",
     heading: "Invisible, Reliable Partners",
@@ -1063,49 +1371,3 @@ const whitelabelwebflowservices = [
   },
 ]
 export { whitelabelwebflowservices };
-
-const trustAgencyPoints = [
-  {
-    id: 1,
-    text: "Skilled in Webflow Interactions",
-  },
-  {
-    id: 2,
-    text: "Proficient with Webflow Apps",
-  },
-  {
-    id: 3,
-    text: "Experienced in CMS and Dynamic Content",
-  },
-  {
-    id: 4,
-    text: "Advanced Animation Implementation",
-  },
-  {
-    id: 5,
-    text: "Clean Code Structure and SEO-Optimized",
-  },
-]
-
-export { trustAgencyPoints };
-
-const confidentialityPoints = [
-  {
-    id: 1,
-    text: "We work fully white label under signed NDAs.",
-  },
-  {
-    id: 2,
-    text: "Your clients remain 100% yours—always.",
-  },
-  {
-    id: 3,
-    text: "No portfolio sharing unless permitted by you.",
-  },
-  {
-    id: 4,
-    text: "Private, secured communication and data handling.",
-  },
-]
-
-export { confidentialityPoints };

@@ -156,7 +156,7 @@ color: #070707 !important;
 }
 
 .slider-center .slick-track {
-    padding-bottom: 10px !important;
+    padding-bottom: 30px !important;
 }
 
 .slider-center .slick-next:before {
@@ -263,18 +263,28 @@ color: #070707 !important;
     line-height: 17px;
     color: #ed8104 !important;
 }
+.portfolio-container img {
+box-shadow: 27px 27px 40px -27px #0003;
 
+}
 .menu-item:hover {
  color: #ed8104 !important;
 }
 
 .header .menu-list .head {
    color: #ed8104 !important;
-   font-size: 16px;
+   font-size: 16px !important;
+   font-weight: 600 !important;
 }
+
+.wordpress-whitelabel-development-page .bg-change,.shopify-whitelabel-development-page .bg-change{
+background: #35255e !important;
+}
+
 
 .menu-list li:not(:first-child) {
     margin-left: 46px;
+    margin-bottom: 5px;
 }
 
 .header ul > li a {
@@ -284,7 +294,9 @@ color: #070707 !important;
   line-height: normal;
   font-weight: 400;
 }
-
+.header .menu-list > li a {
+    font-size: 15px !important;
+}
 .header ul > li a:hover {
   color: #ed8104;
 }
@@ -382,6 +394,7 @@ color: #070707 !important;
 @media screen and (max-width: 768px) {
 .hero_buttons {
   width: 100% !important;
+  
   max-width: 160px !important;
   height: 45px !important;
 }
@@ -417,6 +430,25 @@ color: #070707 !important;
 }
 
 
+/* Custom breakpoint for header */
+@media (min-width: 1200px) {
+  .desktop-menu {
+    display: block !important;
+  }
+  .mobile-menu-button {
+    display: none !important;
+  }
+}
+
+@media (max-width: 1199px) {
+  .desktop-menu {
+    display: none !important;
+  }
+  .mobile-menu-button {
+    display: block !important;
+  }
+}
+
 /* app carosuel */
 
 .cards-wrapper {
@@ -426,7 +458,9 @@ color: #070707 !important;
   gap: 2rem;
   height: 270vh; /* enough height so sticky works */
 }
-
+.shopify-cards-wrapper {
+height: 290vh !important; /* enough height so sticky works */
+}
 .card {
   position: sticky;
   top: 10rem;
@@ -442,10 +476,50 @@ color: #070707 !important;
   transition: background 0.4s ease, transform 0.4s ease;
 }
 
+.card.shopify-card {
+  width: 100% !important;
+  max-width: 100% !important;
+  padding-left: 20px !important;
+  padding-right: 20px !important;
+  background-color: #fff !important;
+    border-radius: 20px;
+    min-height: 180px !important;
+    border: 1px solid #000 !important;
+    justify-content: start !important;
+    align-items: start !important;
+    /* 30px offset from the default top position */
+}
+.card.shopify-card:first-child {
+  background-color: #fff3e0 !important ;
+  top: 130px !important; /* 30px offset from the default top position */
+}
+.card.shopify-card:nth-child(2) {
+  top: calc(10rem + 25px) !important; /* 30px offset from the default top position */
+}
+.card.shopify-card:nth-child(3) {
+  top: calc(10rem + 80px) !important; /* 30px offset from the default top position */
+}
+.card.shopify-card:nth-child(4) {
+  top: calc(10rem + 130px) !important; /* 30px offset from the default top position */
+
+}
+.card.shopify-card:nth-child(5) {
+  top: calc(10rem + 150px) !important; /* 30px offset from the default top position */
+
+}
+.cards-wrapper .card.shopify-card.active-card:last-child {
+  background-color: #fff3e0 !important ;
+}
+.card.shopify-card:hover {
+  background-color: #fff3e0 !important ;
+}
+
 .card:hover {
   transform: rotate(-7deg);
 }
-
+.card.shopify-card:hover {
+  transform: rotate(0deg) !important;
+}
 /* When card becomes active */
 .card.active-card {
   background: #009688;
@@ -816,10 +890,64 @@ iframe#vimeo-video {
 }
 
 
+.dental-case-study-page .bg-change,.skin-and-hair-shopify-case-study-page .bg-change ,.bitsababy-case-study-page .bg-change , .plushie-toy-store-case-study-page  .bg-change,.webflow-development-services-page .bg-change{
+
+  background: #2c4e34 !important;
+}
+
+
+.webflow-whitelabel-development-page .bg-change{
+  background: #35255E !important;
+}
+
+.customBrandBtn{
+  max-width: 100% !important;
+
+  @apply sm:text-[18px] text-[14px] p-[15px] ;
+}
+
+.beauty-landing-page .footer-creative {
+    background: transparent !important;
+}
+.skinCard {
+
+  border: 1px solid rgba(128, 128, 128, 0.185) !important;
+  display: flex !important;
+  flex-direction: column;
+  align-items: center;
+
+  /* NEW: spacing and equal alignment */
+  justify-content: space-between;
+  text-align: center;
+}
+.skinCard h3{
+  min-height: 60px;
+  display: flex;
+  justify-content: center; 
+}
+.customskinCard{
+    border: 1px solid rgba(128, 128, 128, 0.185) !important;
+  display: flex !important;
+  flex-direction: column;
+  align-items: center;
+
+  text-align: center;
+}
+
 .dental-case-study-page .bg-change,.skin-and-hair-shopify-case-study-page .bg-change ,.bitsababy-case-study-page .bg-change , .plushie-toy-store-case-study-page  .bg-change{
 
   background: #2c4e34 !important;
 }
-.wordpress-whitelabel-development-page .bg-change,.shopify-whitelabel-development-page .bg-change , .webflow-whitelabel-development-page .bg-change {
-background: #35255e !important;
+.wordpress-development-services-page .bg-change , .shopify-development-services-page .bg-change{
+
+  background: #2c4e34 !important;
+}
+.customBrandBtn{
+  max-width: 100% !important;
+
+  @apply sm:text-[18px] text-[14px] p-[15px] ;
+}
+
+.beauty-landing-page .footer-creative {
+    background: transparent !important;
 }

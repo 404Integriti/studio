@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function FocusClientCard({ icon,title, text, size }) {
   return (
-    <div className="w-full max-w-[63%] xl:max-w-[54%]" style={{fontFamily:"var(--font-raleway)",}}>
+    <div className="w-full  max-w-[63%] xl:max-w-[54%]" style={{fontFamily:"var(--font-raleway)",}}>
       {/* Icon */}
       <div>
         <Image className="brightness-0" src={icon} alt="icon" width={size} height={size} />

@@ -49,16 +49,11 @@ export default function FeatureSection() {
         </h2>
 
         {/* Features Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-4 min-[991px]:!grid-cols-5 max-w-[1340px] mx-auto px-[20px] py-[40px]">
+        <div className="grid grid-cols-1 md:grid-cols-3 min-[991px]:!grid-cols-5 max-w-[1340px] mx-auto px-[20px] py-[40px]">
           {features.map((feature, index) => (
             <div
             key={index}
-            className={`px-[10px] 
-            ${index !== features.length - 1 ? "min-[991px]:border-r-2 border-[#E5E7EB]" : ""}
-            ${index === features.length - 1 ? "min-[991px]:col-span-1 min-[767px]:max-[991px]:col-span-5  min-[767px]:max-[991px]:mx-auto min-[767px]:max-[991px]:max-w-[227px]" : ""}
-            
-            
-            `}>
+           >
                 <FeatureItem
               icon={feature.icon}
               iconSize={feature.iconSize}

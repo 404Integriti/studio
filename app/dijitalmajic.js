@@ -13,7 +13,7 @@ export default function Dijitalmajic() {
      
       paragraphtext="From strategy to screen — we craft experiences that move people and grow brands. Let’s create your next digital masterpiece."
    
-      buttonlink="/"
+      buttonlink="/contact-us"
  
       buttontext="Lets Build Together"
     />

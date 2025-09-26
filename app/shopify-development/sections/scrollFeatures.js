@@ -41,7 +41,7 @@ const ScrollFeatures = () => {
   // Check if device is mobile
   useEffect(() => {
     const checkMobile = () => {
-      setIsMobile(window.innerWidth < 768);
+      setIsMobile(window.innerWidth < 1000);
     };
     
     checkMobile();
@@ -77,15 +77,15 @@ const ScrollFeatures = () => {
   // Mobile view - show all slides in a grid
   if (isMobile) {
     return (
-      <section className="bg-white py-[60px] overflow-hidden" ref={containerRef}>
-        <div className="w-full mx-auto px-6">
+      <section className="bg-white w-full py-[60px] overflow-hidden" ref={containerRef}>
+        <div className=" mx-auto ">
    
 
           <div className="grid grid-cols-1 gap-6">
             {features.map((feature, index) => (
               <div
                 key={index}
-                className="w-[100%] max-w-[390px] min-h-[255px] bg-[#effefb] rounded-[1.2rem] border-[.0625rem] border-[#83838329] p-6"
+                className="w-[100%] max-w-[88%] mx-auto min-h-[255px] bg-[#effefb] rounded-[1.2rem] border-[.0625rem] border-[#83838329] p-6"
               >
                 <div className="text-center mb-4">
                   <div className=" mb-3"><Image src={feature.icon} width={46} height={44} alt="" /></div>
@@ -99,7 +99,7 @@ const ScrollFeatures = () => {
                   {feature.title}
                 </h3>
                 <p 
-                  className="text-[14px] text-[#333] leading-[21px] leading-[1.1] opacity-[0.75]"
+                  className="text-[14px] text-[#333] leading-[21px]  opacity-[0.75]"
                   style={{
                     fontFamily: "var(--font-raleway)"
                   }}
@@ -121,11 +121,11 @@ const ScrollFeatures = () => {
   
 
         {/* Four Slides Container */}
-        <div className="relative h-[400px] flex items-center justify-center">
+        <div className="relative max-w-[1440px] mx-auto h-[400px] flex  justify-center">
           {features.map((feature, index) => (
             <div
               key={index}        
-              className={`absolute w-[100%] xxl:max-w-[390px] max-w-[336px] min-h-[255px] bg-[#effefb] rounded-[1.2rem] border-[.0625rem] border-[#83838329] p-6 transition-all duration-700 ease-in-out ${
+              className={`absolute w-[100%] xxl:max-w-[390px] max-w-[23%] min-h-[275px] ${index %2 == 0 ? 'bg-[#C7FFF4]' :'bg-[#effefb]'}   rounded-[1.2rem] border-[.0625rem] border-[#83838329] p-6 transition-all duration-700 ease-in-out ${
                 index >= currentSlide && index < currentSlide + 4
                   ? "opacity-100 translate-x-0 scale-100 z-10"
                   : index < currentSlide
@@ -144,10 +144,17 @@ const ScrollFeatures = () => {
               }}
             >
               <div className="text-center mb-4">
-                <div className="mb-3"><Image src={feature.icon} width={46} height={44} alt="" /></div>
+                <div className="mb-3">
+  <Image
+    src={feature.icon}
+    width={feature.icon === "/crm4.svg" ? 35 : 46} // 👈 condition here
+    height={feature.icon === "/crm4.svg" ? 35 : 44} // 👈 you can also change height if needed
+    alt=""
+  />
+</div>
               </div>
               <h3 
-                className="text-[24px] font-[600] text-[#1d1d1f] tracking-[-.025em] "
+                className="text-[20px] min-[1430px]:text-[24px] font-[600] text-[#1d1d1f] tracking-[-.025em] "
                 style={{
                   fontFamily: "var(--font-raleway)"
                 }}
@@ -155,7 +162,7 @@ const ScrollFeatures = () => {
                 {feature.title}
               </h3>
               <p 
-                className="text-[14px] text-[#333] leading-[21px] leading-[1.1] opacity-[0.75]"
+                className="text-[14px] text-[#333] leading-[21px]  opacity-[0.75]"
                 style={{
                   fontFamily: "var(--font-Opensans)"
                 }}

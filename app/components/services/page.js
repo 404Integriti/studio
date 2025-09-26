@@ -10,6 +10,7 @@ export default function ServiceCard({
   heading,
   imgbgcolor,
   description,
+  link,
   blockheight,
   headingStyle = "md:text-[24px] text-[19px] font-[600] text-[#070707] leading-[30px] mt-[20px] mb-[10px] text-center",
   desStyle = "text-[16px] w-[100%] my-[auto] mb-[10px] text-[#575757] mt-[0px] font-normal leading-[23px] text-center md:px-[0] px-[22px] md:max-w-[78%] max-w-[100%]",
@@ -17,7 +18,7 @@ export default function ServiceCard({
   buttonclass,
   blockwidth,
   headingheight,
-  imgClass
+  imgClass,
 }) {
   return (
     <div
@@ -37,7 +38,7 @@ export default function ServiceCard({
             width={width}
             height={height}
             style={{ objectFit: "contain" }}
-            className={`sm:max-w-[100%]  w-[100%] h-[100%]` }
+            className={`sm:max-w-[100%]  h-[100%]` }
           />
         )}
       </div>
@@ -60,7 +61,7 @@ export default function ServiceCard({
       {buttontext && (
         <div className="py-[20px]">
           <Link
-            href="/"
+            href={`${link}`}
             className={buttonclass}
             style={{ fontFamily: "var(--font-raleway)" }}
           >

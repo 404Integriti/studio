@@ -12,12 +12,13 @@ export default function Footer() {
         >
           {/* Left section - Logo and About */}
           <div className="w-full max-w-[460px] flex flex-col md:col-span-2 lg:col-span-1 lg:mb-[0px] mb-[40px]">
+            <Link href="/">
             <Image
               src="/footerlogo.svg"
               alt="Footer Logo"
               width={234}
               height={25}
-            />
+            /></Link>
             <p className="text-white lg:mt-[30px] mt-[15px]  lg:mb-[40px] mb-[20px] text-[14px] leading-[26px] w-full max-w-[410px] tracking-[1px] font-[400]raleway">
               Integriti Studio is your trusted partner for high-performance web
               solutions—specializing in Shopify, WordPress, Webflow and custom
@@ -29,13 +30,23 @@ export default function Footer() {
                 href="https://www.linkedin.com/company/integritistudio/"
                 className="h-[36px] w-[36px] bg-[#009688] hover:bg-[#ed8104] rounded-full flex items-center justify-center"
               >
-                <Image src="/linkdin.svg" alt="LinkedIn" width={16} height={16} />
+                <Image
+                  src="/linkdin.svg"
+                  alt="LinkedIn"
+                  width={16}
+                  height={16}
+                />
               </Link>
               <Link
                 href="https://www.instagram.com/integriti.studio?igsh=MWtjY2ZuN2dyM3Bndg=="
                 className="h-[36px] w-[36px] bg-[#009688] hover:bg-[#ed8104] rounded-full flex items-center justify-center"
               >
-                <Image src="/instagram.svg" alt="Instagram" width={16} height={16} />
+                <Image
+                  src="/instagram.svg"
+                  alt="Instagram"
+                  width={16}
+                  height={16}
+                />
               </Link>
               <Link
                 href="https://github.com/Integritistudio"
@@ -50,17 +61,26 @@ export default function Footer() {
           <div className="footer-links w-full md:col-span-1 lg:col-span-1">
             <ul className="flex flex-col md:gap-3 gap-1 pt-[20px] md:pt-[50px]">
               <li className="lg:text-center text-left">
-                <Link href="/about" className="text-white hover:text-[#ed8104] w-[80px] text-left">
+                <Link
+                  href="/aboutus"
+                  className="text-white hover:text-[#ed8104] w-[80px] text-left"
+                >
                   About Us
                 </Link>
               </li>
               <li className="lg:text-center text-left">
-                <Link href="/portfolio" className="text-white hover:text-[#ed8104] w-[80px] text-left">
+                <Link
+                  href="/portfolio"
+                  className="text-white hover:text-[#ed8104] w-[80px] text-left"
+                >
                   Portfolio
                 </Link>
               </li>
               <li className="lg:text-center text-left">
-                <Link href="/contact" className="text-white hover:text-[#ed8104] w-[80px] text-left">
+                <Link
+                  href="/contact-us"
+                  className="text-white hover:text-[#ed8104] w-[80px] text-left"
+                >
                   Contact us
                 </Link>
               </li>

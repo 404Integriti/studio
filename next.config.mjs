@@ -3,17 +3,20 @@
 const nextConfig = {
 
   images: {
-
-    domains: [
-
-      "cdn.prod.website-files.com", 
-
-      "testing.tricode.org",
-
-      "websitesblogs.integritistaffing.com", // ✅ added WordPress host
-
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'cdn.prod.website-files.com',
+      },
+      {
+        protocol: 'https',
+        hostname: 'testing.tricode.org',
+      },
+      {
+        protocol: 'https',
+        hostname: 'websitesblogs.integritistaffing.com',
+      },
     ],
-
   },
 
 };

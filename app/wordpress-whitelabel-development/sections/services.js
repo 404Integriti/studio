@@ -47,7 +47,7 @@ export default function WordpressWhitelabelServices() {
         <section className="pt-[60px] md:pt-[20px] pb-[60px] w-full ">
               <div className="max-w-[1400px] px-[20px] mx-auto">
                 <h3 className="text-center mb-[10px] xl:mt-[60px] font-[700] text-[35px] text-[#333] " style={{fontFamily:"var(--font-raleway)",}}>White Label WordPress Development Services</h3>
-                <div className="flex flex-wrap xl:gap-x-[60px] justify-center xl:!justify-evenly boder gap-x-[20px] md:gap-y-[125px] gap-y-[90px] mt-[100px] lg:pt-[50px] pt-[30px]">
+                <div className="flex flex-wrap xl:gap-x-[40px] justify-center xl:!justify-evenly boder gap-x-[20px] md:gap-y-[125px] gap-y-[90px] mt-[100px] lg:pt-[50px] pt-[30px]">
                   {Data.map((card, index) => (
                     <WordPressWhitelabelCard key={index} {...card} className={`!max-w-[385px] !min-w-[173px]
         ${index === 3 ? "!h-[190px]" : "!min-h-[280px]"}`} headingStyle="px-[20px] !text-[19px] sm:!text-[24px] !font-[600] mt-[20px] mb-[10px] text-center " desStyle="text-[#333] text-[14px] font-[400] leading-[20px] min-[1440px]:leading-[23px] pl-[20px] sm:pl-[22px] pr-[22px] mb-[10px] min-[1440px]:mx-auto text-center"/>

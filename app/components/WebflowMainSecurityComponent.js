@@ -17,7 +17,7 @@ export default function WebflowMainSecurityComponent({ title, items, imageSrc })
         </div>
 
         {/* Right column */}
-        <div className="lg:w-[65%] lg:mx-[0px] w-full">
+        <div className="lg:w-[65%] lg:mx-[0px] w-full z-50">
           <div className="flex flex-col gap-[20px] security">
             {items.map((item, index) => (
               <div
@@ -50,7 +50,7 @@ export default function WebflowMainSecurityComponent({ title, items, imageSrc })
             src={imageSrc}
             height={357}
             width={700}
-            className="absolute top-[33%] bottom-auto left-[10px]  z-30"
+            className="absolute min-[800px]:block hidden top-[33%] bottom-auto left-[10px]  "
             alt="security"
         />
       </div>

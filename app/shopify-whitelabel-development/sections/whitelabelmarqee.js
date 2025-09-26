@@ -27,9 +27,9 @@ export default function WhitelabelMarquee({ images = [], speed = 30, gap = 40 })
   const duplicatedImages = [...images, ...images];
 
   return (
-    <div className="overflow-hidden w-full">
+    <div className="overflow-hidden w-full ">
       <div
-        className="flex whitespace-nowrap justify-center items-center h-[70px]"
+        className="flex   whitespace-nowrap justify-center items-center h-[70px]"
         ref={trackRef}
         style={{
           gap: `${gap}px`,
@@ -39,7 +39,7 @@ export default function WhitelabelMarquee({ images = [], speed = 30, gap = 40 })
         {duplicatedImages.map((image, idx) => (
           <div
             key={idx}
-            className="flex-shrink-0 flex items-center justify-center"
+            className={`flex-shrink-0 flex items-center justify-center ${image.source == '/ShopifyWhitelabel/bitdefender.svg' ? 'border p-[22px]  border-[#9D9D9D] rounded-full' : ''}`}
             style={{
               width: `${image.width}px`,   // control width per image
               height: `${image.height}px`, // control height per image

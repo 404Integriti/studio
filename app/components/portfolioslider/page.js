@@ -5,6 +5,7 @@ import $ from "jquery";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Image from "next/image";
+import Link from "next/link";
 
 
 export default function PortfolioSlider({ images = [] }) {
@@ -21,7 +22,7 @@ export default function PortfolioSlider({ images = [] }) {
           centerPadding: "200px",
           slidesToShow: 3,
           prevArrow:
-            '<button type="button" class="slick-prev" aria-label="Previous slide"><img src="https://cdn.prod.website-files.com/68078fa4ba014e835ab81bc9/680933dac40a1f5374b1d02b_Vector%20(1).png" alt="Previous slide"/></button>',
+            '<button type="button" class="slick-prev " aria-label="Previous slide"><img src="https://cdn.prod.website-files.com/68078fa4ba014e835ab81bc9/680933dac40a1f5374b1d02b_Vector%20(1).png" alt="Previous slide"/></button>',
           nextArrow:
             '<button type="button" class="slick-next" aria-label="Next slide"><img src="https://cdn.prod.website-files.com/68078fa4ba014e835ab81bc9/680933fa17e676ad004c4695_Vector%20(2).png" alt="Next slide"/></button>',
           responsive: [
@@ -51,6 +52,7 @@ export default function PortfolioSlider({ images = [] }) {
             }
           ],
         });
+        
       });
     }
 
@@ -64,9 +66,9 @@ export default function PortfolioSlider({ images = [] }) {
   return (
     <div className="slider-center">
       {images.map((img, index) => (
-        <div className="slider-item" key={index}>
-          <Image src={img} alt={`Portfolio ${index + 1}`} width={400} height={300} className="w-full h-auto" />
-        </div>
+        <Link href={`${img.link}`} className="slider-item " key={index} >
+          <Image src={img.img} alt={`Portfolio ${index + 1}`} width={327} height={427} className="w-[327px] h-[427px]" />
+        </Link>
       ))}
     </div>
   );

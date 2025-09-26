@@ -12,7 +12,7 @@ const ResponsiveDesign = () => {
       {responsiveDesign.map((item, index) => (
         <section
           key={index}
-          className="w-full flex flex-col lg:flex-row items-center justify-between 
+          className="w-full  flex flex-col lg:flex-row items-center justify-between 
              pr-4 sm:pr-6 md:pr-12 lg:pr-20 xl:pr-32
              pl-0
              py-10 sm:py-14 md:py-16 lg:py-20 gap-12 lg:gap-48 
@@ -35,7 +35,7 @@ const ResponsiveDesign = () => {
           </motion.div>
 
           {/* Right Side - Text Content */}
-          <div className="w-full lg:w-1/2 flex flex-col gap-4 text-left text-[14px]">
+          <div className="w-full lg:w-1/2 flex flex-col gap-4 text-left text-[14px] px-[10px]">
             <div
               className="w-full 
                   max-w-[90%] sm:max-w-[80%] md:max-w-[70%] lg:max-w-[300px] 

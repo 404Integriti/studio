@@ -13,7 +13,7 @@ const items = [
 
   return (
     <div className="relative bg-[#3a3a3a] ">
-  <Shopifymarquee images={items} speed={30} gap={170} />
+  <Shopifymarquee images={items} speed={30} gap={130} />
     </div>
   );
 }

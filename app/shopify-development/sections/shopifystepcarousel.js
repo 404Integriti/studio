@@ -23,26 +23,26 @@ const shopifyStepCarousel = () => {
       icon: "/icon2.svg",
       title: "Built-In for Success",
       description: "We specialize in custom Shopify builds that go beyond standard themes, tailored for unique brand experiences and advanced functionality.",
-      bgcolor: "#3ecdb5"
+      bgcolor: "#3ca392"
     },
     {
       number: 3,
       icon: "/icon3.svg",
       title: "Truly Custom Builds",
       description: "We specialize in custom Shopify builds that go beyond standard themes, tailored for unique brand experiences and advanced functionality.",
-      bgcolor: "#3ecdb5"
+      bgcolor: "#46ada4"
     },
     {
       number: 4,
       icon: "/icon4.svg",
       title: "Diverse Industry Experience",
       description: "Proven experience across diverse industries—from fashion and fitness to tech and lifestyle—delivering impactful eCommerce ",
-      bgcolor: "#009688"
+      bgcolor: "#3ecdb5"
     }
   ];
 
   const handleStepChange = (stepIndex) => {
-    console.log('Active step changed to:', stepIndex);
+    // Step change handler
   };
 
   return (

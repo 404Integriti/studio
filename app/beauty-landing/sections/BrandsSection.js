@@ -60,7 +60,7 @@ const BrandSection = () => {
           Why Beauty Brands Choose Integriti
         </h2>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4  gap-[26px] justify-center align-items-center   pt-[30px] min-[1280px]:gap-[10px] min-[1440px]:gap-[36px]">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4  gap-[26px] justify-center align-items-center   pt-[30px] min-[1280px]:gap-[10px] min-[1440px]:gap-[36px]">
           {maintenanceSupport.map((feature, index) => (
             <WebflowMaintProCard
               key={index}
@@ -80,7 +80,7 @@ const BrandSection = () => {
               firstButtonText="Design My Experience"
               secondButtonText="Meet Our Team"
               firstButtonlink="/contact-us"
-              secondButtonlink="#meetourteam"
+              secondButtonlink="/portfolio"
             />
           </div>
         </div>

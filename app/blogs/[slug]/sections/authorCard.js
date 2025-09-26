@@ -13,6 +13,8 @@ export default function AuthorCard() {
 <Image
   src="https://cdn.prod.website-files.com/683f4d103b2510d5796dca20/6849535d3afbbd0aeaf76e83_Frame%201597884324.svg"
   alt="Author"
+  width = {0}
+  height = {0}
   className="
     w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24
     object-contain mb-2

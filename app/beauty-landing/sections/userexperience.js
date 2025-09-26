@@ -1,5 +1,5 @@
-import Image from "next/image"
-import { platforms } from "../../components/customThemePoints"
+import Image from "next/image";
+import { platforms } from "../../components/customThemePoints";
 import Herobutton from "@/app/components/herobuttons/herobutton";
 
 export default function UserExperience() {
@@ -20,22 +20,22 @@ export default function UserExperience() {
                        lg:leading-[32px] md:leading-[26px] lg:text-left text-center lg:mx-0 mx-auto"
             style={{ fontFamily: "var(--font-opensans)" }}
           >
-            Whether you are launching a minimalist skincare line or scaling a bold haircare brand, 
-            we guide you to the right tech that is built for your growth.
+            Whether you are launching a minimalist skincare line or scaling a
+            bold haircare brand, we guide you to the right tech that is built
+            for your growth.
           </p>
         </div>
 
         {/* Right column */}
-<div className="w-full min-[1280px]:w-[65%] min-[991px]:w-[50%] mx-auto mt-[40px] lg:mt-0 ">
+        <div className="w-full min-[1280px]:w-[65%] min-[991px]:w-[50%] mx-auto mt-[40px] lg:mt-0 ">
           <div className="flex flex-col gap-[20px] security">
             {platforms.map((item, index) => (
               <div
                 key={index}
-                  className={`rounded-[8px] pt-[15px] pb-[16px] pl-[15px] w-[100%] max-w-[587px]`}
+                className={`rounded-[8px] pt-[15px] pb-[16px] pl-[15px] w-[100%] max-w-[587px]`}
                 style={{
                   backgroundColor: item.bgcolor,
                   margin: item.margin,
-                 
                 }}
               >
                 <h3
@@ -52,7 +52,7 @@ export default function UserExperience() {
                 </p>
               </div>
             ))}
-            
+
             <div className="flex lg:justify-start justify-center col-span-full">
               <Herobutton
                 btnpadfirst="raleway customBrandBtn"
@@ -61,8 +61,8 @@ export default function UserExperience() {
                 buttonheight="50px"
                 firstButtonText="Pick the Right Platform"
                 secondButtonText="Meet Our Team"
-                firstButtonlink="/website-development-services"
-                secondButtonlink="#meetourteam"
+                firstButtonlink="/website-development-servicess"
+                secondButtonlink="/portfolio"
               />
             </div>
           </div>

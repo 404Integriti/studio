@@ -37,9 +37,9 @@ const CommunityCardsData = [
 export default function CommunityService() {
   return (
  <section className="CommunityService">
-   <div className="pt-[100px] w-[100%] max-w-[1440px] mx-auto mt-[100px] pb-[60px] ">
-    <h2 className="text-[32px] text-center text-[#333] raleway font-[600] pb-[81px] leading-[60px]">Who We Are & What We Stand For</h2>
-  <div className="flex flex-wrap justify-around gap-x-[20px] gap-y-[125px]  pt-[50px]">
+   <div className="pt-[10px] w-[100%] max-w-[1440px] mx-auto mt-[40px] pb-[60px] ">
+    <h2 className="text-[24px] text-center text-[#333] raleway font-[600] pb-[81px] px-[5px] leading-[32px]">Who We Are & What We Stand For</h2>
+  <div className="flex flex-wrap justify-around gap-x-[20px] gap-y-[125px] px-[10px] pt-[80px]">
           {CommunityCardsData.map((card, index) => (
             <ServiceCard key={index} {...card} />
           ))}

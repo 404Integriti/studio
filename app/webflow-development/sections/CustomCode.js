@@ -57,13 +57,13 @@ const WebflowCCISection = () => {
             style={{
               top: `${100 + index * 50}px`,
               zIndex: cardsData.length + index,
-              marginBottom: "40px",
+              marginBottom: "35px",
             }}
           >
            <WebflowCCICard
     {...card}
     tiltDirection={index % 2 === 0 ? "-rotate-5" : "rotate-5"}
-    alwaysTilt={index === cardsData.length - 1}
+    alwaysTilt={index === cardsData.length - 0}
   />
           </div>
         ))}

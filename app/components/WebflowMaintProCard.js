@@ -1,12 +1,12 @@
 import Image from "next/image";
 
 export const WebflowMaintProCard = ({ data }) => {
-  const { icon, title, description, cardStyle, iconContainerStyle, titleStyle,descriptionStyle  } = data;
+  const { icon, title, description, cardStyle, innerCard, iconContainerStyle, titleStyle,descriptionStyle  } = data;
 
   return (
-    <div className="rounded-[20px] px-[20px] text-left transition-all duration-300 bg-[#FFF] hover:shadow-[0_2px_10px_rgba(0,0,0,0.12)] h-[286px] w-[270px] min-[279px]:w-[300px] mx-auto">
-      <div className="pt-[30px]">
-        <div className="flex justify-start mb-4">
+    <div className={`rounded-[20px] px-[20px] text-left transition-all duration-300 bg-[#FFF] hover:shadow-[0_2px_10px_rgba(0,0,0,0.12)] h-[286px] w-[270px] min-[279px]:w-[300px] mx-auto ${cardStyle}`}>
+      <div className={`pt-[30px] ${innerCard}`}>
+        <div className="flex justify-start mb-4 min-w-[60px]">
         <Image src={icon} alt="icon" width={48} height={48} />
       </div>
       <h3

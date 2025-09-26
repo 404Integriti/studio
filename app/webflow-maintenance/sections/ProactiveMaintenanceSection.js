@@ -24,7 +24,7 @@ const maintenanceSupport = [
 
 const ProactiveMaintenanceSection = () => {
   return (
-    <section className="bg-[#f8f8f8] pt-[40px] pb-[80px] w-full">
+    <section className="bg-[#f8f8f8] sm:pt-[40px] pb-[80px] w-full">
         <div className=" bg-[#f8f8f8] px-[40px] max-w-[1440px] mx-auto">
 
      <h2 className="xs:text-[32px] text-[32px] font-[600] leading-[36px] text-center text-[#333333] raleway mt-[20px] mb-[10px]">Proactive Maintenance That Delivers</h2>

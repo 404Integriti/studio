@@ -23,14 +23,16 @@ const StoreFeatures = () => {
           >
             {MobileApproach.map((mbpr, index) => (
               <div
-  key={index}
-  className={`flex items-center p-4 mb-12 w-full rounded-[20px] border border-[#ede9e9] max-w-[400px]  ${index === 0 || index === 2 ? 'md:mr-[120px]' : ''} ${index === 1 ? 'md:ml-[-120px]' : ''}`}
-  style={{
-    backgroundColor: '#FFFFFF',
-  }}
->
+                  key={index}
+                  className={`flex items-center p-4 mb-12 w-full rounded-[20px] border border-[#ede9e9] max-w-[400px]  ${index === 0 || index === 2 ? 'md:mr-[120px]' : ''} ${index === 1 ? 'md:ml-[-120px]' : ''}`}
+                  style={{
+                    backgroundColor: '#FFFFFF',
+                  }}
+                >
                 <Image
                   src={mbpr.numberImage}
+                  width={60}
+                  height={85}
                   alt={`${mbpr.title} icon`}
                   className="w-15 h-auto mr-4"
                 />

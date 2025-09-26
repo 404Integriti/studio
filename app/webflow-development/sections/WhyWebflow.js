@@ -1,4 +1,5 @@
 import Card from '@/app/components/WhyWebflowCard';
+import Link from 'next/link';
 
 export default function Home() {
   const cards = [
@@ -45,9 +46,9 @@ export default function Home() {
 >
             Clean visual development, no bloat—fast, precise Figma-to-Webflow custom solutions.
           </p>
-          <button className="raleway text-[18px] bg-teal-600 hover:bg-teal-700 text-white font-[500] cursor-pointer px-[30] py-[15px] self-start rounded-full">
+          <Link href='/contact-us' className="raleway text-[18px] bg-teal-600 hover:bg-teal-700 text-white font-[500] cursor-pointer px-[30] py-[15px] self-start rounded-full">
             Work With Us
-          </button>
+          </Link>
         </div>
 
         {/* Remaining boxes with cards */}

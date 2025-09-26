@@ -135,11 +135,11 @@ const MaintenancePackages = () => {
   const currentPackages = packages[billingCycle];
 
   return (
-    <section className="bg-white lg:p-[60px] md:p-[30px] p-[20px] pb-[0px]">
+    <section className="bg-white lg:p-[20px] md:p-[30px] p-[20px] pb-[0px]">
       <div className="w-full max-w-[1400px] mx-auto lg:px-[24px] px-[0px]">
         {/* Main Heading */}
         <h2 
-          className="text-center mb-16 lg:text-[40px] md:text-[36px] text-[28px] lg:leading-[42px] leading-[40px] font-[600] mb-[20px] mt-[10px]"
+          className="text-center  lg:text-[40px] md:text-[36px] text-[28px] lg:leading-[42px] leading-[40px] font-[600] mb-[20px] mt-[10px]"
           style={{
             fontFamily: "var(--font-raleway)"
           }}
@@ -148,7 +148,7 @@ const MaintenancePackages = () => {
         </h2>
 
         {/* Pricing Toggle */}
-        <div className="flex flex-col items-center md:mb-12 mb-6 md:mt-[40px] mt-[30px]">
+        <div className="flex flex-col items-center md:mb-12 mb-6 md:mt-[40px] mt-[30px] ">
           <div className="flex items-center space-x-8 mb-3">
             <span className="text-[14px] font-[400] transition-colors duration-500 ease-in-out text-[#170f49]">
               Monthly
@@ -181,7 +181,7 @@ const MaintenancePackages = () => {
           {currentPackages.map((pkg, index) => (
             <div 
               key={`${billingCycle}-${index}`}
-              className="w-[100%] xl:max-w-[25%] lg:max-w-[49%] md:max-w-[47%] max-w-[98%] px-[17px] py-[40px] bg-[#fff] rounded-[12px] transition-all duration-500 ease-in-out shadow-[0_0_20px_8px_#0003]"
+              className="w-[100%] xl:max-w-[25%] lg:max-w-[49%] md:max-w-[47%] max-w-[98%] px-[17px] py-[40px] bg-[#fff] rounded-[12px] transition-all duration-500 ease-in-out shadow-[0_0_20px_8px_#0003] flex flex-col justify-between"
               style={{
                 animation: 'fadeInUp 0.5s ease-out'
               }}

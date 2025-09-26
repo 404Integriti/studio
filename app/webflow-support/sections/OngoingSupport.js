@@ -6,11 +6,11 @@ import Image from "next/image";
 
 export default function OngoingSupport() {
     return (
-        <section className="onging-support xl:px-[60px] lg:px-[40px] md:px-[30px] px-[20px] pb-[60px]">
+        <section className="onging-support xl:px-[60px] lg:px-[40px] md:px-[30px] px-[20px] md:pt-[20px] pb-[60px]">
             <div className="w-[100%] max-w-[1440px] mx-auto flex xl:flex-row flex-col">
                 <div className="w-[100%] xl:max-w-[539px]  max-w-[100%]">
-                    <div className="xl:ml-[92px] lg::ml-[30px] ml-[0px] lg:mt-[138px] mt-[80px]">
-                        <h2 className="md:text-[36px] text-[24px] font-[600] md:leading-[42px] leading-[px] my-[10px]" style={{
+                    <div className="xl:ml-[92px] lg::ml-[30px] ml-[0px] lg:mt-[138px] ">
+                        <h2 className="md:text-[36px] text-[24px] text-[#333333] font-[600] md:leading-[42px] leading-[px] my-[10px]" style={{
                             fontFamily: 'var(--font-raleway)',
                         }}>Why Ongoing Support Matters</h2>
                         <p className="w-[100%] lg:max-w-[360px] max-w-[600px] lg:text-[20px] text-[18px] leading-[28px] font-[400]" style={{

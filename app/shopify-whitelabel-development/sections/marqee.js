@@ -31,8 +31,8 @@ const experienceImages = [
    height : "46"
   },
       {source: "/ShopifyWhitelabel/bitdefender.svg",
-     width: "180",
-     height : "25"
+     width: "200",
+     height : "47"
     },
      {source: "/ShopifyWhitelabel/lorenza.svg",
      width: "180",
@@ -55,8 +55,8 @@ const experienceImages = [
      height : "46"
     },
       {source: "/ShopifyWhitelabel/bitdefender.svg",
-     width: "180",
-     height : "25"
+     width: "200",
+     height : "47"
     },
     {source: "/ShopifyWhitelabel/lorenza.svg",
      width: "180",
@@ -79,8 +79,8 @@ const experienceImages = [
      height : "46"
     },
       {source: "/ShopifyWhitelabel/bitdefender.svg",
-     width: "180",
-     height : "25"
+       width: "200",
+     height : "47"
     },
   ];
 const paymentImages = [
@@ -182,12 +182,12 @@ const paymentImages = [
     },]
 export default function MyMarqeee() {
   return (
-      <section className="pb-[60px]">
+      <section className="pb-[60px] ">
         {/* first */}
         <h3 className="my-[20px] text-center text-[28px] font-[700] leading-[30px]" style={{fontFamily:"var(--font-raleway)"}}>
             Shopify Theme Experience
         </h3>
-        <div className="w-full max-w-[1280px] overflow-hidden mx-auto">
+        <div className="w-full  overflow-hidden mx-auto">
             <WhitelabelMarquee images={experienceImages} speed={50} gap={32} styleImage={'w-full h-full max-w-[130px] max-h-[34px] sm:max-w-[174px] sm:max-h-[45px] md:max-w-[180px] sm:max-h-[47px]'}/>
 
         </div>  
@@ -197,7 +197,7 @@ export default function MyMarqeee() {
             {pageBuilderImages.map((image,index)=>
                 (
                     <div key={index} className={`flex justify-center ${index === 3 && 'pt-[40px]'}`}>
-                        <Image src={image.source} alt="Image" width={image.width} height={image.height} className="!max-w-[70%] min-[991px]:!max-w-[100%]" />
+                        <Image src={image.source} alt="Image" width={image.width} height={image.height} className="!max-w-[70%] min-[991px]:!max-w-[100%] " />
                     </div>
                 ))}
 
@@ -206,7 +206,7 @@ export default function MyMarqeee() {
         <h3 className="my-[20px] text-center text-[28px] font-[700] leading-[30px]" style={{fontFamily:"var(--font-raleway)"}}>
             Payment gateways
         </h3>
-        <div className="w-full max-w-[1280px] overflow-hidden mx-auto">
+        <div className="w-full  overflow-hidden mx-auto">
                 <WhitelabelMarquee images={paymentImages} speed={50} gap={32} styleImage={'w-full h-full max-w-[130px] max-h-[34px] sm:max-w-[174px] sm:max-h-[45px] md:max-w-[180px] sm:max-h-[47px]'} />
 
         </div>

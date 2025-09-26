@@ -2,7 +2,7 @@
 import Historycom from "../../components/about/historycom";
 export default function History() {
   return (
-    <section className='history w-[100%] max-w-[100%]'>
+    <section className='history w-[100%] max-w-[100%] '>
       <Historycom 
         graphimg="/graph.svg"
         imgwidth={1440}
