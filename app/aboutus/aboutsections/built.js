@@ -40,7 +40,7 @@ export default function Built() {
   return (
     <section className='built-for-you'>
         <div className='w-[100%] max-w-[1240px] md:pt-[123px] mx-auto mb-[80px]'>
-          <h2 className='raleway lg:text-[36px] text-[24px] font-[600] text-center mt-[20px] leading-[30px] mb-[10px] text-[#333]'><span className='text-[#00b8a9]'>Built </span>For You, <span className='text-[#00b8a9]'>By Integriti </span></h2>
+          <h2 className='raleway  md:text-[36px] text-[30px] font-[600] text-center mt-[20px] leading-[30px] mb-[10px] text-[#333]'><span className='text-[#00b8a9]'>Built </span>For You, <span className='text-[#00b8a9]'>By Integriti </span></h2>
           
 <div className="flex flex-wrap justify-center md:justify-between gap-[20px] sm:gap-[16px] pt-[20px] px-[20px]">
              {builtCardsData.map((card, index) => (
