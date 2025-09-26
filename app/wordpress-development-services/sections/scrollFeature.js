@@ -87,7 +87,7 @@ const ScrollFeatures = () => {
         ref={containerRef}
       >
         <div className="w-full mx-auto px-6">
-          <h1 className="text-center font-[600] py-[15px] text-[36px]">
+          <h1 className="text-center raleway font-[600] py-[15px] text-[36px]">
             Wordpress Support
           </h1>
 
@@ -142,8 +142,8 @@ const ScrollFeatures = () => {
   return (
     <section className="bg-white py-[0px] overflow-hidden" ref={containerRef}>
       <div className="w-full mx-auto px-6">
-        <h1 className="text-center font-[600] pt-[45px] text-[36px] text-[#333333]">
-          Wordpress Support
+        <h1 className="text-center raleway font-[600] pt-[45px] text-[36px] text-[#333333]">
+          WordPress Support
         </h1>
 
         {/* Four Slides Container */}
@@ -208,7 +208,7 @@ const ScrollFeatures = () => {
             btnpadsec="hidden"
             buttonwidth=" sm:!280px"
             buttonheight="!18px"
-            firstButtonText="Expolre Wordpress Support"
+            firstButtonText="Explore WordPress Support"
             secondButtonText=""
             firstButtonlink="/contact-us"
             secondButtonlink="/portfolio"

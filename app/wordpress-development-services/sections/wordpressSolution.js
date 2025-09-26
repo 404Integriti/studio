@@ -49,7 +49,7 @@ const WordpressSolutions = () => {
           btnpadsec="hidden "
           buttonwidth="!280px"
           buttonheight="!20px"
-          firstButtonText="Expolre Wordpress Development"
+          firstButtonText="Explore WordPress Development"
           secondButtonText=""
           firstButtonlink="/wordpress-development"
           secondButtonlink="/portfolio"

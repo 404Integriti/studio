@@ -44,7 +44,7 @@ export default function Approch() {
               paragraph = "Our user-first philosophy puts your audience at the center, with designs built on strategy—not just style. Every element aligns with business goals and conversion paths, supported by flexible systems for long-term scalability and seamless handoff to development."
                classparagraph = "w-[100%] max-w-[580px] text-[#333] text-[#333] sans"
                 buttontext = "Get Started"
-                 buttonclass = "bg-[#ff5722] w-[180px] pt-[12px] pb-[12px] text-[#fce4ec] text-[20px] leading-[22px] rounded-[30px] text-center mt-[25px]"
+                 buttonclass = "bg-[#ff5722] w-[180px] pt-[12px] pb-[12px] text-[#fce4ec] text-[20px] leading-[22px] rounded-[30px] text-center mt-[25px] transition-all duration-300 hover:bg-[#ED8104]"
               buttonlink="/contact-us"
             />
         </div>

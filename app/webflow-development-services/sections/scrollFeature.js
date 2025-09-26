@@ -83,7 +83,7 @@ const ScrollFeatures = () => {
   if (isMobile) {
     return (
       <section
-        className="bg-white py-[60px] overflow-hidden"
+        className="bg-white  py-[60px] overflow-hidden"
         ref={containerRef}
       >
         <div className="w-full mx-auto px-6">
@@ -142,7 +142,7 @@ const ScrollFeatures = () => {
   return (
     <section className="bg-white py-[0px] overflow-hidden" ref={containerRef}>
       <div className="w-full mx-auto px-6">
-        <h1 className="text-center font-[600] pt-[45px] text-[36px] text-[#333333]">
+        <h1 className="text-center raleway font-[600] pt-[45px] text-[36px] text-[#333333]">
           Webflow Support
         </h1>
 

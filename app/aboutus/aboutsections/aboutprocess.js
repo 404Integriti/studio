@@ -3,9 +3,10 @@ import Secheading from "../../components/secheading"
 
 export default function Aboutprocess() {
   return (
-    <div className="process-container w-full max-w-[1440px] mx-auto flex  items-center lg:flex-row flex-col pt-[60px]">
+    <section className="w-full">
+       <div className="process-container  max-w-[1440px] sm:px-[80px] mx-auto flex  items-center lg:flex-row flex-col pt-[60px]">
       
-      <div className="process-image relative w-full lg:max-w-[750px] max-w-[100%] lg:pt-[0px] pt-[30px] lg:px-[0px] px-[20px]  ">
+      <div className="process-image text-center  flex justify-center relative w-full lg:max-w-[750px] max-w-[100%] lg:pt-[0px] pt-[30px] lg:px-[0px] px-[20px]  ">
         <Image 
           src="/processabout.svg" 
           alt="Process Image" 
@@ -29,5 +30,7 @@ export default function Aboutprocess() {
       </div>
 
     </div>
+    </section>
+   
   )
 }

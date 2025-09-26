@@ -394,6 +394,7 @@ background: #35255e !important;
 @media screen and (max-width: 768px) {
 .hero_buttons {
   width: 100% !important;
+  
   max-width: 160px !important;
   height: 45px !important;
 }
@@ -893,6 +894,12 @@ iframe#vimeo-video {
 
   background: #2c4e34 !important;
 }
+
+
+.webflow-whitelabel-development-page .bg-change{
+  background: #35255E !important;
+}
+
 .customBrandBtn{
   max-width: 100% !important;
 

@@ -36,7 +36,7 @@ export default function WordpressServices() {
                 btnpadsec="hidden"
                 buttonwidth=" sm:!280px"
                 buttonheight="!18px"
-                firstButtonText="Expolre Wordpress Design"
+                firstButtonText="Explore WordPress Design"
                 secondButtonText=""
                 firstButtonlink="/wordpress-design"
                 secondButtonlink="/portfolio"

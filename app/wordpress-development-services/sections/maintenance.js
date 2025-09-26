@@ -15,7 +15,7 @@ const Player = dynamic(
 export default function Maintenance() {
   return (
     <section className="w-[100%] py-[40px]">
-      <div className="max-w-[1440px] flex flex-col justify-center items-center  lg:flex-row  px-[10px] sm:px-[40px] lg:px-[60px]">
+      <div className="max-w-[1440px] mx-auto flex flex-col justify-center items-center  lg:flex-row  px-[10px] sm:px-[40px] lg:px-[60px]">
         <div className="flex flex-col justify-baseline md:w-[80%]  lg:w-[45%]">
           <h4
             className="lg:mt-[60px] text-[30px] sm:text-[36px] lg:pt-[100px] font-[600] leading-[36px] mb-[10px]"
@@ -45,7 +45,7 @@ export default function Maintenance() {
               btnpadsec="hidden"
               buttonwidth=" sm:!280px"
               buttonheight="!18px"
-              firstButtonText="Expolre Wordpress Maintenance"
+              firstButtonText="Explore WordPress Maintenance"
               secondButtonText=""
               firstButtonlink="/wordpress-maintenance "
               secondButtonlink="/portfolio"

@@ -23,9 +23,12 @@ export default function Header() {
 
   return (
     <>
-      <section className="header max-w-[100%] mx-auto border-b-[#4455671c]" style={{
-        boxShadow: "0 1px 37px 1px #eae7e5",
-      }}>
+      <section
+        className="header max-w-[100%] mx-auto border-b-[#4455671c]"
+        style={{
+          boxShadow: "0 1px 37px 1px #eae7e5",
+        }}
+      >
         <div className="container mx-auto max-w-[1300px] pt-[23px] pb-[23px] md:pl-[20px] pl-[15px] md:pr-[20px] pr-[15px] h-[86px] flex items-center">
           <div className="flex justify-between items-center w-full">
             {/* Logo */}
@@ -73,12 +76,12 @@ export default function Header() {
                   </Link>
 
                   {/* Submenu */}
-                  <div className="submenu absolute left-1/2 top-[50px] -translate-x-1/2 w-[800px] hidden group-hover:block bg-white shadow-lg p-4 z-50">
-                    <div className="flex gap-6 flex-col ">
+                  <div className="submenu absolute left-1/2 top-[50px] -translate-x-1/2 w-[800px] hidden group-hover:block bg-white shadow-lg  border z-50">
+                    <div className="flex gap-6 flex-col py-4">
                       {/* Submenu Header Item */}
                       <Link
-                        href="/website-development-service"
-                        className="w-full pt-[20px] pb-[16px] pr-[16px] flex items-center hover:bg-[#fff3e0]"
+                        href="/website-development-services"
+                        className="w-full pt-[20px] pb-[16px] px-4 pr-[16px] flex items-center hover:bg-[#fff3e0]"
                       >
                         <Image
                           src="/menuimage.png"
@@ -86,7 +89,7 @@ export default function Header() {
                           width={51}
                           height={51}
                         />
-                        <div className="ml-[20px]">
+                        <div className="pl-[20px] ">
                           <div className="text-[16px] font-[600] text-[#283338] raleway">
                             Website Development Services
                           </div>
@@ -97,12 +100,12 @@ export default function Header() {
                       </Link>
 
                       {/* Services Columns */}
-                      <div className="w-full flex justify-between">
+                      <div className="w-full px-4 flex justify-between">
                         {/* WordPress Services */}
                         <ul className="raleway menu-list">
                           <li>
-                            <div
-                             
+                            <Link
+                              href="/wordpress-development-services"
                               className="flex head items-center !text-[#ed8104] font-[600] tracking-[1px]"
                             >
                               <Image
@@ -113,27 +116,35 @@ export default function Header() {
                                 width={40}
                               />
                               WordPress Services
-                            </div>
+                            </Link>
                           </li>
                           <li>
-                            <Link href="/wordpress-development" >WordPress Development</Link>
+                            <Link href="/wordpress-development">
+                              WordPress Development
+                            </Link>
                           </li>
                           <li>
-                            <Link href="/wordpress-maintenance">WordPress Maintenance</Link>
+                            <Link href="/wordpress-maintenance">
+                              WordPress Maintenance
+                            </Link>
                           </li>
                           <li>
-                            <Link href="/wordpress-support">WordPress Support</Link>
+                            <Link href="/wordpress-support">
+                              WordPress Support
+                            </Link>
                           </li>
                           <li>
-                            <Link href="/wordpress-design">WordPress Design</Link>
+                            <Link href="/wordpress-design">
+                              WordPress Design
+                            </Link>
                           </li>
                         </ul>
 
                         {/* Shopify Services */}
                         <ul className="raleway menu-list">
                           <li>
-                            <div
-                              
+                            <Link
+                              href="/shopify-development-services"
                               className="flex head items-center !text-[#ed8104] font-[600] tracking-[1px]"
                             >
                               <Image
@@ -144,13 +155,17 @@ export default function Header() {
                                 width={40}
                               />
                               Shopify Services
-                            </div>
+                            </Link>
                           </li>
                           <li>
-                            <Link href="/shopify-development">Shopify Development</Link>
+                            <Link href="/shopify-development">
+                              Shopify Development
+                            </Link>
                           </li>
                           <li>
-                            <Link href="/shopify-maintenance">Shopify Maintenance</Link>
+                            <Link href="/shopify-maintenance">
+                              Shopify Maintenance
+                            </Link>
                           </li>
                           <li>
                             <Link href="/shopify-support">Shopify Support</Link>
@@ -163,8 +178,8 @@ export default function Header() {
                         {/* Webflow Services */}
                         <ul className="raleway menu-list">
                           <li>
-                            <div
-                              
+                            <Link
+                              href="/webflow-development-services"
                               className="flex head items-center !text-[#ED8104] font-[600] tracking-[1px]"
                             >
                               <Image
@@ -175,13 +190,17 @@ export default function Header() {
                                 width={40}
                               />
                               Webflow Services
-                            </div>
+                            </Link>
                           </li>
                           <li>
-                            <Link href="/webflow-development">Webflow Development</Link>
+                            <Link href="/webflow-development">
+                              Webflow Development
+                            </Link>
                           </li>
                           <li>
-                            <Link href="/webflow-maintenance">Webflow Maintenance</Link>
+                            <Link href="/webflow-maintenance">
+                              Webflow Maintenance
+                            </Link>
                           </li>
                           <li>
                             <Link href="/webflow-support">Webflow Support</Link>
@@ -254,20 +273,20 @@ export default function Header() {
       {isMobileMenuOpen && (
         <div className="fixed inset-0 z-50">
           {/* Backdrop */}
-          <div 
+          <div
             className="fixed inset-0 bg-black bg-opacity-50"
             onClick={closeMobileMenu}
           ></div>
-          
+
           {/* Mobile Menu Content */}
           <div className="fixed top-0 left-0 w-full h-full bg-white overflow-y-auto">
             {/* Header Section */}
             <div className="border-b border-orange-500">
               <div className="flex justify-between items-center p-4">
                 <div className="flex items-center">
-                   <div className="Logo">
-              <Image src="/Logo.png" alt="Logo" width={234} height={25} />
-            </div>
+                  <div className="Logo">
+                    <Image src="/Logo.png" alt="Logo" width={234} height={25} />
+                  </div>
                 </div>
                 <button
                   onClick={closeMobileMenu}
@@ -294,8 +313,8 @@ export default function Header() {
             <div className="p-4">
               <ul className="space-y-4">
                 <li>
-                  <Link 
-                    href="/" 
+                  <Link
+                    href="/"
                     className="menu-font-style  hover:!text-[#ED8104] block py-2"
                     onClick={closeMobileMenu}
                   >
@@ -303,7 +322,7 @@ export default function Header() {
                   </Link>
                 </li>
                 <li>
-                  <Link 
+                  <Link
                     href="/aboutus"
                     className="menu-font-style hover:!text-[#ED8104] block py-2"
                     onClick={closeMobileMenu}
@@ -311,16 +330,18 @@ export default function Header() {
                     About Us
                   </Link>
                 </li>
-                
+
                 {/* Services Section */}
                 <li>
-                  <div 
+                  <div
                     className="flex items-center justify-between menu-font-style hover:!text-[#ED8104] py-2 cursor-pointer"
                     onClick={toggleServicesSubmenu}
                   >
                     <span>Services</span>
                     <svg
-                      className={`w-5 h-5 transition-transform duration-200 ${isServicesSubmenuOpen ? 'rotate-180' : ''}`}
+                      className={`w-5 h-5 transition-transform duration-200 ${
+                        isServicesSubmenuOpen ? "rotate-180" : ""
+                      }`}
                       fill="none"
                       stroke="currentColor"
                       viewBox="0 0 24 24"
@@ -333,99 +354,211 @@ export default function Header() {
                       />
                     </svg>
                   </div>
-                  
+
                   {/* Services List */}
                   {isServicesSubmenuOpen && (
-                    <div className="mt-4 space-y-4 flex gap-6 flex-col">
-                    {/* Website Development - Full width first row */}
-                    <Link href="/website-development-service">
-                    <div className="w-full flex items-start space-x-3">
-                      <div className="w-10 h-10 bg-orange-500 rounded-full flex items-center justify-center flex-shrink-0">
-                        <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                        </svg>
-                      </div>
-                      <div>
-                        <div className="font-semibold text-black">Website Development</div>
-                        <div className="text-gray-500 text-sm">User-Centric Website Development</div>
-                      </div>
-                    </div>
-</Link>
-                    {/* Remaining 3 services in one row on tablet, stacked on mobile */}
-                    <div className="md:flex md:flex-row md:space-x-4 md:space-y-0 flex flex-col space-y-4">
-                      {/* WordPress Services */}
-                      <div className="md:w-1/3">
-                        <div className="flex items-center space-x-3 mb-2">
-                          <div className="w-10 h-10 bg-blue-500 rounded-full flex items-center justify-center flex-shrink-0">
-                            <span className="text-white font-bold text-lg">     <Image
-                                className="mr-[5px]"
-                                src="/wordpress.svg"
-                                alt=""
-                                height={40}
-                                width={40}
-                              /></span>
+                    <div className="mt-4 space-y-4 flex  gap-6 flex-col">
+                      {/* Website Development - Full width first row */}
+                      <Link href="/website-development-services" onClick={closeMobileMenu}>
+                        <div className="w-full flex items-start space-x-3">
+                          <div className="w-10 h-10 bg-orange-500 rounded-full flex items-center justify-center flex-shrink-0">
+                            <svg
+                              className="w-6 h-6 text-white"
+                              fill="none"
+                              stroke="currentColor"
+                              viewBox="0 0 24 24"
+                            >
+                              <path
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                                strokeWidth={2}
+                                d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                              />
+                            </svg>
                           </div>
-                          <span className="!text-[#ed8104] font-semibold">WordPress Services</span>
+                          <div
+                      
+                          >
+                            <div className="font-semibold text-black">
+                              Website Development
+                            </div>
+                            <div className="text-gray-500 text-sm">
+                              User-Centric Website Development
+                            </div>
+                          </div>
                         </div>
-                        <div className="ml-13 space-y-1">
-                          <Link href="/wordpress-development" className="text-gray-500 text-sm md:inline block hover:text-[#ed8104] ">WordPress Development</Link>
-                          <Link href="/wordpress-maintenance" className="text-gray-500 text-sm md:inline block hover:text-[#ed8104] ">WordPress Maintenance</Link>
-                          <Link href="/wordpress-support" className="text-gray-500 text-sm md:inline block hover:text-[#ed8104] ">WordPress Support</Link>
-                          <Link href="/wordpress-design" className="text-gray-500 text-sm md:inline block hover:text-[#ed8104] ">WordPress Design</Link>
+                      </Link>
+                      {/* Remaining 3 services in one row on tablet, stacked on mobile */}
+                      <div className="md:flex md:flex-row md:space-x-4 md:space-y-0 flex flex-col space-y-4">
+                        {/* WordPress Services */}
+                        <div className="md:w-1/3">
+                          <Link
+                            href="/wordpress-development-services"
+                            className="flex items-center space-x-3 mb-2"
+                          >
+                            <div className="w-10 h-10 bg-blue-500 rounded-full flex items-center justify-center flex-shrink-0">
+                              <span className="text-white font-bold text-lg">
+                                {" "}
+                                <Image
+                                  className="mr-[5px]"
+                                  src="/wordpress.svg"
+                                  alt=""
+                                  height={40}
+                                  width={40}
+                                />
+                              </span>
+                            </div>
+                            <span className="!text-[#ed8104] font-semibold">
+                              WordPress Services
+                            </span>
+                          </Link>
+                          <div className="ml-13 space-y-1">
+                            <Link
+                              href="/wordpress-development"
+                              className="text-gray-500 text-sm  block hover:text-[#ed8104] "
+                              onClick={closeMobileMenu}
+                            >
+                              WordPress Development
+                            </Link>
+                            <Link
+                              href="/wordpress-maintenance"
+                              className="text-gray-500 text-sm  block hover:text-[#ed8104] "
+                              onClick={closeMobileMenu}
+                            >
+                              WordPress Maintenance
+                            </Link>
+                            <Link
+                              href="/wordpress-support"
+                              className="text-gray-500 text-sm  block hover:text-[#ed8104] "
+                              onClick={closeMobileMenu}
+                            >
+                              WordPress Support
+                            </Link>
+                            <Link
+                              href="/wordpress-design"
+                              className="text-gray-500 text-sm  block hover:text-[#ed8104] "
+                              onClick={closeMobileMenu}
+                            >
+                              WordPress Design
+                            </Link>
+                          </div>
                         </div>
-                      </div>
 
-                      {/* Shopify Services */}
-                      <div className="md:w-1/3">
-                        <div className="flex items-center space-x-3 mb-2">
-                          <div className="w-10 h-10 rounded-full flex items-center justify-center flex-shrink-0">
-                            <span className="text-white font-bold text-lg">     <Image
-                                className="mr-[5px]"
-                                src="/shopify.png"
-                                alt=""
-                                height={40}
-                                width={40}
-                              /></span>
+                        {/* Shopify Services */}
+                        <div className="md:w-1/3">
+                          <Link
+                            href="/shopify-development-services"
+                            className="flex items-center space-x-3 mb-2"
+                          >
+                            <div className="w-10 h-10 rounded-full flex items-center justify-center flex-shrink-0">
+                              <span className="text-white font-bold text-lg">
+                                {" "}
+                                <Image
+                                  className="mr-[5px]"
+                                  src="/shopify.png"
+                                  alt=""
+                                  height={40}
+                                  width={40}
+                                />
+                              </span>
+                            </div>
+                            <span className="text-[#ed8104] font-semibold">
+                              Shopify Services
+                            </span>
+                          </Link>
+                          <div className="ml-13 space-y-1">
+                            <Link
+                              href="/shopify-development"
+                              className="text-gray-500 text-sm   block hover:text-[#ed8104] "
+                              onClick={closeMobileMenu}
+                            >
+                              Shopify Development
+                            </Link>
+                            <Link
+                              href="/shopify-maintenance"
+                              className="text-gray-500 text-sm  block hover:text-[#ed8104] "
+                              onClick={closeMobileMenu}
+                            >
+                              Shopify Maintenance
+                            </Link>
+                            <Link
+                              href="/shopify-support"
+                              className="text-gray-500 text-sm  block hover:text-[#ed8104] "
+                              onClick={closeMobileMenu}
+                            >
+                              Shopify Support
+                            </Link>
+                            <Link
+                              href="/shopify-design"
+                              className="text-gray-500 text-sm  block hover:text-[#ed8104] "
+                              onClick={closeMobileMenu}
+                            >
+                              Shopify Design
+                            </Link>
                           </div>
-                          <span className="text-[#ed8104] font-semibold">Shopify Services</span>
                         </div>
-                        <div className="ml-13 space-y-1">
-                          <Link href="/shopify-development" className="text-gray-500 text-sm md:inline block hover:text-[#ed8104] ">Shopify Development</Link>
-                          <Link href="/shopify-maintenance" className="text-gray-500 text-sm md:inline block hover:text-[#ed8104] ">Shopify Maintenance</Link>
-                          <Link href="/shopify-support" className="text-gray-500 text-sm md:inline block hover:text-[#ed8104] ">Shopify Support</Link>
-                          <Link href="/shopify-design" className="text-gray-500 text-sm md:inline block hover:text-[#ed8104] ">Shopify Design</Link>
-                        </div>
-                      </div>
 
-                      {/* Webflow Services */}
-                      <div className="md:w-1/3">
-                        <div className="flex items-center space-x-3 mb-2">
-                          <div className="w-10 h-10 rounded-full flex items-center justify-center flex-shrink-0">
-                            <span className="">     <Image
-                                className="mr-[5px]"
-                                src="/webflow.png"
-                                alt=""
-                                height={40}
-                                width={40}
-                              /></span>
+                        {/* Webflow Services */}
+                        <div className="md:w-1/3">
+                          <Link
+                            href="/webflow-development-services"
+                            className="flex items-center space-x-3 mb-2"
+                          >
+                            <div className="w-10 h-10 rounded-full flex items-center justify-center flex-shrink-0">
+                              <span className="">
+                                {" "}
+                                <Image
+                                  className="mr-[5px]"
+                                  src="/webflow.png"
+                                  alt=""
+                                  height={40}
+                                  width={40}
+                                />
+                              </span>
+                            </div>
+                            <span className="text-orange-500 font-semibold">
+                              Webflow Services
+                            </span>
+                          </Link>
+                          <div className="ml-13 space-y-1">
+                            <Link
+                              href="/webflow-development"
+                              className="text-gray-500 text-sm  block hover:hover:text-[#ed8104] "
+                              onClick={closeMobileMenu}
+                            >
+                              Webflow Development
+                            </Link>
+                            <Link
+                              href="/webflow-maintenance"
+                              className="text-gray-500 text-sm  block hover:text-[#ed8104] "
+                              onClick={closeMobileMenu}
+                            >
+                              Webflow Maintenance
+                            </Link>
+                            <Link
+                              href="/webflow-support"
+                              className="text-gray-500 text-sm  block hover:text-[#ed8104] "
+                              onClick={closeMobileMenu}
+                            >
+                              Webflow Support
+                            </Link>
+                            <Link
+                              href="/webflow-design"
+                              className="text-gray-500 text-sm  block hover:text-[#ed8104] "
+                              onClick={closeMobileMenu}
+                            >
+                              Webflow Design
+                            </Link>
                           </div>
-                          <span className="text-orange-500 font-semibold">Webflow Services</span>
-                        </div>
-                        <div className="ml-13 space-y-1">
-                           <Link href="/webflow-development" className="text-gray-500 text-sm md:inline block hover:hover:text-[#ed8104] ">Webflow Development</Link>
-                           <Link href="/webflow-maintenance" className="text-gray-500 text-sm md:inline block hover:text-[#ed8104] ">Webflow Maintenance</Link>
-                           <Link href="/webflow-support" className="text-gray-500 text-sm md:inline block hover:text-[#ed8104] ">Webflow Support</Link>
-                           <Link href="/webflow-design" className="text-gray-500 text-sm md:inline block hover:text-[#ed8104] ">Webflow Design</Link>
                         </div>
                       </div>
-                    </div>
                     </div>
                   )}
                 </li>
 
                 <li>
-                  <Link 
-                    href="/portfolio" 
+                  <Link
+                    href="/portfolio"
                     className="menu-font-style hover:!text-[#ED8104] block py-2"
                     onClick={closeMobileMenu}
                   >
@@ -433,8 +566,8 @@ export default function Header() {
                   </Link>
                 </li>
                 <li>
-                  <Link 
-                    href="/community" 
+                  <Link
+                    href="/community"
                     className="menu-font-style hover:!text-[#ED8104] block py-2"
                     onClick={closeMobileMenu}
                   >
@@ -442,8 +575,8 @@ export default function Header() {
                   </Link>
                 </li>
                 <li>
-                  <Link 
-                    href="/blogs" 
+                  <Link
+                    href="/blogs"
                     className="menu-font-style hover:!text-[#ED8104] block py-2"
                     onClick={closeMobileMenu}
                   >
@@ -451,8 +584,8 @@ export default function Header() {
                   </Link>
                 </li>
                 <li>
-                  <Link 
-                    href="/resources" 
+                  <Link
+                    href="/resources"
                     className="menu-font-style hover:!text-[#ED8104] block py-2"
                     onClick={closeMobileMenu}
                   >
@@ -460,8 +593,8 @@ export default function Header() {
                   </Link>
                 </li>
                 <li>
-                  <Link 
-                    href="/contact-us" 
+                  <Link
+                    href="/contact-us"
                     className="menu-font-style hover:!text-[#ED8104] block py-2"
                     onClick={closeMobileMenu}
                   >

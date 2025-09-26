@@ -66,7 +66,7 @@ export default function Freedom() {
                     </div>
                 ))}
 
-            <Link href="/webflow-development" className='px-[15px] mt-[10px] py-[10px] bg-[#e64a19] rounded-[30px] w-[100%] max-w-[241px] h-[42px]  text-center text-[16px] text-[#fce4ec] font-[400] leading-[22px] lg:ml-[110px] mx-auto hover:bg-[#ED8104] duration-300'>Explore Webflow Services </Link>      
+            <Link href="/webflow-development-services" className='px-[15px] mt-[10px] py-[10px] bg-[#e64a19] rounded-[30px] w-[100%] max-w-[241px] h-[42px]  text-center text-[16px] text-[#fce4ec] font-[400] leading-[22px] lg:ml-[110px] mx-auto hover:bg-[#ED8104] duration-300'>Explore Webflow Services </Link>      
              </div>
         </div>
       </div>

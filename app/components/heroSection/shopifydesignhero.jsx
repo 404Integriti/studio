@@ -17,13 +17,13 @@ export default function Shopifydesignhero() {
         buttons={
           <Herobutton 
             btnpadfirst="px-[10px] py-[15px] lg:text-[20px] text-[14px] mt-[20px] raleway"
-            btnpadsec="hidden"
+            btnpadsec="px-[15px] py-[10px] raleway text-[18px]"
             buttonwidth="200px"
             buttonheight="50px"
             firstButtonText="Get Started"
-            secondButtonText=""
+            secondButtonText="Learn More"
             firstButtonlink="/contact-us"
-            secondButtonlink=""
+            secondButtonlink="/portfolio"
           />
      
         }

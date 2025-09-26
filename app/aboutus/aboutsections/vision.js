@@ -13,7 +13,7 @@ export default function Mainvision() {
       }
     toprightheadclass="raleway lg:text-[36px] text-[30px] font-[600] mt-[20px] leading-[30px] mb-[10px] text-[#333]"
     toprighttext="At Integriti Studio, we’re all about keeping it real. We take your ideas and transform them into something that will benefit your company and look fantastic. We concentrate on what really counts: coming up with solutions that make sense for you, whether that means designing a seamless, useful website or customizing an e-commerce store that feels just right. "
-    toptextclass="lg:text-[16px] text-[15px] leading-[22px] sans opacity-[.75] w-[100%] lg:max-w-[78%]   mt-[20px] mb-[10px]"
+    toptextclass="lg:text-[16px] text-[15px] leading-[22px] sans opacity-[.75] w-[100%] lg:max-w-[90%] xl:max-w-[78%]  mt-[20px] mb-[10px]"
     sechead={
         <>
           <span className="hero-orange">Marketing</span> Is More Than Simply Selling; It{"'"}s About Making A <span className="hero-orange">Difference.</span>That’s The Philosophy That Birthed <span className="hero-orange">Integriti Studio.</span>

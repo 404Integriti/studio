@@ -44,7 +44,7 @@ export default function Herosection({
         {paragraph}
       </p>
 
-      <div className={`${btnContainer} hero-buttons `}>
+      <div className={`${btnContainer} hero-buttons  `}>
         {buttons}
       </div>
 </div>

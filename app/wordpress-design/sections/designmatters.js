@@ -5,7 +5,7 @@ import { designmatters } from "../../components/customThemePoints"; // adjust pa
 
 const PluginIntegration = () => {
   return (
-    <section className=" py-[20px] sm:py-[80px] bg-[#f8f8f8]">
+    <section className=" py-[20px] lg:[py-80px] bg-[#f8f8f8]">
       <div className="w-full max-w-[1052px] mx-auto ">
       <h2 className="md:text-[36px] text-[30px] font-[600] text-center leading-[36px] text-[#333333] raleway :pb-[60px] md:pb-[50px] pb-[40px]"> Why Design Matters in WordPress</h2>
       <div className="flex justify-center items-center flex-wrap lg:gap-x-[35px] gap-x-[0px] lg:gap-y-[36px] gap-y-[0px]">

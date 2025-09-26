@@ -66,7 +66,7 @@ export default function DnaPage() {
 <section className="pt-[60px] md:pt-[80px] pb-[60px] is-dna-section">
       <div className="max-w-[1400px] mx-auto">
         <Secheading
-          classheading="text-[36px] lg:text-[50px] font-[600] text-[#000] leading-[36px] lg:leading-[28px] pb-[25px] lg:pb-[40px] mb-[10px] md:mt-[20px] mt-[0px] px-[20px] text-center"
+          classheading=" text-[24px] sm:text-[36px] text-[#333333] lg:text-[50px] font-[600] text-[#000] leading-[36px] lg:leading-[28px] pb-[25px] lg:pb-[40px] mb-[10px] md:mt-[20px] mt-[0px] px-[20px] text-center"
           heading="The DNA of Integriti Studio"
         />
         <div className="is-divider"></div>

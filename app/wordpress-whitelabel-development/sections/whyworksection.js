@@ -26,11 +26,11 @@ const features = [
 
 export default function WhyWorkSection() {
   return (
-    <section className="bg-[#f8f8f8]">
-      <div className="w-full max-w-[1440px] min-[1441px]:mx-auto pt-[20px]">
+    <section className="bg-[#f8f8f8] w-full">
+      <div className="mx-auto max-w-[1440px]  pt-[30px] md:pt-[0px]">
         {/* Heading */}
         <div className="flex justify-center">
-          <h3 className="text-[#333] mt-[15px] mb-[10px] leading-[30px] text-[28px] font-[700] text-center " style={{fontFamily:"var(--font-raleway)",}}>
+          <h3 className="text-[#333] mt-[15px] mb-[10px] leading-[30px] text-[22px] sm:text-[28px] font-[700] text-center " style={{fontFamily:"var(--font-raleway)",}}>
           Why Work With a White Label <br />
           <span>WordPress Development Agency?</span>
         </h3>
@@ -39,7 +39,7 @@ export default function WhyWorkSection() {
         {/* Cards */}
         <div className="py-[40px] pl-[30px] min-[479px]:pl-[0px] grid grid-cols-1 min-[479px]:grid-cols-2 gap-[14px]">
           {features.map((item, index) => (
-            <div key={index} className="flex justify-center">
+            <div key={index} className="flex min-[478px]:justify-center">
               <WhyWorkCard key={index} icon={item.icon} text={item.text} size={item.size} />
               </div>
           ))}
