@@ -28,7 +28,7 @@ export default function ServiceCard({
       style={{ height: blockheight, maxWidth: blockwidth }}
     >
       <div
-        className={`w-[83px] h-[83px] rounded-[50%] flex justify-center items-center ${ imgClass|| 'mt-[-70px]'} `  }
+        className={`w-[83px] h-[83px] rounded-[50%]  flex justify-center items-center ${ imgClass|| 'mt-[-70px]'} `  }
         style={{ backgroundColor: imgbgcolor }}
       >
         {src && (
@@ -38,7 +38,7 @@ export default function ServiceCard({
             width={width}
             height={height}
             style={{ objectFit: "contain" }}
-            className={`sm:max-w-[100%]  h-[100%]` }
+            className={`sm:max-w-[100%] border h-[100%]` }
           />
         )}
       </div>

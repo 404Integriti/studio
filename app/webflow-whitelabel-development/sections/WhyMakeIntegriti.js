@@ -3,7 +3,7 @@ import Shopservicers from "@/app/components/webflowWhitelabel/page";
 
 export default function WhyMakeIntegriti() {
   return (
-    <section className='pb-[40px]'>
+    <section className='pb-[40px] w-full px-[15px]'>
       {/* Heading */}
      <div className='flex justify-center'>
        <h3

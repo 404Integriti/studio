@@ -12,12 +12,12 @@ export default function Herosection({
   subheadingClass,
   btnContainer
 }) {
-    const hasBackground = !sectionpadding?.includes('!bg-none');
+   
   
   return (
     <section className={`hero-section-bg  ${sectionpadding}`}
     style={{
-  backgroundImage: hasBackground ? "none" : "url('/hero-section-bg.webp')",
+  backgroundImage:  "url('/hero-section-bg.webp')",
   }}
     >
         <div className="max-w-[1440px] mx-auto">

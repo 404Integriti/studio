@@ -4,7 +4,7 @@ import Herobutton from "@/app/components/herobuttons/herobutton";
 export default function WebflowWhitelabelHero() {
   return (
     <Herosection
-      sectionpadding="lg:py-[120px] md:py-[60px] py-[40px] lg:pb-[100px] md:pb-[80px] pb-[60px] lg:pt-[100px] md:pt-[50px] lg:px-[0px] !px-[15px] !py-[0px] sm:!pt-[40px] md:!pt-[60px] !pb-[10px] sm:!pb-[40px] md:!pb-[110px]"
+      sectionpadding="lg:py-[120px] md:py-[60px] py-[40px] lg:pb-[100px] md:pb-[80px] pb-[60px] lg:pt-[100px]  lg:px-[0px] !px-[15px] !py-[0px] sm:!pt-[40px] md:!pt-[60px] !pb-[20px] sm:!pb-[40px] md:!pb-[110px]"
       heading={
         <span className="hero-orange">
          Webflow <span className="text-[#333333]">White Label</span> <br/> Development

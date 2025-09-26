@@ -32,7 +32,7 @@ export default function WhyWebflow() {
 
   return (
     <section className="bg-[#f7f7f7]">
-      <div className="max-w-[1080px] pt-[50px] mx-auto">
+      <div className="max-w-[1080px] pt-[20px] sm:pt-[50px] mx-auto">
         {/* Heading */}
         <h2 className="text-[28px] font-[700] text-center text-[#2d3748]" style={{
           fontFamily: "var(--font-raleway)"
