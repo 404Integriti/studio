@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function ImpactCard({ impact, card, heading,para }) {
   return (
-  <div className=" left-0 flex justify-center w-[310px] h-[255px] lg:w-[390px] lg:h-[290px] relative  ">
+  <div className=" left-0 flex justify-center w-[310px] h-[258px] lg:w-[390px] lg:h-[290px] relative  ">
              {/* Decorative background image */}
              <Image
                src={impact.image}
