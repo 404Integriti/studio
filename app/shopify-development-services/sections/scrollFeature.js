@@ -54,30 +54,35 @@ const ScrollFeatures = () => {
     return () => window.removeEventListener("resize", checkMobile);
   }, []);
 
-  useEffect(() => {
-    if (isMobile) return; // Disable carousel on mobile
+ useEffect(() => {
+  if (isMobile) return;
 
-    const handleScroll = () => {
-      const currentScrollY = window.scrollY;
-      const scrollThreshold = 20; // Much more sensitive - only 20px scroll needed
+  const handleScroll = () => {
+    const containerTop = containerRef.current?.offsetTop || 0;
+    const startScrollAt = containerTop - window.innerHeight / 2; // Trigger when section is half visible
 
-      if (Math.abs(currentScrollY - lastScrollY) > scrollThreshold) {
-        if (currentScrollY > lastScrollY) {
-          // Scrolling down - show next slide
-          setScrollDirection("down");
-          setCurrentSlide((prev) => Math.min(prev + 1, features.length - 4)); // Stop at 4th to last slide
-        } else {
-          // Scrolling up - show previous slide
-          setScrollDirection("up");
-          setCurrentSlide((prev) => Math.max(prev - 1, 0)); // Move only 1 slide back
-        }
-        setLastScrollY(currentScrollY);
+    const currentScrollY = window.scrollY;
+
+    // ✅ Do nothing until user reaches section
+    if (currentScrollY < startScrollAt) return;
+
+    const scrollThreshold = 80; // more stable, avoid micro scrolls
+
+    if (Math.abs(currentScrollY - lastScrollY) > scrollThreshold) {
+      if (currentScrollY > lastScrollY) {
+        setScrollDirection("down");
+        setCurrentSlide((prev) => Math.min(prev + 1, features.length - 4));
+      } else {
+        setScrollDirection("up");
+        setCurrentSlide((prev) => Math.max(prev - 1, 0));
       }
-    };
+      setLastScrollY(currentScrollY);
+    }
+  };
 
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, [lastScrollY, features.length, isMobile]);
+  window.addEventListener("scroll", handleScroll);
+  return () => window.removeEventListener("scroll", handleScroll);
+}, [lastScrollY, features.length, isMobile]);
 
   // Mobile view - show all slides in a grid
   if (isMobile) {

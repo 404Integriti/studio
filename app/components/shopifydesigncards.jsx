@@ -29,12 +29,12 @@ export default function ShopifyDesignCards({ cards }) {
   }, []);
 
   return (
-    <div className="cards-wrapper shopify-cards-wrapper">
+    <div className="cards-wrapper shopify-cards-wrapper ">
       {cards.map((card, index) => (
         <div
           key={index}
           ref={(el) => (cardsRef.current[index] = el)}
-          className=" card shopify-card"
+          className=" card shopify-card sm:!max-h-[180px] z-20 !bg-white hover:!bg-[#FFF3E0] transition-all duration-300"
           style={{ transform: `rotate(${card.rotate})` }}
         >
           <div className="w-[100%] max-w-[100%]">

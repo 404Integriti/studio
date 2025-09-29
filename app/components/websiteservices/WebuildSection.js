@@ -35,12 +35,30 @@ const cardData = [
 ];
 
 export default function WebuildSection() {
+
+  const leftColRef = useRef(null);
+  const cardsWrapperRef = useRef(null);
+
+  useEffect(() => {
+    if (!leftColRef.current || !cardsWrapperRef.current) return;
+
+    // Set height of left column based on cards wrapper height
+    const updateHeight = () => {
+      leftColRef.current.style.minHeight = `${cardsWrapperRef.current.scrollHeight}px`;
+    };
+
+    updateHeight();
+    window.addEventListener("resize", updateHeight);
+
+    return () => window.removeEventListener("resize", updateHeight);
+  }, []);
+
   return (
     <section className="relative bg-[#f8f8f8]">
       <div className="max-w-[1440px] lg:pt-[150px] md:pt-[80px] pt-[60px] px-[20px] mx-auto flex lg:flex-row flex-col items-start md:pb-[0px] pb-[60px]">
         
         {/* Left side */}
-<div className="w-full lg:max-w-[50%] max-w-[100%] lg:pl-[40px] flex flex-col items-center relative lg:min-h-[1846px] lg:mb-[0] mb-[30px]">
+<div className="w-full lg:max-w-[50%] max-w-[100%] lg:pl-[40px] flex flex-col items-center relative lg:min-h-[1846px] lg:mb-[0] mb-[30px] " ref={leftColRef}>
 
           <div className="w-full max-w-[506px]  sticky top-[140px]">
             <h2
@@ -63,7 +81,7 @@ export default function WebuildSection() {
         </div>
 
         {/* Right side */}
-        <div className="w-full lg:max-w-[38%] mx-auto max-w-[100%] relative lg:mt-[0px] mt-[50px]">
+        <div ref={cardsWrapperRef} className="w-full   lg:max-w-[38%] mx-auto max-w-[100%] relative lg:mt-[0px] mt-[50px]">
             <div className={`wrapper`}> {/* gives enough scroll space */}
                 <StackedCards cards={cardData} />
               </div>

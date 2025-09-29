@@ -15,7 +15,7 @@ export default function  Profilesmarquee({ images = [], speed = 30, gap = 40 }) 
 
     function animate() {
       start += 1;
-      if (start >= track.scrollWidth / 2) {
+      if (start >= track.scrollWidth ) {
         start = 0;
       }
       track.style.transform = `translateX(-${start}px)`;
@@ -26,7 +26,8 @@ export default function  Profilesmarquee({ images = [], speed = 30, gap = 40 }) 
   }, []);
 
   // Duplicate images for seamless loop
-  const duplicatedImages = [...images, ...images];
+  const duplicatedImages = [...images, ...images, ...images];
+
 
   return (
     <div className="overflow-hidden w-full mt-[60px] pt-[40px] pb-[40px]">
