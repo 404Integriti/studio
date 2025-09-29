@@ -16,7 +16,7 @@ export default function ResourcesCard({ title, link }) {
             <div className="flex justify-center  items-center relative">
               <Link
                 href={link || "#"}
-                className="bg-[#ed8104]  absolute bottom-[-95px]  w-[180px] text-center left-[40px] hover:bg-[#e64a19] transition-all duration-300 text-[20px] font-[500] py-[8px] text-white px-[20px] rounded-[20px]"
+                className="bg-[#ed8104]  absolute bottom-[-95px]  w-[180px] text-center left-[30px] hover:bg-[#e64a19] transition-all duration-300 text-[20px] font-[500] py-[8px] text-white px-[20px] rounded-[20px]"
               >
                 Read More
               </Link>

@@ -7,7 +7,7 @@ export default function BlogCard({ image, title, link }) {
       <div className="bg-white border border-[#e64a19]  shadow-sm overflow-hidden !h-[310px]  flex flex-col">
         <div className="flex flex-col justify-between items-center px-4 py-4 sm:py- h-full">
           {/* Image */}
-          <div className="w-[164px]  h-[158px]  sm:h-[158px] md:h-[162px] lg:!h-[158px] lg:w-[164px] relative">
+          <div className="w-[164px]  h-[158px]  sm:h-[150px]  lg:!h-[158px] lg:w-[164px] relative">
             <Image
               src={image || "/new.png"}
               alt={title || "Blog post image"}
@@ -18,12 +18,12 @@ export default function BlogCard({ image, title, link }) {
           </div>
 
           {/* Title */}
-          <div className="h-[60px] flex align-baseline p-0">
+          <div className="h-[60px]  flex align-baseline p-0">
           <h1
-            className="text-[#1c1c1c] text-center  font-semibold text-[14px] sm:text-[15px] md:text-[16px] lg:text-[14px] leading-[20px] sm:leading-[22px] lg:leading-[20px] w-full max-[253px] px-2 "
+            className="text-[#1c1c1c]  text-center  font-semibold text-[14px] sm:text-[14px] lg:text-[14px] leading-[20px] sm:leading-[20px] lg:leading-[20px] w-full max-w-[253px] px-2 "
             style={{ fontFamily: "var(--font-raleway)" }}
           >
-            {title || "Blog Title"}
+    {(title || "Blog Title").replace(/&/g, ' & ')}
           </h1>
              </div>
       
