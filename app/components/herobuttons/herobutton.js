@@ -33,7 +33,7 @@ export default function Herobutton({
 
       <Link
         href={secondButtonlink}
-        className={` tracking-[0em] hero_buttons-sec border  rounded-[73.62px] ${btnpadsec} hero_buttons flex items-center justify-center `}
+        className={` tracking-[0em] hero_buttons-sec   rounded-[73.62px] ${btnpadsec} hero_buttons flex items-center justify-center `}
         style={{
           fontFamily:
             fontfamily === "raleway"

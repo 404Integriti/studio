@@ -22,7 +22,7 @@ export default function ServiceCard({
 }) {
   return (
     <div
-      className={`flex justify-center flex-col items-zz w-[100%] max-w-[434px] border-[#f5eded] border-[1px] border-solid dna-card-hover mt-[-35px] rounded-[20px] dnacard ${
+      className={`flex justify-center flex-col items-center w-[100%] max-w-[434px] border-[#f5eded] border-[1px] border-solid dna-card-hover mt-[-35px] rounded-[20px] dnacard ${
         className ?? ""
       }`}
       style={{ height: blockheight, maxWidth: blockwidth }}
