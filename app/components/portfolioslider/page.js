@@ -67,7 +67,7 @@ export default function PortfolioSlider({ images = [] }) {
     <div className="slider-center">
       {images.map((img, index) => (
         <Link href={`${img.link}`} className="slider-item " key={index} >
-          <Image src={img.img} alt={`Portfolio ${index + 1}`} width={327} height={427} className="w-[327px] h-[427px]" />
+          <Image src={img.img} alt={`Portfolio ${index + 1}`} width={327} height={427} className="md:!w-[327px] md:!max-h-[427px]" />
         </Link>
       ))}
     </div>
