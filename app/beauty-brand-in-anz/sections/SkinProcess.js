@@ -2,7 +2,7 @@ import ServiceCard from "../../components/services/page";
 import Image from "next/image";
 const SkinCardsData = [
   {
-    src: "/endtoend.png",
+    src: "/BeautyBrandShopify.png",
     alt: "values",
     width: 83,
     height: 83,

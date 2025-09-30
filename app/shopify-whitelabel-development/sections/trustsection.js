@@ -17,7 +17,7 @@ const rightItems = [
 export default function TrustSection() {
   return (
     <section className=" bg-white ">
-      <div className='px-[20px] py-[40px] md:px-[0px] xl:mx-auto xl:w-[1030px] flex flex-col md:flex-row justify-center max-[991px]:gap-[26px] max-w-[1440px]'>
+      <div className='sm:px-[20px] py-[40px] md:px-[0px] xl:mx-auto xl:w-[1030px] flex flex-col md:flex-row justify-center max-[991px]:gap-[26px] max-w-[1440px]'>
         <InfoCard
           title="Why Agencies Trust Integriti Studio"
           items={leftItems}

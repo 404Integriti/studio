@@ -46,7 +46,7 @@ export default function Maintenance() {
               btnpadsec="hidden"
               buttonwidth=" sm:!280px"
               buttonheight="!18px"
-              firstButtonText="Expolre Wordpress Maintenance"
+              firstButtonText="Expolre Shopify Maintenance"
               secondButtonText=""
               firstButtonlink="/contact-us"
               secondButtonlink="/portfolio"
