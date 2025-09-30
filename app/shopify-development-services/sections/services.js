@@ -37,7 +37,7 @@ export default function ShopifyServices() {
                 btnpadsec="hidden"
                 buttonwidth=" sm:!280px"
                 buttonheight="!18px"
-                firstButtonText="Expolre Wordpress Design"
+                firstButtonText="Expolre Shopify Design"
                 secondButtonText=""
                 firstButtonlink="/contact-us"
                 secondButtonlink="/portfolio"

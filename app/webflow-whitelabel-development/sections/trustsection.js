@@ -1,26 +1,27 @@
 import InfoCard from './infocard';
 
 const leftItems = [
-  'Every project starts with a legally binding NDA',
-  '100% white-label — your agency stays invisible to clients',
-  'We follow your tone, processes, and brand guidelines',
-  'Trained to operate like your in-house team',
-  'Fully aligned with your tools, platforms, and workflows',
+  'Skilled in Webflow Interactions',
+  'Proficient with Webflow Apps',
+  'Experienced in CMS and Dynamic Content',
+  'Advanced Animation Implementation',
+  'Clean Code Structure and SEO-Optimized',
 ];
 
 const rightItems = [
-  'Always on-time, with quality that exceeds expectations',
-  'Proactive and clear communication, led by expert PMs',
-  'Clean, scalable code optimized for performance and security',
-  'Seamless white-label support  your agency stays front and center',
+  'We work fully white label under signed NDAs.',
+  'Your clients remain 100% yours—always.',
+  'No portfolio sharing unless permitted by you.',
+  'Trained to operate like your in-house team',
+  'Private, secured communication and data handling.',
 ];
 
 export default function WebflowTrustSection() {
   return (
     <section className=" bg-white">
-      <div className='px-[20px] pt-[15px] pb-[20px] md:pb-[80px] md:px-[0px] xl:mx-auto xl:w-[1030px] flex flex-col md:flex-row justify-center max-[991px]:gap-[26px] max-w-[1440px]'>
+      <div className='sm:px-[20px] pt-[15px] pb-[20px] md:pb-[80px] md:px-[0px] xl:mx-auto xl:w-[1030px] flex flex-col md:flex-row justify-center max-[991px]:gap-[26px] max-w-[1440px]'>
         <InfoCard
-          title="Confidentiality & NDA-First Culture"
+          title="Why Agencies Trust Integriti Studio"
           items={leftItems}
           bgColor="bg-[#EF4D23]"
           textColor="text-white"
@@ -28,7 +29,7 @@ export default function WebflowTrustSection() {
           tick={"first"}
         />
         <InfoCard
-          title="Why Agencies Trust Integriti Studio"
+          title="Confidentiality & NDA-First Culture"
           styleHeading={'!text-[23px] !font-[700] min-[479px]:!font-[600]'}
           items={rightItems}
           bgColor="bg-[#F3EEEE]"

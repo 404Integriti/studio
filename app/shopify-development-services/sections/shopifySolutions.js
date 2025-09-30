@@ -49,7 +49,7 @@ const ShopifySolutions = () => {
           btnpadsec="hidden "
           buttonwidth="!280px"
           buttonheight="!20px"
-          firstButtonText="Expolre Wordpress Development"
+          firstButtonText="Expolre Shopify Development"
           secondButtonText=""
           firstButtonlink="/contact-us"
           secondButtonlink="/portfolio"

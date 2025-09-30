@@ -3,13 +3,13 @@ import Shopservicers from "@/app/components/webflowWhitelabel/page";
 
 export default function WhyMakeIntegriti() {
   return (
-    <section className='pb-[40px] w-full px-[15px]'>
+    <section className='pb-[40px] w-full pr-[15px] '>
       {/* Heading */}
      <div className='flex justify-center'>
        <h3
         className="w-full min-[991px]:w-[54%] xl:w-[40%] leading-[35px] text-[28px] text-[#333] font-bold mt-[60px] pb-[30px] text-center"
         style={{ fontFamily: "var(--font-raleway)" }}
-      >
+    >
         Why Make Integriti Studio Your White Label Webflow Agency?
       </h3>
      </div>
