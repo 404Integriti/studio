@@ -1,4 +1,5 @@
 "use client";
+
 import Image from "next/image";
 import Link from "next/link";
 import Menubutton from "../menubutton/menubutton";
@@ -52,9 +53,9 @@ export default function Header() {
 
                 {/* Services with Dropdown */}
                 <li className="py-[20px] px-[12px] flex justify-center items-center relative group">
-                  <Link
+                  <div
                     className="menu-font-style flex justify-between items-center gap-[5px]"
-                    href=""
+                    
                   >
                     Services
                     <span>
@@ -73,10 +74,10 @@ export default function Header() {
                         />
                       </svg>
                     </span>
-                  </Link>
+                  </div>
 
                   {/* Submenu */}
-                  <div className="submenu absolute left-1/2 top-[50px] -translate-x-1/2 w-[800px] hidden group-hover:block bg-white shadow-lg  border z-50">
+                  <div className="submenu absolute left-1/2 top-[50px] -translate-x-1/2 w-[800px] hidden group-hover:block bg-white shadow-lg   z-50">
                     <div className="flex gap-6 flex-col py-4">
                       {/* Submenu Header Item */}
                       <Link
@@ -314,7 +315,7 @@ export default function Header() {
               <ul className="space-y-4">
                 <li>
                   <Link
-                    href="/"
+                      href="/"
                     className="menu-font-style  hover:!text-[#ED8104] block py-2"
                     onClick={closeMobileMenu}
                   >
@@ -360,27 +361,16 @@ export default function Header() {
                     <div className="mt-4 space-y-4 flex  gap-6 flex-col">
                       {/* Website Development - Full width first row */}
                       <Link href="/website-development-services" onClick={closeMobileMenu}>
-                        <div className="w-full flex items-start space-x-3">
-                          <div className="w-10 h-10 bg-orange-500 rounded-full flex items-center justify-center flex-shrink-0">
-                            <svg
-                              className="w-6 h-6 text-white"
-                              fill="none"
-                              stroke="currentColor"
-                              viewBox="0 0 24 24"
-                            >
-                              <path
-                                strokeLinecap="round"
-                                strokeLinejoin="round"
-                                strokeWidth={2}
-                                d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2 2v10a2 2 0 002 2z"
-                              />
-                            </svg>
+                        <div className="w-full flex items-start space-x-3 ">
+                          <div className="w-[44px] h-[44px] bg-orange-500 rounded-full flex items-center justify-center flex-shrink-0 relative">
+                          
+                            <Image src='/menuimage.png' alt="menu image" fill={true}/>
                           </div>
                           <div
                       
                           >
                             <div className="font-semibold text-black">
-                              Website Development
+                              Website Development Services
                             </div>
                             <div className="text-gray-500 text-sm">
                               User-Centric Website Development
@@ -592,15 +582,7 @@ export default function Header() {
                     Resources
                   </Link>
                 </li>
-                <li>
-                  <Link
-                    href="/contact-us"
-                    className="menu-font-style hover:!text-[#ED8104] block py-2"
-                    onClick={closeMobileMenu}
-                  >
-                    Contact
-                  </Link>
-                </li>
+                
               </ul>
             </div>
           </div>

@@ -6,48 +6,50 @@ import BlogsHeroSlug from "../../components/heroSection/blogshero";
 import BlogContent from "./sections/blogContent";
 import AuthorCard from "./sections/authorCard";
 import ShareSection from "./sections/shareSection";
+import { useBlogStore } from "@/store/postStore";
 
 export default function BlogDetail() {
   const { slug } = useParams();
+  const { posts } = useBlogStore(); // ✅ Get global posts
   const [post, setPost] = useState(null);
   const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(null);
-
-  async function fetchSinglePost(slug) {
-    try {
-      const res = await fetch(
-        `https://websitesblogs.integritistaffing.com/wp-json/wp/v2/posts?slug=${slug}&_embed`,
-        { cache: "no-store" }
-      );
-      if (!res.ok) throw new Error("Failed to fetch blog");
-      const data = await res.json();
-      return data[0];
-    } catch (err) {
-      console.error("Error fetching single post:", err);
-      throw err;
-    }
-  }
 
   useEffect(() => {
-    async function fetchData() {
-      try {
-        setLoading(true);
-        const singlePost = await fetchSinglePost(slug);
-        setPost(singlePost);
-      } catch (err) {
-        setError(err.message);
-      } finally {
-        setLoading(false);
-      }
+    if (!slug) return;
+
+    // ✅ Try to find the post from global state
+    const matchedPost = posts.find((p) => p.slug === slug);
+
+    if (matchedPost) {
+      // 🎉 Found in global store — no second request needed
+      setPost(matchedPost);
+      setLoading(false);
+    } else {
+      // ❌ If not found (e.g. direct page refresh), fetch fallback
+      (async () => {
+        try {
+          const res = await fetch(
+            `https://websitesblogs.integritistaffing.com/wp-json/wp/v2/posts?slug=${slug}&_embed`,
+            { cache: "no-store" }
+          );
+          if (!res.ok) throw new Error("Failed to fetch blog");
+          const data = await res.json();
+          setPost(data[0] || null);
+        } catch (err) {
+          console.error("Error fetching single post:", err);
+        } finally {
+          setLoading(false);
+        }
+      })();
     }
-    if (slug) fetchData();
-  }, [slug]);
+  }, [slug, posts]);
+
 
   if (loading)
     return <div className="flex justify-center items-center py-20 text-lg">Loading blog...</div>;
 
-  if (error || !post)
-    return <div className="flex justify-center items-center py-20 text-red-500">Error loading blog: {error}</div>;
+  if ( !post)
+    return <div className="flex justify-center items-center py-20 text-red-500">Error loading blog</div>;
 
   return (
     <>

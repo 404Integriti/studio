@@ -15,7 +15,7 @@ export default function OptimizedDevice() {
   return (
   <section>
     <div className='w-[100%] max-w-[1350px] mx-auto flex lg:flex-row flex-col justify-center pt-[100px] gap-[25px] pb-[30px] lg:px-[10px] px-[20px]'>
-        <div className='w-[100%] max-w-[685px] px-[10px]'>
+        <div className='w-[100%] max-w-[570px] px-[10px] '>
     
                 <Player
                   autoplay
@@ -25,7 +25,7 @@ export default function OptimizedDevice() {
                 />
                 </div>
      
-        <div className='w-[100%] max-w-[685px] px-[10px] mt-[42px] flex flex-col justify-center'>
+        <div className='w-[100%] max-w-[570px] px-[10px]  flex flex-col justify-center'>
             <h2 className="lg:text-[34px] text-[28px] font-[600] leading-[40px] mt-[20px] mb-[10px] text-[#333]" style={{
                 fontFamily: "var(--font-raleway)",
             }}>Optimized for Every Device</h2>

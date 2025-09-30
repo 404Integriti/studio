@@ -4,39 +4,42 @@ import { useEffect, useState } from "react";
 import { useParams } from "next/navigation";
 import Herosection from "./herosection";
 import Herobutton from "../herobuttons/herobutton";
+import { useBlogStore } from "@/store/postStore";
 
 export default function BlogsHero() {
-  const { slug } = useParams();
-  const [heading, setHeading] = useState("Blogs"); // default for main page
+ const { slug } = useParams();
+  const { posts } = useBlogStore(); // ✅ get global posts
+  const [heading, setHeading] = useState("Blogs"); // default
   const [loading, setLoading] = useState(false);
 
-  // Fetch blog heading only if slug exists
-  async function fetchBlogHeading(slug) {
-    try {
-      const res = await fetch(
-        `https://websitesblogs.integritistaffing.com/wp-json/wp/v2/posts?slug=${slug}&_embed`,
-        { cache: "no-store" }
-      );
-
-      if (!res.ok) throw new Error("Failed to fetch blog");
-
-      const data = await res.json();
-      return data[0]?.title?.rendered || "Blogs";
-    } catch (err) {
-      console.error(err);
-      return "Blogs";
-    }
-  }
-
   useEffect(() => {
-    if (!slug) return; // no slug, keep default
+    if (!slug) return; // ✅ no slug = main blog listing page
 
     setLoading(true);
-    fetchBlogHeading(slug)
-      .then((title) => setHeading(title))
-      .finally(() => setLoading(false));
-  }, [slug]);
 
+    // ✅ Try to find the post by slug from global store
+    const matchedPost = posts.find((p) => p.slug === slug);
+
+    if (matchedPost) {
+      setHeading(matchedPost.title.rendered || "Blogs");
+      setLoading(false);
+    } else {
+      // ✅ fallback: if store is empty (e.g., page refreshed directly on slug page)
+      fetch(
+        `https://websitesblogs.integritistaffing.com/wp-json/wp/v2/posts?slug=${slug}&_embed`,
+        { cache: "no-store" }
+      )
+        .then((res) => res.json())
+        .then((data) => {
+          setHeading(data[0]?.title?.rendered || "Blogs");
+        })
+        .catch((err) => {
+          console.error("Failed to fetch blog heading:", err);
+          setHeading("Blogs");
+        })
+        .finally(() => setLoading(false));
+    }
+  }, [slug, posts]);
   if (loading) {
     return (
       <div className="flex justify-center items-center py-20">

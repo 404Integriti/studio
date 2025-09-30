@@ -24,7 +24,7 @@ export default function Customdesign() {
 
     // Set height of left column based on cards wrapper height
     const updateHeight = () => {
-      leftColRef.current.style.minHeight = `${cardsWrapperRef.current.scrollHeight}px`;
+      leftColRef.current.style.minHeight = `${cardsWrapperRef.current.scrollHeight -50 }px`;
     };
 
     updateHeight();

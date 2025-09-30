@@ -140,8 +140,8 @@ const ScrollFeatures = () => {
 
   // Desktop view - show 3 slides with carousel
   return (
-    <section className="bg-white py-[0px] overflow-hidden" ref={containerRef}>
-      <div className="w-full mx-auto px-6">
+    <section className="bg-white w-full py-[0px] overflow-hidden" ref={containerRef}>
+      <div className="max-w-[1440px] mx-auto px-6">
         <h1 className="text-center raleway font-[600] pt-[45px] text-[36px] text-[#333333]">
           WordPress Support
         </h1>

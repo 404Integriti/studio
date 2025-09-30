@@ -38,31 +38,33 @@ const StepCarousel = ({ steps=[], activeStep = 0, onStepChange }) => {
           onClick={() => handleStepClick(index)}
         >
           {/* Step Number and Navigation */}
-          <div className="flex items-center justify-between md:mb-4 mb-2">
+          <div className="flex items-center justify-between md:mb-4 mb-2  ">
             <div className="bg-opacity-20 rounded-full flex items-center justify-center border border-white h-[3rem] w-[3rem]">
-              <span className="text-white text-[2.125rem] font-[600] leading-[2.2] min-h-[3rem]">{step.number}</span>
+              <span className="text-white text-[2.125rem] font-[600] text-center leading-[2.2] min-w-[3rem] min-h-[3rem]">{step.number}</span>
             </div>
             
             {/* Navigation arrows - only show on active step */}
             {index === currentStep && (
               <div className="flex gap-2">
-                <button
+                <button disabled={step.number == 1}
                   onClick={(e) => {
                     e.stopPropagation();
                     handlePrevious();
+                    
                   }}
-                  className="w-8 h-8 rounded-full flex items-center justify-center border border-white border-opacity-30 hover:bg-opacity-30 transition-all"
+                  className={`${ step.number == 1 ? 'opacity-45' : '' } w-8 h-8 rounded-full flex items-center justify-center border border-white border-opacity-30 hover:bg-opacity-30 transition-all`}
                 >
                   {/* Show up/down arrows on mobile, left/right on desktop */}
                   <ChevronUp className="w-4 h-4 text-white md:hidden" />
-                  <ChevronLeft className="w-4 h-4 text-white hidden md:block" />
+                  <ChevronLeft className="w-4 h-4 text-white hidden md:block " />
                 </button>
                 <button
+                disabled={step.number == 4}
                   onClick={(e) => {
                     e.stopPropagation();
                     handleNext();
                   }}
-                  className="w-8 h-8 bg-opacity-20 rounded-full flex items-center justify-center border border-white border-opacity-30 hover:bg-opacity-30 transition-all"
+                  className={`${ step.number == 4 ? 'opacity-45' : '' } w-8 h-8 bg-opacity-20 rounded-full flex items-center justify-center border border-white border-opacity-30 hover:bg-opacity-30 transition-all`}
                 >
                   {/* Show up/down arrows on mobile, left/right on desktop */}
                   <ChevronDown className="w-4 h-4 text-white md:hidden" />

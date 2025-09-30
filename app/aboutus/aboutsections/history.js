@@ -15,7 +15,7 @@ export default function History() {
               <span className="hero-orange">Our</span> History
             </>
         }
-        headingclass="raleway text-[36px] font-[600] leading-[44px] mb-[10px] text-left block"
+        headingclass="raleway text-[36px] font-[600] leading-[44px] mb-[10px]  text-left block"
         text={
             <>
               In a world saturated with noise, true connection is rare. That{"'"}s where Integriti Studio steps in. <br />

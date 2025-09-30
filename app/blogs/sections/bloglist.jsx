@@ -2,10 +2,14 @@
 
 import { useState, useEffect } from "react";
 import BlogCard from "../sections/blogcard";
+import { useBlogStore } from "@/store/postStore";
+
+
 
 export default function BlogList() {
-  const [posts, setPosts] = useState([]);
-  const [loading, setLoading] = useState(true);
+  const { posts, setPosts } = useBlogStore();
+
+  const [loading, setLoading] = useState(posts.length === 0);
   const [error, setError] = useState(null);
   const [mounted, setMounted] = useState(false);
 
@@ -14,7 +18,9 @@ export default function BlogList() {
       const res = await fetch(
         `https://websitesblogs.integritistaffing.com/wp-json/wp/v2/posts?categories=3&_embed&per_page=100`,
         { cache: "no-store" }
+
       );
+console.log(res);
 
       if (!res.ok) {
         throw new Error("Failed to fetch posts");
@@ -35,6 +41,10 @@ export default function BlogList() {
     setMounted(true);
 
     async function fetchPosts() {
+      if (posts.length > 0) {
+        setLoading(false);
+        return;
+      }
       try {
         setLoading(true);
         const allPosts = await fetchAllPosts();

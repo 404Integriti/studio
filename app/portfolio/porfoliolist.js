@@ -146,19 +146,20 @@ const portfolioData = [
 export default function Porfoliolist() {
   return (
     <div className="porfolio-list">
-      {portfolioData.map((item) => {
+      {portfolioData.map((item,index) => {
         const isLeftText = item.layout === "left-text";
         const isLeftImage = item.layout === "left-image";
 
         return (
-          <div key={item.id} className={`${item.bg}`}>
-            <div className="py-[40px] w-[100%] max-w-[1000px] flex md:flex-row flex-col mx-auto lg:px-[0px] md:px-[30px] lg:px-[0px] px-[20px] md:gap-[0px]">
+          <div key={index} className={`${item.bg}`}>
+            <div className="py-[40px] w-[100%] max-w-[1000px] flex md:flex-row flex-col mx-auto lg:px-[0px] md:px-[30px]  px-[20px] md:gap-[0px]">
               
               {/* ✅ If text is left */}
               {isLeftText && (
                 <>
                   <div className="list-content w-[100%] md:max-w-[580px] max-w-[100%] flex flex-col items-start pr-[10px]   ">
                     <Herosection
+                    sectionpadding={'!bg-none'}
                       heading={item.heading}
                       headingClass={item.headingClass}
                       paragraph={item.paragraph}
@@ -183,6 +184,7 @@ export default function Porfoliolist() {
                   <div className="list-content w-[100%] md:max-w-[450px] max-w-[100%] flex flex-col items-start md:pl-[40px] pl-[0px]">
                     <Herosection
                       heading={item.heading}
+                      
                       headingClass={item.headingClass}
                       paragraph={item.paragraph}
                       paragraphClass={item.paragraphClass}

@@ -28,7 +28,7 @@ export default function SectionSection() {
           />
           <Link
             href="/wordpress-development-services"
-            className="px-[10px] py-[15px] bg-[#e64a19] rounded-[30px] w-[100%] max-w-[241px] h-[42px]
+            className="px-[15px] py-[10px] h-[22px] bg-[#e64a19] rounded-[30px] w-[100%] max-w-[241px] 
                        text-[16px] text-[#fce4ec] font-[400] hover:bg-[#ED8104] duration-300"
             style={{
               fontFamily: "Raleway, sans-serif",

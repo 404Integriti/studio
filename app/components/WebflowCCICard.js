@@ -5,7 +5,7 @@ import Image from "next/image";
 const WebflowCCICard = ({ title, description, image, tiltDirection, alwaysTilt }) => {
   return (
     <div
-      className={`group transition-transform duration-300 ease-in-out transform w-fit mx-auto ${
+      className={`group transition-transform duration-300 ease-in-out transform  w-fit mx-auto ${image == '/WebflowCCI/fifth.svg' ? 'md:top-[-20px] sm:top-[-30px] top-[-40px] relative' : ''} ${
         alwaysTilt
           ? tiltDirection // permanent tilt
           : tiltDirection === "-rotate-5"
@@ -14,7 +14,7 @@ const WebflowCCICard = ({ title, description, image, tiltDirection, alwaysTilt }
       }`}
     >
       <div
-        className="grid grid-cols-2 max-w-[720px] py-4  bg-[#C7FFF4]  items-center  pr-[20px] rounded-3xl space-y-6 md:space-y-0 mx-auto"
+        className="grid grid-cols-2 max-w-[720px] py-4 !min-h-[260px] bg-[#C7FFF4]  items-center  pr-[20px] rounded-3xl space-y-6 md:space-y-0 mx-auto"
         style={{
           boxShadow: "0 -4px 15px -4px rgba(0, 0, 0, 0.1)", // custom top shadow
         }}
@@ -25,7 +25,7 @@ const WebflowCCICard = ({ title, description, image, tiltDirection, alwaysTilt }
             src={image}
             fill={true}
             alt="Motion Design Illustration"
-            className="max-w-full h-full border"
+            className="max-w-full h-full "
           />
         </div>
 

@@ -29,7 +29,7 @@ export default function ShopifyDesignCards({ cards }) {
   }, []);
 
   return (
-    <div className="cards-wrapper shopify-cards-wrapper ">
+    <div className="cards-wrapper shopify-cards-wrapper  max-h-[1100px]">
       {cards.map((card, index) => (
         <div
           key={index}

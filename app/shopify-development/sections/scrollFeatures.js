@@ -85,13 +85,13 @@ const ScrollFeatures = () => {
             {features.map((feature, index) => (
               <div
                 key={index}
-                className="w-[100%] max-w-[88%] mx-auto min-h-[255px] bg-[#effefb] rounded-[1.2rem] border-[.0625rem] border-[#83838329] p-6"
+                className={`w-[100%] max-w-[78%] mx-auto min-h-[255px] ${index %2 == 0 ? 'bg-[#C7FFF4]' :'bg-[#effefb]'} rounded-[1.2rem] border-[.0625rem] border-[#83838329] p-6`}
               >
                 <div className="text-center mb-4">
                   <div className=" mb-3"><Image src={feature.icon} width={46} height={44} alt="" /></div>
                 </div>
                 <h3 
-                  className="text-[24px] font-[600] text-[#1d1d1f] tracking-[-.025em]"
+                  className=" text-[20px] lg:text-[24px] font-[600] text-[#1d1d1f] tracking-[-.025em]"
                   style={{
                     fontFamily: "var(--font-raleway)"
                   }}
@@ -99,7 +99,7 @@ const ScrollFeatures = () => {
                   {feature.title}
                 </h3>
                 <p 
-                  className="text-[14px] text-[#333] leading-[21px]  opacity-[0.75]"
+                  className="text-[14px] lg: text-[#333] leading-[21px]  opacity-[0.75]"
                   style={{
                     fontFamily: "var(--font-raleway)"
                   }}
@@ -121,7 +121,7 @@ const ScrollFeatures = () => {
   
 
         {/* Four Slides Container */}
-        <div className="relative max-w-[1440px] mx-auto h-[400px] flex  justify-center">
+        <div className="relative max-w-[1440px] mx-auto min-h-[300px] flex  justify-center">
           {features.map((feature, index) => (
             <div
               key={index}        

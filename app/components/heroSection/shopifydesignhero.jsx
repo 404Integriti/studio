@@ -16,8 +16,8 @@ export default function Shopifydesignhero() {
         paragraphClass="max-w-[740px] mx-auto text-center mt-[19px] lg:text-[18px] text-[#333] text-[16px] leading-[32px] leading-[28px] "
         buttons={
           <Herobutton 
-            btnpadfirst="px-[10px] py-[15px] lg:text-[20px] text-[14px] mt-[20px] raleway"
-            btnpadsec="px-[15px] py-[10px] raleway text-[18px]"
+            btnpadfirst="px-[10px] py-[15px] lg:text-[20px] text-[14px] mt-[20px]  raleway ]"
+            btnpadsec="px-[15px] py-[10px] raleway text-[18px]  mt-[20px]"
             buttonwidth="200px"
             buttonheight="50px"
             firstButtonText="Get Started"

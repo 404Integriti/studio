@@ -28,15 +28,15 @@ const DemoStepCarousel = () => {
     {
       number: 3,
       icon: "/icon3.svg",
-      title: "SEO Optimization",
-      description: "Comprehensive search engine optimization strategies to improve your site's visibility and ranking in search results.",
+      title: "SEO Built-In",
+      description: "Every build is engineered for long-term organic growth with clean code, structured content, and smart internal linking.",
       bgcolor: "#46ada4"
     },
     {
       number: 4,
       icon: "/icon4.svg",
-      title: "Security & Maintenance",
-      description: "Ongoing security updates, backups, and maintenance to keep your WordPress site running smoothly and securely.",
+      title: "Full Ownership & Flexibility",
+      description: "No restrictions, subscriptions, or hidden costs—your website belongs fully to you, giving you complete creative and functional freedom.",
       bgcolor: "#3ecdb5"
     }
   ];

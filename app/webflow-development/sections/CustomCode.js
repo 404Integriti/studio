@@ -53,7 +53,7 @@ const WebflowCCISection = () => {
         {cardsData.map((card, index) => (
           <div
             key={index}
-            className="sticky transition-all duration-300 w-full"
+            className={`sticky transition-all  duration-300 w-full`}
             style={{
               top: `${100 + index * 50}px`,
               zIndex: cardsData.length + index,
@@ -63,7 +63,7 @@ const WebflowCCISection = () => {
            <WebflowCCICard
     {...card}
     tiltDirection={index % 2 === 0 ? "-rotate-5" : "rotate-5"}
-    alwaysTilt={index === cardsData.length - 0}
+    alwaysTilt={index === cardsData.length - 1 }
   />
           </div>
         ))}
