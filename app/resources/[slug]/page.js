@@ -4,6 +4,7 @@ import ShareButton from "../sections/sharebutton";
 import { FaXTwitter, FaFacebookF, FaInstagram, FaGithub } from "react-icons/fa6";
 import { OtherResourcesCard } from "../sections/otherresourcescard";
 import ContentRenderer from "../sections/contentrenderer";
+import Head from "next/head";
 
 export default async function ResourceDetail({ params}) {
   const { slug } = await params;
@@ -43,6 +44,10 @@ export default async function ResourceDetail({ params}) {
 
   return (
     <div className="">
+      <Head>
+            <title>Resources</title>
+            
+          </Head>
           {/* Hero section */}
         <section className="max-[991px]:pb-[40px] pb-[20px] ">
           <div>

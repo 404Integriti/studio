@@ -1,12 +1,14 @@
-'use client';
-import Communityhero from '../components/heroSection/communityhero';
-import CommunityPurpose from './communitysections/communitypurpose';
-import CommunityService from './communitysections/commiunityservice';
-import Communityprocess from './communitysections/communityprocess';
-import Moments from './communitysections/moments';
-import Difference from './communitysections/difference';
+import Communityhero from "../components/heroSection/communityhero";
+import CommunityPurpose from "./communitysections/communitypurpose";
+import CommunityService from "./communitysections/commiunityservice";
+import Communityprocess from "./communitysections/communityprocess";
+import Moments from "./communitysections/moments";
+import Difference from "./communitysections/difference";
 import Aboutmarquee from "../aboutus/aboutsections/aboutmarquee";
 
+export const metadata = {
+  title: "Community",
+};
 export default function Community() {
   return (
     <>
@@ -18,5 +20,5 @@ export default function Community() {
       <Difference />
       <Aboutmarquee />
     </>
-  )
+  );
 }

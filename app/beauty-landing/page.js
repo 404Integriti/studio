@@ -1,11 +1,14 @@
-
 import VideoSection from "../videosection";
 import BeautyLandingHero from "../components/heroSection/beautylandinghero";
-import BrandSection from "./sections/BrandsSection"
-import Casestudy from "./sections/casestudy"; 
+import BrandSection from "./sections/BrandsSection";
+import Casestudy from "./sections/casestudy";
 import BeautyPricing from "./sections/beautyprice";
 import SectionUpdate from "./sections/sectionupdate";
 import UserExperience from "./sections/userexperience";
+
+export const metadata = {
+  title: " Beauty Landing",
+};
 const page = () => {
   return (
     <div>
@@ -15,9 +18,9 @@ const page = () => {
       <Casestudy />
       <BeautyPricing />
       <SectionUpdate />
-      <UserExperience/>
+      <UserExperience />
     </div>
-  )
-}
+  );
+};
 
 export default page;

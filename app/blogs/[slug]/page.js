@@ -7,6 +7,7 @@ import BlogContent from "./sections/blogContent";
 import AuthorCard from "./sections/authorCard";
 import ShareSection from "./sections/shareSection";
 import { useBlogStore } from "@/store/postStore";
+import Head from "next/head";
 
 export default function BlogDetail() {
   const { slug } = useParams();
@@ -53,6 +54,14 @@ export default function BlogDetail() {
 
   return (
     <>
+      <Head>
+      <title>Blogs</title>
+      <meta
+        name="description"
+        content={"Read our latest blog post."}
+      />
+    </Head>
+
       {/* Hero Section */}
       <BlogsHeroSlug slug={slug} />
 

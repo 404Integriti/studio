@@ -7,18 +7,20 @@ import FeatureSection from "./sections/featuresection";
 import MyMarqeee from "./sections/marqee";
 import ShopifyWhitelabelServices from "./sections/services";
 
+export const metadata = {
+  title: "Shopify Whitelable Development",
+};
 export default function page() {
   return (
     <>
-    <ShopifyWhitelabelHero />
-    <FeatureSection />
-    <FocusClientSection />
-    <ShopifyWhitelabelServices />
-    <TrustSection />
-    <MyMarqeee />
-    <HowToConnect />
-    <FaqSection />
-    
+      <ShopifyWhitelabelHero />
+      <FeatureSection />
+      <FocusClientSection />
+      <ShopifyWhitelabelServices />
+      <TrustSection />
+      <MyMarqeee />
+      <HowToConnect />
+      <FaqSection />
     </>
-  )
+  );
 }

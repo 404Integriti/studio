@@ -5,16 +5,18 @@ import BitsProcess from "./sections/BitsProcess";
 import ProductOffering from "./sections/ProductOffering";
 import Impact from "./sections/TheImpact";
 
-
+export const metadata = {
+  title: "Bitsabay Case Study",
+};
 export default function page() {
   return (
     <>
-    <BitsABabyHero/>
-        <Challenges/>
-        <BitsProcess/>
-        <ProductOffering/>
-        <Impact/>
-        <CaseStudy/>
+      <BitsABabyHero />
+      <Challenges />
+      <BitsProcess />
+      <ProductOffering />
+      <Impact />
+      <CaseStudy />
     </>
-  )
+  );
 }
