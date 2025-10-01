@@ -4,7 +4,7 @@ import Herobutton from "@/app/components/herobuttons/herobutton";
 export default function Wbshero() {
   return (
     <Herosection
-      sectionpadding="lg:py-[120px] md:py-[60px] py-[40px] lg:pb-[100px] md:pb-[150px] pb-[60px] lg:pt-[100px] md:pt-[50px] lg:px-[0px] px-[15px]"
+      sectionpadding="lg:py-[70px] md:py-[60px] py-[40px]   pb-[60px]  md:pt-[50px] lg:px-[0px] px-[15px]"
       heading={
         <>
           <span className="hero-orange">Your Website, Built to Perform, Designed to Grow</span>

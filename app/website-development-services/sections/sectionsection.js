@@ -12,7 +12,7 @@ export default function SectionSection() {
     >
       <div
         className="w-[100%] max-w-[1440px] mx-auto xl:px-[50px] flex lg:flex-row flex-col justify-center items-center
-                         gap-[46px] sm:pt-[30px] lg:pb-[120px] md:pb-[80px] pb-[60px]"
+                         gap-[46px]  lg:pb-[120px] md:pb-[80px] pb-[60px]"
       >
         <div className="w-[100%] max-w-[700px] lg:max-w-[40%] lg:pl-[40px] px-[20px]">
           <Herosection

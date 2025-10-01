@@ -12,7 +12,7 @@ export default function Herohome() {
         md:pt-[65px] md:pb-[30px] md:mt-[-40px]     // ≥768px
         lg:pt-[65px] lg:pb-[30px] md:mt-[-40px]     // ≥1024px
         xl:pt-[100px] xl:pb-[30px] xl:mt-[-65px]    // ≥1280px
-        2xl:pt-[100px] 2xl:pb-[30px] 2xl:mt-[-65px] // ≥1536px
+        2xl:pt-[100px] 2xl:pb-[30px] 2xl:mt-[-115px] // ≥1536px
       "
       
       // ✅ Heading text responsive scaling

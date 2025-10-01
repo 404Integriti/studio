@@ -4,7 +4,7 @@ import Herobutton from "@/app/components/herobuttons/herobutton";
 export default function  Shopifydevhero() {
   return (
     <Herosection
-      sectionpadding="lg:py-[120px] md:py-[60px] py-[40px] lg:pb-[100px] md:pb-[80px] pb-[60px] lg:pt-[100px] md:pt-[50px] lg:px-[0px] px-[15px] text-[]"
+      sectionpadding="lg:py-[100px] md:py-[60px] py-[40px]  md:pb-[80px] pb-[60px]  md:pt-[50px] lg:px-[0px] px-[15px] text-[]"
       heading={
         <>
          <span className="hero-orange">Shopify Development That Powers E-Commerce Growth  </span> 

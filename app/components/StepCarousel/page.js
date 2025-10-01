@@ -25,14 +25,14 @@ const StepCarousel = ({ steps=[], activeStep = 0, onStepChange }) => {
   };
 
   return (
-    <div className="flex flex-col md:flex-row lg:justify-end md:justify-center items-center  gap-0">
+    <div className="flex flex-col md:flex-row lg:justify-end md:justify-center items-  gap-0">
       {steps.map((step, index) => (
         <div
           key={index}
-          className={`relative transition-all duration-500 ease-in-out cursor-pointer ${
+          className={`relative transition-all !h-auto  duration-500 ease-in-out cursor-pointer ${
             index === currentStep
-              ? `w-full md:w-[284px] h-auto md:h-[382px] min-h-[200px] md:min-h-[382px] rounded-2xl px-[16px] py-[20px] md:py-[40px] text-white`
-              : `w-full md:w-[92px] h-auto md:h-[382px] min-h-[80px] md:min-h-[382px] rounded-2xl px-[16px] md:px-[22px] py-[16px] md:py-[40px] text-white`
+              ? `w-full md:w-[284px]  md:h-[382px] min-h-[200px] md:min-h-[382px] rounded-2xl px-[16px] py-[20px] md:py-[40px] text-white !cursor-default`
+              : `w-full md:w-[92px]  min-h-[80px] md:min-h-[382px] rounded-2xl px-[16px] md:px-[22px] py-[16px] md:py-[40px] text-white`
           }`}
           style={{ backgroundColor: step.bgcolor }}
           onClick={() => handleStepClick(index)}
@@ -52,7 +52,7 @@ const StepCarousel = ({ steps=[], activeStep = 0, onStepChange }) => {
                     handlePrevious();
                     
                   }}
-                  className={`${ step.number == 1 ? 'opacity-45' : '' } w-8 h-8 rounded-full flex items-center justify-center border border-white border-opacity-30 hover:bg-opacity-30 transition-all`}
+                  className={`${ step.number == 1 ? 'opacity-45' : '' } w-8 h-8 rounded-full flex items-center justify-center border cursor-pointer border-white border-opacity-30 hover:bg-opacity-30 transition-all`}
                 >
                   {/* Show up/down arrows on mobile, left/right on desktop */}
                   <ChevronUp className="w-4 h-4 text-white md:hidden" />
@@ -64,7 +64,7 @@ const StepCarousel = ({ steps=[], activeStep = 0, onStepChange }) => {
                     e.stopPropagation();
                     handleNext();
                   }}
-                  className={`${ step.number == 4 ? 'opacity-45' : '' } w-8 h-8 bg-opacity-20 rounded-full flex items-center justify-center border border-white border-opacity-30 hover:bg-opacity-30 transition-all`}
+                  className={`${ step.number == 4 ? 'opacity-45' : '' } w-8 h-8 bg-opacity-20 rounded-full flex items-center justify-center border border-white border-opacity-30 hover:bg-opacity-30 transition-all cursor-pointer`}
                 >
                   {/* Show up/down arrows on mobile, left/right on desktop */}
                   <ChevronDown className="w-4 h-4 text-white md:hidden" />

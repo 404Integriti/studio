@@ -445,7 +445,7 @@ export default function Header() {
                                 {" "}
                                 <Image
                                   className="mr-[5px]"
-                                  src="/shopify.png"
+                                  src="/Shopify.png"
                                   alt=""
                                   height={40}
                                   width={40}

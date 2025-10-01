@@ -6,7 +6,7 @@ export default function Shopifydevelopmenthero() {
   return (
     <section>
     <Herosection
-      sectionpadding="lg:py-[120px] md:py-[60px] py-[40px] min-[1994px]:!my-5  pb-[70px]  md:pt-[50px] lg:px-[0px] px-[15px] "
+      sectionpadding="lg:py-[120px]  md:py-[60px] py-[40px] min-[1994px]:!my-5  pb-[70px]  md:pt-[50px] lg:px-[0px] px-[15px] "
       heading={
         <>
           <span className="hero-orange ">
