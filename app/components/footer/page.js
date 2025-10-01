@@ -1,7 +1,38 @@
-import Image from "next/image";
+  "use client";
+  import Image from "next/image";
 import Link from "next/link";
+import { useState } from "react";
+import { validateEmailAndSubmit } from "@/utils/Mail";
 
 export default function Footer() {
+  
+  const [email, setEmail] = useState("");
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState("");
+  const [success, setSuccess] = useState("");
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setError("");
+    setSuccess("");
+    setLoading(true);
+
+    try {
+      const isValid =await validateEmailAndSubmit(email);
+
+      if (isValid) {
+        // ✅ Do whatever you want here (e.g., submit to backend, Mailchimp, etc.)
+        setSuccess("Email validated and submitted successfully ");
+        // Example: Call your own API endpoint here
+        // await fetch("/api/subscribe", { method: "POST", body: JSON.stringify({ email }) })
+      }
+    } catch (err) {
+      setError(err.message);
+    } finally {
+      setLoading(false);
+    }
+  };
+
   return (
     <section className="footer bg-[#3c3c3c]">
       <div className="w-full max-w-[1440px] px-[24px] mx-auto">
@@ -121,13 +152,15 @@ export default function Footer() {
             <h3 className="text-white text-[18px] leading-[22px] font-[600] mb-[26px] raleway">
               Subscribe to Newsletter
             </h3>
-            <div className="flex">
+            <form onSubmit={handleSubmit} className="flex ">
               <input
-                type="email"
+                
+                type="email" name="Email" value={email} onChange={(e) => setEmail(e.target.value)}
                 placeholder="Enter your email"
                 className="px-[16px] py-[12px] bg-[#f5f5f5] text-[#333333] rounded-l-[8px] border-none outline-none flex-1 min-w-[200px]"
+                required
               />
-              <button className="px-[20px] h-[55px] py-[12px] bg-gradient-to-r from-[#ff6b35] to-[#f7931e] text-white rounded-r-[8px] border-none cursor-pointer hover:opacity-90 transition-opacity">
+              <button className="px-[20px] h-[55px] py-[12px] bg-gradient-to-r from-[#ff6b35] to-[#f7931e] text-white rounded-r-[8px] border-none cursor-pointer hover:opacity-90 transition-opacity" type="submit" disabled={loading}>
                 <svg
                   width="20"
                   height="20"
@@ -144,7 +177,10 @@ export default function Footer() {
                   />
                 </svg>
               </button>
-            </div>
+            
+            </form>  
+            {error && <p className="text-red-300 mt-[10px]">{error}</p>}
+             {success && <p className="text-green-600 mt-[10px]">{success}</p>}
           </div>
         </div>
       </div>

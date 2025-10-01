@@ -123,6 +123,7 @@ color: #070707 !important;
 .dijitalbtn:hover {
   transform: scale(1.25) !important;
   transition: transform 0.3s ease-in-out !important;
+
 }
 
 .dijital_right a:hover {
