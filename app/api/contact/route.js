@@ -115,7 +115,7 @@ const html = `
 
     const info = await transporter.sendMail({
       from: `"${name}" <${process.env.GMAIL}>`,
-      to: "mhamidabid301@gmail.com",
+      to: "info@integriti.io",
       replyTo: email,
       subject: `New message from ${name}`,
       text: `Name: ${name}\nEmail: ${email}\nNumber: ${phone}\n\n${message}`,

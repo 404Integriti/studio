@@ -3,6 +3,7 @@
 @import 'swiper/css';
 @import 'swiper/css/navigation';
 @import 'swiper/css/pagination';
+@import "intl-tel-input/build/css/intlTelInput.css";
 
 *,*::after,*::before {
   box-sizing: border-box;
@@ -951,4 +952,14 @@ iframe#vimeo-video {
 
 .beauty-landing-page .footer-creative {
     background: transparent !important;
+}
+
+.iti{
+   width: 100%;
+   border: none;
+ 
+}
+.iti *{
+  font-size: 14px;
+ 
 }

@@ -1,13 +1,16 @@
 "use client";
+
+import { useEffect, useRef, useState } from "react";
+import intlTelInput from "intl-tel-input";
+import "intl-tel-input/build/css/intlTelInput.css";
 import { Mail, Phone } from "lucide-react";
 import SectionHeading from "../components/secheading";
 import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react";
 import axios from "axios";
-export default function ContactSection() {
 
- // 🧠 Step 1: Manage state for form fields
+export default function ContactSection() {
+  // 🧠 Step 1: Manage state for form fields
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -19,43 +22,147 @@ export default function ContactSection() {
   const [successMsg, setSuccessMsg] = useState("");
   const [errorMsg, setErrorMsg] = useState("");
 
-  // 🧠 Step 2: Handle input changes
+  // -------------------------
+  // Phone input refs & init
+  // -------------------------
+  const inputRef = useRef(null);
+  const itiRef = useRef(null); // <--- stable ref for the intl-tel-input instance
+
+  useEffect(() => {
+    // run only on client
+    if (!inputRef.current) return;
+
+    // initialize plugin and keep instance in itiRef.current
+    itiRef.current = intlTelInput(inputRef.current, {
+      initialCountry: "us",
+      separateDialCode: true,
+      nationalMode: false,
+      utilsScript:
+        "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/js/utils.js",
+    });
+
+    // update react state when input or country changes
+    const updatePhoneState = () => {
+      let number = "";
+      try {
+        // preferred: E.164 via plugin (may throw/return empty if utils not loaded)
+        number = itiRef.current.getNumber();
+      } catch (err) {
+        // fallback: raw input value
+        number = inputRef.current.value || "";
+      }
+      // DEBUG: uncomment to inspect what's being read
+      // console.log("phone update from input:", number);
+      setFormData((prev) => ({ ...prev, phone: number }));
+    };
+
+    inputRef.current.addEventListener("input", updatePhoneState);
+    // intl-tel-input dispatches a custom 'countrychange' event on the input element
+    inputRef.current.addEventListener("countrychange", updatePhoneState);
+
+    // Set initial phone state from plugin (if it has something)
+    setTimeout(() => {
+      // small delay ensures utilsScript has a chance to load
+      updatePhoneState();
+    }, 100);
+
+    // cleanup on unmount
+    return () => {
+      if (inputRef.current) {
+        inputRef.current.removeEventListener("input", updatePhoneState);
+        inputRef.current.removeEventListener("countrychange", updatePhoneState);
+      }
+      if (itiRef.current && typeof itiRef.current.destroy === "function") {
+        itiRef.current.destroy();
+        itiRef.current = null;
+      }
+    };
+  }, []);
+
+  // If the parent state resets phone (for example after submit), make sure input UI shows it.
+  useEffect(() => {
+    if (!inputRef.current) return;
+    const desired = formData.phone || "";
+    if (inputRef.current.value !== desired) {
+      // Updating the raw input value is safe; plugin will update flag if possible.
+      inputRef.current.value = desired;
+    }
+
+    // If phone was cleared, also reset selected country to default (optional)
+    if (!desired && itiRef.current && typeof itiRef.current.setCountry === "function") {
+      itiRef.current.setCountry("us");
+    }
+  }, [formData.phone]);
+
+  // -------------------------
+  // Other form handlers
+  // -------------------------
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData((prev) => ({ ...prev, [name]: value }));
   };
 
-  // 🧠 Step 3: Handle form submit
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    setLoading(true);
-    setSuccessMsg("");
-    setErrorMsg("");
-    console.log(formData);
+const handleSubmit = async (e) => {
+  e.preventDefault();
+  setLoading(true);
+  setSuccessMsg("");
+  setErrorMsg("");
 
-    try {
-      const res = await axios.post("/api/contact", formData); 
-      if (res.status === 200) {
-        setSuccessMsg("✅ Message sent successfully!");
-        setFormData({ name: "", email: "", phone: "", message: "" });
-      }
-      
-    } catch (error) {
-      console.error(error);
-      setErrorMsg("❌ Failed to send message. Try again later.");
-    } finally {
-      setLoading(false);
+  let phoneNumber = "";
+
+  if (itiRef.current) {
+    // ✅ Get dial code
+    const countryData = itiRef.current.getSelectedCountryData();
+    const dialCode = countryData?.dialCode ? `+${countryData.dialCode}` : "";
+
+    // ✅ Get raw number and remove non-digits
+    let localNumber = inputRef.current?.value?.replace(/\D/g, "") || "";
+
+    // ✅ Remove leading 0 if present
+    if (localNumber.startsWith("0")) {
+      localNumber = localNumber.slice(1);
     }
+
+    // ✅ Combine final phone number
+    phoneNumber = `${dialCode}${localNumber}`;
+  }
+
+  // Final fallback
+  if (!phoneNumber) {
+    phoneNumber = inputRef.current?.value || "";
+  }
+
+  const finalData = {
+    ...formData,
+    phone: phoneNumber,
   };
 
-  
+  console.log("📤 Final phone with country code:", phoneNumber);
 
-  
+  try {
+    const res = await axios.post("/api/contact", finalData);
+    if (res.status === 200) {
+      setSuccessMsg("✅ Message sent successfully!");
+      setFormData({ name: "", email: "", phone: "", message: "" });
+      if (inputRef.current) inputRef.current.value = "";
+    } else {
+      setErrorMsg("❌ Failed to send message. Try again later.");
+    }
+  } catch (error) {
+    console.error(error);
+    setErrorMsg("❌ Failed to send message. Try again later.");
+  } finally {
+    setLoading(false);
+  }
+};
+
+
+
 
 
   return (
     <section
-      className=" contact hero-section-bg w-full px-[15px] lg:pt-[120px] md:pt-[80px] pt-[60px] pb-[60px]"
+      className="contact hero-section-bg w-full px-[15px] lg:pt-[120px] md:pt-[80px] pt-[60px] pb-[60px]"
       style={{
         backgroundImage: "url(/hero-section-bg.webp)",
       }}
@@ -70,13 +177,13 @@ export default function ContactSection() {
           classheading="text-center pb-[20px] lg:text-[50px] text-[36px] font-[800] lg:leading-[68px] leading-[50px] mt-[20px] mb-[10px]"
         />
       </div>
-      <div className="max-w-[1440px]  mx-auto flex md:flex-row flex-col gap-10 px-6">
+      <div className="max-w-[1440px] mx-auto flex md:flex-row flex-col gap-10 px-6">
         {/* Left Info Boxes */}
-        <div className="flex xl:flex-row flex-col justify-center items-center gap-[16px] w-[100%] md:max-w-[48%] max-w-[100%] ">
+        <div className="flex xl:flex-row flex-col justify-center items-center gap-[16px] w-[100%] md:max-w-[48%] max-w-[100%]">
           {/* Contact Info */}
           <div className="bg-[#ffd99d33] rounded-[8px] min-h-[110px] py-[15px] px-[15px] w-[100%] xl:max-w-[178px] max-w-[100%] xl:h-[149px] md:h-[125px]">
             <h3
-              className="text-[18px] font-[700] leading-[24px] mb-[10px] "
+              className="text-[18px] font-[700] leading-[24px] mb-[10px]"
               style={{
                 fontFamily: "var(--font-raleway)",
               }}
@@ -107,7 +214,7 @@ export default function ContactSection() {
           <div className="bg-[#c5e3e0] rounded-[8px] min-h-[110px] py-[15px] px-[15px] w-[100%] xl:max-w-[189px] max-w-[100%] xl:h-[149px] md:h-[125px]">
             <div className="flex items-center justify-start mb-[10px] gap-[27px]">
               <h3
-                className="text-[18px] font-[700] leading-[24px]  "
+                className="text-[18px] font-[700] leading-[24px]"
                 style={{
                   fontFamily: "var(--font-raleway)",
                 }}
@@ -136,7 +243,7 @@ export default function ContactSection() {
           <div className="bg-[#6c4ab633] rounded-[8px] min-h-[110px] py-[15px] px-[15px] w-[100%] xl:max-w-[200px] max-w-[100%] xl:h-[149px] md:h-[125px]">
             <div className="flex items-center justify-start mb-[10px] gap-[27px]">
               <h3
-                className="text-[18px] font-[700] leading-[24px]  "
+                className="text-[18px] font-[700] leading-[24px]"
                 style={{
                   fontFamily: "var(--font-raleway)",
                 }}
@@ -162,16 +269,14 @@ export default function ContactSection() {
         </div>
 
         {/* Right Form */}
-        <div className="w-[100%] md:max-w-[48%] max-w-[100%] bg-white py-[20px] ">
-            <form
+        <div className="w-[100%] md:max-w-[48%] max-w-[100%] bg-white py-[20px]">
+          <form
             className="flex flex-col w-[100%] max-w-[580px] mx-auto"
             style={{ fontFamily: "var(--font-raleway)" }}
             onSubmit={handleSubmit}
           >
             <div>
-              <label className="text-[#1c1c1c] mb-[5px] font-[600] ">
-                Name
-              </label>
+              <label className="text-[#1c1c1c] mb-[5px] font-[600]">Name</label>
               <input
                 type="text"
                 name="name"
@@ -198,27 +303,27 @@ export default function ContactSection() {
               />
             </div>
 
-            <div>
-              <label className="text-[#1c1c1c] mb-[5px] font-[600]">
+            {/* ✅ Phone Input */}
+            <div className="">
+              <label
+                htmlFor="phone"
+                className="text-[#1c1c1c] mb-[5px] font-[600] block"
+              >
                 Phone Number
               </label>
-              <div className="bg-[#fff] border border-[#171f33] rounded-[20px] w-[100%] h-[48px] px-[16px] text-[#575757] mb-[10px] py-[8px] text-[14px] flex">
-                <Image
-                  src="https://flagcdn.com/us.svg"
-                  alt="US Flag"
-                  width={20}
-                  height={14}
-                  className="mr-2"
-                />
+              <div className="bg-[#fff] border border-[#171f33] rounded-[20px] text-[#575757] mb-[10px] text-[14px] flex">
                 <input
-                  type="text"
-                  name="phone"
-                  placeholder="+1"
-                  required
-                  value={formData.phone}
-                  onChange={handleChange}
-                  className="flex-1 border-0 py-3 focus:outline-none"
-                />
+  ref={inputRef}
+  id="phone"
+  name="phone"              // ✅ add this
+  type="tel"
+  min={8}
+  required
+  placeholder="Enter phone number"
+  defaultValue=""           // ✅ ensures browser sees value
+  className="flex-1 w-full border-0 rounded-[20px] py-[8px] h-[48px] px-[8px] focus:outline-none"
+/>
+
               </div>
             </div>
 
@@ -246,12 +351,8 @@ export default function ContactSection() {
               {loading ? "Sending..." : "Submit"}
             </button>
 
-            {successMsg && (
-              <p className="text-green-600 mt-3 text-sm">{successMsg}</p>
-            )}
-            {errorMsg && (
-              <p className="text-red-600 mt-3 text-sm">{errorMsg}</p>
-            )}
+            {successMsg && <p className="text-green-600 mt-3 text-sm">{successMsg}</p>}
+            {errorMsg && <p className="text-red-600 mt-3 text-sm">{errorMsg}</p>}
           </form>
         </div>
       </div>

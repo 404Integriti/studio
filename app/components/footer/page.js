@@ -160,8 +160,8 @@ export default function Footer() {
                 className="px-[16px] py-[12px] bg-[#f5f5f5] text-[#333333] rounded-l-[8px] border-none outline-none flex-1 min-w-[200px]"
                 required
               />
-              <button className="px-[20px] h-[55px] py-[12px] bg-gradient-to-r from-[#ff6b35] to-[#f7931e] text-white rounded-r-[8px] border-none cursor-pointer hover:opacity-90 transition-opacity" type="submit" disabled={loading}>
-                <svg
+              <button className="px-[20px] h-[55px]  bg-gradient-to-r from-[#ff6b35] to-[#f7931e] text-white rounded-r-[8px] w-auto border-none cursor-pointer hover:opacity-90 transition-opacity" type="submit" disabled={loading}>
+              {loading == true ? 'Please Wait' :<svg
                   width="20"
                   height="20"
                   viewBox="0 0 24 24"
@@ -175,7 +175,7 @@ export default function Footer() {
                     strokeLinecap="round"
                     strokeLinejoin="round"
                   />
-                </svg>
+                </svg>}  
               </button>
             
             </form>  
