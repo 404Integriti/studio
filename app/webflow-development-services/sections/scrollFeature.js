@@ -130,7 +130,7 @@ const ScrollFeatures = () => {
             buttonheight="!18px"
             firstButtonText="Explore Webflow Support"
             secondButtonText=""
-            firstButtonlink="/contact-us"
+            firstButtonlink="/webflow-support"
             secondButtonlink="/portfolio"
           />
         </div>
@@ -210,7 +210,7 @@ const ScrollFeatures = () => {
             buttonheight="!18px"
             firstButtonText="Explore Webflow Support"
             secondButtonText=""
-            firstButtonlink="/contact-us"
+            firstButtonlink="/webflow-support"
             secondButtonlink="/portfolio"
           />
         </div>

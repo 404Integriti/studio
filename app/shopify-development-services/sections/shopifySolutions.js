@@ -51,7 +51,7 @@ const ShopifySolutions = () => {
           buttonheight="!20px"
           firstButtonText="Expolre Shopify Development"
           secondButtonText=""
-          firstButtonlink="/contact-us"
+          firstButtonlink="/shopify-development"
           secondButtonlink="/portfolio"
         />
       </div>

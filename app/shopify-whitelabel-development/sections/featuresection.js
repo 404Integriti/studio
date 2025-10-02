@@ -11,21 +11,21 @@ export default function FeatureSection() {
         "We work under your brand, providing deliverables that feel like an in-house extension of your agency.",
     },
     {
-      icon: "/wordpressWhitelabel/why/one.svg",
+      icon: "/WordpressWhitelabel/why/one.svg",
       iconSize:"54",
       title: "Dedicated Shopify Experts",
       description:
         "A team of seasoned developers and designers highly specialized in Shopify and Shopify Plus. Ready when you are.",
     },
     {
-      icon: "/wordpressWhitelabel/why/two.svg",
+      icon: "/WordpressWhitelabel/why/two.svg",
       iconSize:"60",
       title: "Flexible Engagement Models",
       description:
         "Whether you need one project or an ongoing partnership. We build flexible plans around your workflow.",
     },
     {
-      icon: "/wordpressWhitelabel/why/three.svg",
+      icon: "/WordpressWhitelabel/why/three.svg",
       iconSize:"48",
       title: "Real Time Collaboration",
       description:

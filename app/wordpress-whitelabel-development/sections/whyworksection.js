@@ -3,22 +3,22 @@ import WhyWorkCard from "./whyworkcard";
 
 const features = [
   {
-    icon: "/wordpressWhitelabel/why/one.svg",
+    icon: "/WordpressWhitelabel/why/one.svg",
     text: "You can expand your service offering instantly without hiring or training in-house developers.",
     size:'54'
   },
   {
-    icon: "/wordpressWhitelabel/why/two.svg",
+    icon: "/WordpressWhitelabel/why/two.svg",
     text: "Deadlines become easier to manage because we work on your timeline and adjust to your processes.",
     size:'60'
   },
   {
-    icon: "/wordpressWhitelabel/why/three.svg",
+    icon: "/WordpressWhitelabel/why/three.svg",
     text: "You stay in full control of the client relationship while we take care of the heavy lifting behind the scenes.",
     size:'48'
   },
   {
-    icon: "/wordpressWhitelabel/why/four.svg",
+    icon: "/WordpressWhitelabel/why/four.svg",
     text: "You reduce your operational stress and free up time to focus on growth, sales and strategy.",
     size:'51'
   },

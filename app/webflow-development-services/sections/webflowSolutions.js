@@ -33,7 +33,7 @@ const solutions = [
 
 const WebflowSolutions = () => {
   return (
-    <section className="bg-[#f8f8f8]   w-full py-[10px] mt-[-10px] sm:py-[40px]">
+    <section className="bg-[#f8f8f8]  w-full py-[10px] mt-[-10px] sm:py-[40px]">
       <div className="  max-w-[1360px] mx-auto ">
         <h2 className="xs:text-[32px] text-[32px] font-[600] leading-[36px] text-center text-[#333333] raleway px-[30px] sm:px-[40px] pt-[20px] mb-[10px] ">
           Webflow Development
@@ -51,7 +51,7 @@ const WebflowSolutions = () => {
           buttonheight="!20px"
           firstButtonText="Expolre Webflow Development"
           secondButtonText=""
-          firstButtonlink="/contact-us"
+          firstButtonlink="/webflow-development"
           secondButtonlink="/portfolio"
         />
       </div>

@@ -48,7 +48,7 @@ export default function Maintenance() {
               buttonheight="!18px"
               firstButtonText="Expolre Shopify Maintenance"
               secondButtonText=""
-              firstButtonlink="/contact-us"
+              firstButtonlink="/shopify-maintenance"
               secondButtonlink="/portfolio"
             />
           </div>

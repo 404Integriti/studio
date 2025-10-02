@@ -237,7 +237,7 @@ export default function Header() {
                 </li>
 
                 {/* Menu Button */}
-                <li className="mr-[13px] flex justify-center items-center">
+                <li className="mr-[13px] flex justify-center items-center ">
                   <Menubutton />
                 </li>
               </ul>
@@ -581,6 +581,9 @@ export default function Header() {
                   >
                     Resources
                   </Link>
+                </li>
+                <li>
+                     <Menubutton />
                 </li>
                 
               </ul>

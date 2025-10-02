@@ -134,7 +134,7 @@ const ScrollFeatures = () => {
               buttonheight="!18px"
               firstButtonText="Explore Shopify Support"
               secondButtonText=""
-              firstButtonlink="/contact-us"
+              firstButtonlink="/shopify-support"
               secondButtonlink="/portfolio"
             />
           </div>
@@ -215,7 +215,7 @@ const ScrollFeatures = () => {
             buttonheight="!18px"
             firstButtonText="Expolre Shopify Support"
             secondButtonText=""
-            firstButtonlink="/contact-us"
+            firstButtonlink="/shopify-support"
             secondButtonlink="/portfolio"
           />
         </div>

@@ -130,7 +130,7 @@ const ScrollFeatures = () => {
             buttonheight="!18px"
             firstButtonText="Expolre Wordpress Support"
             secondButtonText=""
-            firstButtonlink="/contact-us"
+            firstButtonlink="/wordpress-support"
             secondButtonlink="/portfolio"
           />
         </div>
@@ -210,7 +210,7 @@ const ScrollFeatures = () => {
             buttonheight="!18px"
             firstButtonText="Explore WordPress Support"
             secondButtonText=""
-            firstButtonlink="/contact-us"
+            firstButtonlink="/wordpress-support"
             secondButtonlink="/portfolio"
           />
         </div>

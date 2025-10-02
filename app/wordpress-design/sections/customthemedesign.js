@@ -107,7 +107,7 @@ const Customthemedesign = () => {
               {/* Laptop with rocket illustration */}
               <div className="w-full h-full flex items-center  justify-center">
             <Image 
-              src="/frame3.svg"
+              src="/Frame3.svg"
               width={471}
               height={366}
               alt="Laptop with rocket illustration"

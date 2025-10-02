@@ -48,7 +48,7 @@ export default function Maintenance() {
               buttonheight="!18px"
               firstButtonText="Expolre Webflow Maintenance"
               secondButtonText=""
-              firstButtonlink="/contact-us"
+              firstButtonlink="/webflow-maintenance"
               secondButtonlink="/portfolio"
             />
           </div>

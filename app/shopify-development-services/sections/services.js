@@ -39,7 +39,7 @@ export default function ShopifyServices() {
                 buttonheight="!18px"
                 firstButtonText="Expolre Shopify Design"
                 secondButtonText=""
-                firstButtonlink="/contact-us"
+                firstButtonlink="/shopify-design"
                 secondButtonlink="/portfolio"
               />
             </div>

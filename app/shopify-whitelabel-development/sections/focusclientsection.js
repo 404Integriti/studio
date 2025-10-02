@@ -3,7 +3,7 @@ import FocusClientCard from "./focusclientcard";
 
 const features = [
   {
-    icon: "/wordpressWhitelabel/why/one.svg",
+    icon: "/WordpressWhitelabel/why/one.svg",
     text: "We represent your agency with the highest level of professionalism—your clients will never know we’re behind the scenes.",
     title:"Full White Label Support",
     size:'54'
@@ -15,13 +15,13 @@ const features = [
     size:'43'
   },
   {
-    icon: "/wordpressWhitelabel/why/three.svg",
+    icon: "/WordpressWhitelabel/why/three.svg",
     text: "You stay in full control of the client relationship while we take care of the heavy lifting behind the scenes.",
     title:"Transparent Workflow",
     size:'48'
   },
   {
-    icon: "/wordpressWhitelabel/why/four.svg",
+    icon: "/WordpressWhitelabel/why/four.svg",
     text: "You reduce your operational stress and free up time to focus on growth, sales and strategy.",
     title:"Profit-First Collaboration",
     size:'51'
